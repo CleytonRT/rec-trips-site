@@ -1,0 +1,19 @@
+[
+    {
+      "imagem": "/img/roteiro1.jpg",
+      "titulo": "Arraial & Macaé",
+      "tipo": "Hospedagem",
+      "ida": "16/05/2025",
+      "volta": "18/05/2025",
+      "valor": "R$440,00"
+    },
+    {
+      "imagem": "/img/roteiro2.jpg",
+      "titulo": "Rota do Vinho + Cacau Show",
+      "tipo": "Bate e Volta",
+      "ida": "13/07/2025",
+      "volta": "13/07/2025",
+      "valor": "R$95,00"
+    }
+  ]
+  

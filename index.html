@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecTrips | Grave seu momento conosco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");        
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(106, 27, 154, 0.9) 0%, rgba(64, 224, 208, 0.9) 100%);
+        }
+
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(106, 27, 154, 0.3), 0 10px 10px -5px rgba(64, 224, 208, 0.1);
+        }
+
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(245, 245, 245, 0.9) 100%);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+<!-- NAVBAR COMPLETA -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center py-4">
+      <div class="flex items-center space-x-4">
+        <div class="flex items-center">
+          <img src="/img/Logo RT.jpeg" alt="Logo RecTrips" class="h-12 w-auto">
+          <span class="ml-2 text-2xl font-bold bg-gradient-to-r from-purple-600 to-cyan-400 bg-clip-text text-transparent">RecTrips</span>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#hero" class="nav-link text-gray-800 hover:text-cyan-400 font-medium">Home</a>
+        <a href="#packages" class="nav-link text-gray-800 hover:text-cyan-400 font-medium">Pacotes</a>
+        <a href="#destinations" class="nav-link text-gray-800 hover:text-cyan-400 font-medium">Destinos</a>
+        <a href="#contact" class="nav-link text-gray-800 hover:text-cyan-400 font-medium">Contato</a>
+      </div>
+      <div class="md:hidden">
+        <button class="mobile-menu-button p-2 focus:outline-none block md:hidden">
+          <i class="fas fa-bars text-purple-600 text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div class="mobile-menu hidden md:hidden bg-white py-4 px-4">
+    <a href="#hero" class="block py-2 text-gray-800 hover:text-cyan-400">Home</a>
+    <a href="#packages" class="block py-2 text-gray-800 hover:text-cyan-400">Pacotes</a>
+    <a href="#destinations" class="block py-2 text-gray-800 hover:text-cyan-400">Destinos</a>
+    <a href="#contact" class="block py-2 text-gray-800 hover:text-cyan-400">Contato</a>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+  <section class="hero">
+    <div id="hero">
+    </div>
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="imagem-overlay">
+              <img src="/img/viagem1.jpg" alt="Hero 1" />
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="imagem-overlay">
+              <img src="/img/viagem2.jpg" alt="Hero 2" />
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="imagem-overlay">
+              <img src="/img/viagem3.jpg" alt="Hero 3" />
+            </div>
+          </div>          
+      </div>
+      
+      <div class="hero-content">
+        <h1 class="titulo-hero">Grave seu momento com a gente</h1>
+        <p>Cada viagem, um novo capítulo da sua história.</p>
+        <a href="#packages" class="btn">Ver Pacotes</a>
+      </div>
+    </div>
+  </section>
+
+<!-- Pacotes Section Atualizado -->
+<section id="packages" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Nossos Pacotes</h2>
+      <p class="text-x0.9 text-gray-600 max-w-3xl mx-auto">
+        Escolha seu próximo destino e venha gravar seu momento com a gente! ✨
+      </p>
+    </div>
+
+    <div id="pacotes-container" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+  </div>
+</section>  
+
+<!-- Destinos Section -->
+<section id="destinations" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Nossos Destinos</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Explore os lugares incríveis com a RecTrips!</p>
+      </div>
+  
+      <div class="relative overflow-hidden">
+        <div class="flex transition-transform duration-500 ease-in-out w-full" id="carousel-destinos">
+          
+          <!-- Slide 1 -->
+          <div class="w-full flex-shrink-0 px-4 md:w-[768px]">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+              <h3 class="text-2xl font-bold text-purple-600 mb-2">Floripa - O Retorno</h3>
+              <video controls poster="/img/amazonia.jpg" class="w-full rounded-lg mb-4">
+                <source src="/videos/video1.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+              </video>
+              <div class="grid grid-cols-2 gap-4 mb-4">
+                <img src="/img/roteiro1.jpg" class="rounded-lg cursor-pointer" onclick="abrirImagem(this.src)">
+                <img src="/img/roteiro2.jpg" class="rounded-lg cursor-pointer" onclick="abrirImagem(this.src)">
+              </div>
+              <blockquote class="italic text-gray-700 bg-purple-50 p-4 rounded-lg shadow">
+                “Uma experiência maravilhosa que nunca esquecerei. O guia e os monitores super extrovertidos, brincalhões, com um roteiro perfeito.”
+                <footer class="mt-2 text-sm font-semibold text-purple-600">@viajante.rt</footer>
+              </blockquote>
+            </div>
+          </div>
+  
+          <!-- Slide 2 -->
+          <div class="w-full flex-shrink-0 px-4 md:w-[768px]">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+              <h3 class="text-2xl font-bold text-purple-600 mb-2">São Thomé das Letras</h3>
+              <video controls poster="/img/amazonia.jpg" class="w-full rounded-lg mb-4">
+                <source src="/videos/video2.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+              </video>
+              <div class="grid grid-cols-2 gap-4 mb-4">
+                <img src="/img/roteiro3.jpg" class="rounded-lg cursor-pointer" onclick="abrirImagem(this.src)">
+                <img src="/img/roteiro1.jpg" class="rounded-lg cursor-pointer" onclick="abrirImagem(this.src)">
+              </div>
+              <blockquote class="italic text-gray-700 bg-purple-50 p-4 rounded-lg shadow">
+                “Lugar místico, energizante e inesquecível. Tudo impecável!”
+                <footer class="mt-2 text-sm font-semibold text-purple-600">@sagrado_rt</footer>
+              </blockquote>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- Botões Desktop -->
+        <div class="hidden md:flex justify-between absolute top-1/2 left-0 right-0 px-6 transform -translate-y-1/2 z-10">
+          <button onclick="voltarSlide()" class="bg-purple-100 text-purple-600 p-3 rounded-full hover:bg-purple-200 transition-all duration-300">
+            <i class="fas fa-chevron-left text-xl"></i>
+          </button>
+          <button onclick="avancarSlide()" class="bg-purple-100 text-purple-600 p-3 rounded-full hover:bg-purple-200 transition-all duration-300">
+            <i class="fas fa-chevron-right text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal de Imagem Expandida -->
+    <div id="imagemModal" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 hidden">
+      <img id="imagemExpandida" class="max-w-3xl max-h-[80vh] rounded shadow-lg">
+      <button onclick="fecharImagem()" class="absolute top-4 right-6 text-white text-2xl">&times;</button>
+    </div>
+</section>
+  
+  
+<!-- Contato Section -->
+<section id="contact" class="py-16 bg-gradient-to-r from-purple-700 to-teal-400 text-white">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Entre em Contato</h2>
+    <p class="mb-6">Quer gravar seu momento? Fale com a gente nos nossos canais:</p>
+
+    <div class="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
+
+      <!-- Botão WhatsApp -->
+      <a href="https://wa.me/message/G7FUENJX5QHII1" target="_blank" class="flex items-center bg-white text-purple-700 font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition w-full md:w-auto justify-center">
+        <i class="fab fa-whatsapp text-2xl mr-2"></i>
+        <span>WhatsApp</span>
+      </a>
+
+      <!-- Botão Instagram -->
+      <a href="https://www.instagram.com/rec.trips?igsh=cHg4bGVkd3FrdDM3&utm_source=qr" target="_blank"
+         class="flex items-center bg-white text-purple-700 font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition w-full md:w-auto justify-center">
+        <i class="fab fa-instagram text-2xl mr-2 "></i>
+        Instagram
+      </a>
+
+      <!-- Botão E-mail -->
+      <a href="mailto:rectrips2021@gmail.com"
+         class="flex items-center bg-white text-purple-700 font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition w-full md:w-auto justify-center">
+        <i class="fas fa-envelope text-2xl mr-2"></i>
+        E-mail
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-gray-900 text-white py-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+
+      <!-- Informações Legais -->
+      <div>
+        <h3 class="text-lg font-semibold mb-2">Informações Legais</h3>
+        <p class="mb-1">CNPJ: 49.914.405/0001-24</p>
+        <p class="mb-1">Cadastur: 1234567890</p>
+        <img src="/img/Cadastur.JPG" alt="Logo Cadastur" class="mt-4 w-32">
+      </div>
+
+      <!-- Missão, Visão e Valores -->
+      <div>
+        <h3 class="text-lg font-semibold mb-2">Quem Somos</h3>
+        <p class="mb-2"><strong>Missão:</strong> Proporcionar experiências inesquecíveis de viagem para todos os públicos, com responsabilidade e alegria.</p>
+        <p class="mb-2"><strong>Visão:</strong> Ser referência em turismo acessível e acolhedor no Brasil.</p>
+        <p class="mb-2"><strong>Valores:</strong> Inclusão, segurança, empatia, diversão e compromisso com o viajante.</p>
+      </div>
+    </div>
+
+    <div class="mt-8 text-center text-xs text-gray-400">
+      &copy; 2025 RecTrips. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+<script>
+    document.querySelector('.btn').addEventListener('click', function(e) {
+      e.preventDefault(); // impede o comportamento padrão do link
+      const destino = document.querySelector('#packages');
+  
+      window.scrollTo({
+        top: destino.offsetTop - 100, // ajusta para compensar a navbar, se quiser
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+<script src="js/carousel.js"></script>  
+<script src="js/carousel-destinos.js"></script>  
+<script>
+  // Garante que o container exista antes de rodar o fetch
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM pronto — iniciando fetch de pacotes.json');
+    fetch('./json/pacotes.json')
+      .then(response => {
+        console.log('fetch() retornou:', response);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then(pacotes => {
+        console.log('pacotes.json parseado:', pacotes);
+        const container = document.getElementById('pacotes-container');
+        if (!container) {
+          console.error('Container #pacotes-container NÃO encontrado');
+          return;
+        }
+        pacotes.forEach(pkg => {
+          const card = document.createElement('div');
+          card.className = 'package-card';
+          card.innerHTML = `
+            <img src="${pkg.imagem}" alt="${pkg.titulo}" class="package-img">
+            <div class="p-6">
+              <h3 class="package-title">${pkg.titulo}</h3>
+              <p class="package-type">${pkg.tipo}</p>
+              <p class="package-date"><i class="fas fa-calendar-alt mr-2"></i>Ida: ${pkg.ida}</p>
+              <p class="package-date"><i class="fas fa-calendar-alt mr-2"></i>Retorno: ${pkg.volta}</p>
+              <div class="mt-4">
+                <p class="text-gray-500 text-xs">A partir de:</p>
+                <p class="package-price">${pkg.valor}</p>
+              </div>
+              <div class="mt-4">
+                <a href="#" class="whatsapp-btn" onclick="abrirWhatsApp()">
+                  <i class="fab fa-whatsapp mr-2"></i>informações
+                </a>
+              </div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      })
+      .catch(err => console.error('❌ Erro ao carregar pacotes:', err));
+  });
+</script>
+</body>
+</html>
