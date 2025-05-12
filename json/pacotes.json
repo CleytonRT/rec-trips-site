@@ -1,19 +1,27 @@
 [
     {
       "imagem": "/img/roteiro1.jpg",
-      "titulo": "Arraial & Macaé",
-      "tipo": "Hospedagem",
-      "ida": "16/05/2025",
-      "volta": "18/05/2025",
-      "valor": "R$440,00"
-    },
-    {
-      "imagem": "/img/roteiro2.jpg",
-      "titulo": "Rota do Vinho + Cacau Show",
+      "titulo": "São Roque - Rota do Vinho + Cacau Show",
       "tipo": "Bate e Volta",
       "ida": "13/07/2025",
       "volta": "13/07/2025",
       "valor": "R$95,00"
+    },
+    {
+      "imagem": "/img/roteiro2.jpg",
+      "titulo": "São Roque - Rota do Vinho + Cacau Show e Goes",
+      "tipo": "Bate e Volta",
+      "ida": "16/08/2025",
+      "volta": "16/08/2025",
+      "valor": "Em Breve"
+    },
+    {
+      "imagem": "/img/roteiro1.jpg",
+      "titulo": "São Thomé das Letras - O ritual",
+      "tipo": "Hospedagem",
+      "ida": "31/10/2025",
+      "volta": "02/11/2025",
+      "valor": "Em Breve"
     }
   ]
   
