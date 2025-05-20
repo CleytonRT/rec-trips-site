@@ -1,6 +1,6 @@
 let slideIndex = 0;
 const carousel = document.getElementById('carousel-destinos');
-const slides = carousel.querySelectorAll('div.w-full');
+const slides = carousel.querySelectorAll('.destino-slide');
 const totalSlides = slides.length;
 
 const btnVoltar = document.getElementById('btn-voltar');

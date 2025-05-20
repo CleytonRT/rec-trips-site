@@ -8,7 +8,9 @@
     <meta property="og:description" content="Cada viagem, um novo capítulo da sua história." />
     <title>RecTrips | Grave seu momento conosco</title>
     <link rel="icon" href="img/logo-rt-sem-fundo.png" type="image/png" sizes="48x48">
-    <link rel="apple-touch-icon" href="img/logo-rt-sem-fundo.png">
+    <link rel="apple-touch-icon" sizes="48x48" href="img/logo-rt-sem-fundo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/android-chrome-48x48.png">
+    <meta name="theme-color" content="#6B21A8">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css" />
@@ -120,66 +122,84 @@
 
 <!-- Destinos Section -->
 <section id="destinations" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Nossos Destinos</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">Explore os lugares incríveis com a RecTrips!</p>
       </div>
   
-      <div class="relative overflow-hidden">
+        <div class="relative overflow-x-hidden overflow-y-visible">
         <div class="flex transition-transform duration-500 ease-in-out w-full" id="carousel-destinos">
           
-          <!-- Slide 1 -->
-          <div class="w-full flex-shrink-0 px-4 md:w-[768px]">
-            <div class="bg-white rounded-xl shadow-lg p-6">
-              <h3 class="text-2xl font-bold text-purple-600 mb-2">Floripa - O Retorno</h3>
-              <video controls poster="/img/amazonia.jpg" class="w-full rounded-lg mb-4">
-                <source src="/videos/video1.mp4" type="video/mp4">
-                Seu navegador não suporta vídeo.
-              </video>
-              <div class="grid grid-cols-2 gap-4 mb-4">
-                <img src="/img/roteiro1.jpg" class="rounded-lg cursor-pointer" onclick="abrirImagem(this.src)">
-                <img src="/img/roteiro2.jpg" class="rounded-lg cursor-pointer" onclick="abrirImagem(this.src)">
-              </div>
-              <blockquote class="italic text-gray-700 bg-purple-50 p-4 rounded-lg shadow">
-                “Uma experiência maravilhosa que nunca esquecerei. O guia e os monitores super extrovertidos, brincalhões, com um roteiro perfeito.”
-                <footer class="mt-2 text-sm font-semibold text-purple-600">@viajante.rt</footer>
-              </blockquote>
-            </div>
-          </div>
-  
-          <!-- Slide 2 -->
-          <div class="w-full flex-shrink-0 px-4 md:w-[768px]">
-            <div class="bg-white rounded-xl shadow-lg p-6">
-              <h3 class="text-2xl font-bold text-purple-600 mb-2">São Thomé das Letras</h3>
-              <video controls poster="/img/amazonia.jpg" class="w-full rounded-lg mb-4">
-                <source src="/videos/video2.mp4" type="video/mp4">
-                Seu navegador não suporta vídeo.
-              </video>
-              <div class="grid grid-cols-2 gap-4 mb-4">
-                <img src="/img/roteiro3.jpg" class="rounded-lg cursor-pointer" onclick="abrirImagem(this.src)">
-                <img src="/img/roteiro1.jpg" class="rounded-lg cursor-pointer" onclick="abrirImagem(this.src)">
-              </div>
-              <blockquote class="italic text-gray-700 bg-purple-50 p-4 rounded-lg shadow">
-                “Lugar místico, energizante e inesquecível. Tudo impecável!”
-                <footer class="mt-2 text-sm font-semibold text-purple-600">@sagrado_rt</footer>
-              </blockquote>
-            </div>
-          </div>
-  
-        </div>
-  
-        <!-- Botões Desktop -->
-        <div class="hidden md:flex justify-between absolute top-1/2 left-0 right-0 px-6 transform -translate-y-1/2 z-10">
-          <button onclick="voltarSlide()" class="bg-purple-100 text-purple-600 p-3 rounded-full hover:bg-purple-200 transition-all duration-300">
-            <i class="fas fa-chevron-left text-xl"></i>
-          </button>
-          <button onclick="avancarSlide()" class="bg-purple-100 text-purple-600 p-3 rounded-full hover:bg-purple-200 transition-all duration-300">
-            <i class="fas fa-chevron-right text-xl"></i>
-          </button>
-        </div>
+    <!-- Slide 1 -->
+    <!-- Dentro do seu carrossel de destinos -->
+    <div class="destino-slide">
+      <h3>São Thomé das Letras</h3>
+
+      <!-- Imagem principal -->
+      <img
+        src="/img/amazonia.jpg"
+        alt="São Thomé das Letras"
+        class="destino-main-img"
+      />
+
+      <!-- Grid de miniaturas -->
+      <div class="destino-thumbs">
+        <img src="/img/viagem1.jpg" alt="Cachoeira" />
+        <img src="/img/viagem2.jpg" alt="Trilha" />
       </div>
+
+      <!-- Depoimento -->
+      <blockquote class="feedback-card">
+        “Lugar místico, energizante e inesquecível. Tudo impecável!”
+        <footer>@sagrado_rt</footer>
+      </blockquote>
     </div>
+  
+    <!-- Slide 1 -->
+    <!-- Dentro do seu carrossel de destinos -->
+    <div class="destino-slide">
+      <h3>São Thomé das Letras</h3>
+
+      <!-- Imagem principal -->
+      <img
+        src="/img/amazonia.jpg"
+        alt="São Thomé das Letras"
+        class="destino-main-img"
+      />
+
+      <!-- Grid de miniaturas -->
+      <div class="destino-thumbs">
+        <img src="/img/viagem1.jpg" alt="Cachoeira" />
+        <img src="/img/viagem2.jpg" alt="Trilha" />
+      </div>
+
+      <!-- Depoimento -->
+      <blockquote class="feedback-card">
+        “Lugar místico, energizante e inesquecível. Tudo impecável!”
+        <footer>@sagrado_rt</footer>
+      </blockquote>
+  </div>
+  
+    </div>
+  
+  <!-- Botões Desktop -->
+  <div class="hidden md:flex justify-between absolute top-1/2 left-0 right-0 px-6 transform -translate-y-1/2 z-10">
+    <button
+      id="btn-voltar"
+      class="carousel-btn-left"
+      onclick="voltarSlide()">
+      <i class="fas fa-chevron-left text-xl"></i>
+    </button>
+    <button
+      id="btn-avancar"
+      class="carousel-btn-right"
+      onclick="avancarSlide()">
+      <i class="fas fa-chevron-right text-xl"></i>
+    </button>
+  </div>
+  </div>
+  </div>
   
     <!-- Modal de Imagem Expandida -->
     <div id="imagemModal" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 hidden">
