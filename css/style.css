@@ -59,7 +59,7 @@
     position: relative;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -260%);
+    transform: translate(-50%, -200%);
     text-align: center;
     z-index: 10;
   }
@@ -104,6 +104,10 @@
   
   /* MEDIA QUERY – MOBILE */
   @media (max-width: 768px) {
+    .hero {
+    height: 60vh;
+    }
+    
     .titulo-hero {
       font-size: 32px;
       max-width: 100%;
@@ -111,6 +115,15 @@
   
     .hero-content p {
       font-size: 14px;
+    }
+
+    .hero-content {
+      position: relative;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -280%);
+      text-align: center;
+      z-index: 10;
     }
   }
   
@@ -192,6 +205,9 @@
    ============================================ */
 
 /* ===== Botões de navegação (desktop) ===== */
+#carousel-destinos {
+  position: relative; /* adiciona isto */
+}
 .carousel-btn-left,
 .carousel-btn-right {
   position: absolute;
@@ -199,10 +215,11 @@
   transform: translateY(-50%);
   background-color: rgba(236, 232, 240, 0.9);
   color: #6B21A8;
-  padding: 12px;
+  padding: 0.75rem;
   border-radius: 9999px;
   z-index: 10;
   cursor: pointer;
+  border: none;
   transition: background-color 0.2s ease;
 }
 .carousel-btn-left:hover,

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="https://rectrips.com.br/" />
+    <meta property="og:image" content="https://rectrips.com.br/img/logo-rt-sem-fundo.png" />
     <meta property="og:title" content="RecTrips – Grave seu momento com a gente" />
     <meta property="og:description" content="Cada viagem, um novo capítulo da sua história." />
     <title>RecTrips | Grave seu momento conosco</title>
@@ -80,22 +80,25 @@
     <div class="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-            <div class="imagem-overlay">
-              <img src="/img/viagem1.jpg" alt="Hero 1" />
-            </div>
-          </div>
+          <picture class="imagem-overlay">
+            <source media="(max-width: 768px)" srcset="img/angra1.jpeg">
+            <img src="/img/arraial3.jpeg" alt="Hero 1" />
+          </picture>
+        </div>
           
-          <div class="carousel-item">
-            <div class="imagem-overlay">
-              <img src="/img/viagem2.jpg" alt="Hero 2" />
-            </div>
-          </div>
+        <div class="carousel-item">
+          <picture class="imagem-overlay">
+            <source media="(max-width: 768px)" srcset="img/saothome1.jpeg">
+            <img src="/img/arraial6.jpeg" alt="Hero 2" />
+          </picture>
+        </div>
           
-          <div class="carousel-item">
-            <div class="imagem-overlay">
-              <img src="/img/viagem3.jpg" alt="Hero 3" />
-            </div>
-          </div>          
+        <div class="carousel-item">
+          <picture class="imagem-overlay">
+            <source media="(max-width: 768px)" srcset="img/arraial1.jpeg">
+            <img src="/img/arraial4.jpeg" alt="Hero 3" />
+          </picture>
+        </div>          
       </div>
       
       <div class="hero-content">
@@ -124,83 +127,97 @@
 <section id="destinations" class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4">Nossos Destinos</h2>
+        <h2 class="text-3xl font-bold text-purple-700 mb-4">Nossos Destinos</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">Explore os lugares incríveis com a RecTrips!</p>
       </div>
   
-        <div class="relative overflow-x-hidden overflow-y-visible">
+        <div class="relative overflow-hidden">
         <div class="flex transition-transform duration-500 ease-in-out w-full" id="carousel-destinos">
           
     <!-- Slide 1 -->
     <!-- Dentro do seu carrossel de destinos -->
     <div class="destino-slide">
-      <h3>São Thomé das Letras</h3>
+      <h3>Arraial e Macaé - Soltos ao mar</h3>
 
       <!-- Imagem principal -->
       <img
-        src="/img/amazonia.jpg"
-        alt="São Thomé das Letras"
+        src="/img/arraial2.jpeg"
+        alt="Soltos ao Mar"
         class="destino-main-img"
       />
 
       <!-- Grid de miniaturas -->
       <div class="destino-thumbs">
-        <img src="/img/viagem1.jpg" alt="Cachoeira" />
-        <img src="/img/viagem2.jpg" alt="Trilha" />
+        <img src="/img/arraial5.jpeg" alt="Cerveja" />
+        <img src="/img/vinicius1.jpeg" alt="Vinicius e Alice" />
       </div>
 
       <!-- Depoimento -->
       <blockquote class="feedback-card">
-        “Lugar místico, energizante e inesquecível. Tudo impecável!”
-        <footer>@sagrado_rt</footer>
+        “Viagem superou minhas expectativas,foi uma experiência surreal,a vibe a galera o passeio..
+Simplesmente incrível, obrigado Rec!”
+        <footer>@Melo_vn_</footer>
       </blockquote>
     </div>
   
-    <!-- Slide 1 -->
-    <!-- Dentro do seu carrossel de destinos -->
+    <!-- Slide 2 -->
     <div class="destino-slide">
-      <h3>São Thomé das Letras</h3>
+      <h3>Floripa - O grande retorno</h3>
 
       <!-- Imagem principal -->
       <img
-        src="/img/amazonia.jpg"
-        alt="São Thomé das Letras"
+        src="/img/juan2.jpeg"
+        alt="Juan"
         class="destino-main-img"
       />
 
       <!-- Grid de miniaturas -->
       <div class="destino-thumbs">
-        <img src="/img/viagem1.jpg" alt="Cachoeira" />
-        <img src="/img/viagem2.jpg" alt="Trilha" />
+        <img src="/img/juan1.jpeg" alt="Fogueira" />
+        <img src="/img/juan3.jpeg" alt="Pessoal na praia" />
       </div>
 
       <!-- Depoimento -->
       <blockquote class="feedback-card">
-        “Lugar místico, energizante e inesquecível. Tudo impecável!”
-        <footer>@sagrado_rt</footer>
+        “Se fosse para descrever a viagem em uma palavra..... INESQUECÍVEL!”
+        <footer>@Ruh_vell7</footer>
       </blockquote>
-  </div>
-  
     </div>
+        <!-- Slide 2 -->
+    <div class="destino-slide">
+      <h3>Floripa - O grande retorno</h3>
+
+      <!-- Imagem principal -->
+      <img
+        src="/img/gustavo2.jpeg"
+        alt="Galera de Floripa"
+        class="destino-main-img"
+      />
+
+      <!-- Grid de miniaturas -->
+      <div class="destino-thumbs">
+        <img src="/img/gustavo1.jpeg" alt="Praia" />
+        <img src="/img/gustavo3.jpeg" alt="Dunas da Joaquina" />
+      </div>
+
+      <!-- Depoimento -->
+      <blockquote class="feedback-card">
+        “Bom... Essa foi a minha primeira viagem com a rec e eu gostei muito da viagem, ela superou as minhas expectativas. Gostei muito das pessoas da viagem e espero comparecer em mais viagens”
+        <footer>@zbaptista_</footer>
+      </blockquote>
   
+  </div>
+  </div>
   <!-- Botões Desktop -->
-  <div class="hidden md:flex justify-between absolute top-1/2 left-0 right-0 px-6 transform -translate-y-1/2 z-10">
-    <button
-      id="btn-voltar"
-      class="carousel-btn-left"
-      onclick="voltarSlide()">
-      <i class="fas fa-chevron-left text-xl"></i>
+    <button id="btn-voltar" onclick="voltarSlide()" class="hidden md:flex carousel-btn-left">
+      <i class="fas fa-chevron-left"></i>
     </button>
-    <button
-      id="btn-avancar"
-      class="carousel-btn-right"
-      onclick="avancarSlide()">
-      <i class="fas fa-chevron-right text-xl"></i>
+    <button id="btn-avancar" onclick="avancarSlide()" class="hidden md:flex carousel-btn-right">
+      <i class="fas fa-chevron-right"></i>
     </button>
   </div>
   </div>
-  </div>
-  
+
     <!-- Modal de Imagem Expandida -->
     <div id="imagemModal" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 hidden">
       <img id="imagemExpandida" class="max-w-3xl max-h-[80vh] rounded shadow-lg">
