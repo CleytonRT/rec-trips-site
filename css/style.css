@@ -105,7 +105,7 @@
   /* MEDIA QUERY – MOBILE */
   @media (max-width: 768px) {
     .hero {
-    height: 60vh;
+    height: 70vh;
     }
     
     .titulo-hero {
@@ -121,7 +121,7 @@
       position: relative;
       top: 40%;
       left: 50%;
-      transform: translate(-50%, -280%);
+      transform: translate(-50%, -220%);
       text-align: center;
       z-index: 10;
     }
