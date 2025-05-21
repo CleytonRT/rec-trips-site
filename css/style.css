@@ -322,6 +322,6 @@
   /* esconde botões de desktop no mobile */
   .carousel-btn-left,
   .carousel-btn-right {
-    display: none;
+    display: none !important;
   }
 }
