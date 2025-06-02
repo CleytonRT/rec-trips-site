@@ -13,7 +13,15 @@
       "tipo": "Bate e Volta",
       "ida": "16/08/2025",
       "volta": "16/08/2025",
-      "valor": "Em Breve"
+      "valor": "110,00"
+    },
+    {
+      "imagem": "/img/em-breve.jpg",
+      "titulo": "Pedra da Macela + Cachoeira",
+      "tipo": "Bate e Volta",
+      "ida": "14/09/2025",
+      "volta": "14/09/2025",
+      "valor": "Em breve"
     },
     {
       "imagem": "/img/sao-thome-o-ritual.jpeg",
@@ -21,8 +29,24 @@
       "tipo": "Hospedagem",
       "ida": "31/10/2025",
       "volta": "02/11/2025",
-      "valor": "Em Breve"
+      "valor": "465,00"
+    },
+    {
+      "imagem": "/img/em-breve.jpg",
+      "titulo": "Hopi Hari - Hora do Horror",
+      "tipo": "Bate e Volta",
+      "ida": "09/11/2025",
+      "volta": "09/11/2025",
+      "valor": "200,00"
+    },
+    {
+      "imagem": "/img/em-breve.jpg",
+      "titulo": "Paraty",
+      "tipo": "Bate e Volta prolongado",
+      "ida": "05/12/2025",
+      "volta": "06/12/2025",
+      "valor": "Em breve"
     }
-    
+
   ]
   
