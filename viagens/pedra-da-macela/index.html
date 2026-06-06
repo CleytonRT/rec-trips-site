@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pedra da Macela + Cachoeira do Faé — RecTrips</title>
+  <!-- Tailwind (igual ao index) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Fonte (Poppins/Inter) — igual ao index -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+
+<!-- (Opcional) Ícones se usa no index -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Seu CSS global deve vir DEPOIS do Tailwind -->
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="./css/travel-info.css">
+
+
+  <!-- SEO/OG básicos -->
+  <meta name="description" content="Bate e Volta com trilha no nascer do sol, cachoeiras e mirantes. Datas, valor, embarque, pagamento e políticas." />
+  <meta property="og:title" content="Pedra da Macela + Cachoeira do Faé — RecTrips" />
+  <meta property="og:description" content="Bate e Volta com trilha no nascer do sol, cachoeiras e mirantes." />
+  <meta property="og:image" content="/img/angra1.jpeg"/>
+
+</head>
+
+<a id="floatingWhats" class="floating-whats" aria-label="WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 32 32" width="50" height="50" aria-hidden="true">
+    <path fill="#fff" d="M19.11 17.81c-.27-.14-1.57-.77-1.81-.86-.24-.09-.42-.14-.6.14-.18.27-.69.86-.85 1.04-.16.18-.31.2-.58.07-.27-.14-1.15-.42-2.19-1.33-.81-.72-1.36-1.6-1.53-1.86-.16-.27-.02-.41.12-.55.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.05-.34-.02-.47-.07-.14-.6-1.44-.82-1.98-.22-.53-.45-.46-.6-.47l-.51-.01c-.18 0-.47.07-.72.34-.24.27-.95.93-.95 2.27s.97 2.64 1.1 2.82c.14.18 1.9 2.9 4.6 4.07.64.28 1.13.45 1.52.58.64.2 1.22.17 1.68.1.51-.08 1.57-.64 1.8-1.27.22-.62.22-1.15.16-1.27-.06-.12-.24-.18-.51-.32z"/>
+    <path fill="#fff" d="M16 4C9.37 4 4 9.37 4 16c0 2.11.55 4.09 1.51 5.81L4 28l6.36-1.49C12.1 27.46 14.01 28 16 28c6.63 0 12-5.37 12-12S22.63 4 16 4zm0 21.82c-1.83 0-3.54-.54-4.97-1.47l-.36-.23-3.76.88.8-3.66-.24-.38A9.8 9.8 0 0 1 6.18 16c0-5.41 4.41-9.82 9.82-9.82 5.41 0 9.82 4.41 9.82 9.82 0 5.41-4.41 9.82-9.82 9.82z"/>
+  </svg>
+</a>
+
+<body class="bg-gray-50">
+
+  <!-- NAVBAR (mesma estrutura do site) -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center space-x-4">
+          <div class="flex items-center">
+            <a href="../../index.html" class="flex items-center">
+              <img src="/img/logo-rt-sem-fundo.png" alt="Logo RecTrips" class="h-12 w-auto">
+              <span class="ml-2 text-2xl font-bold bg-gradient-to-r from-purple-600 to-cyan-400 bg-clip-text text-transparent">RecTrips</span>
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="../../index.html#hero" class="nav-link text-gray-800 hover:text-cyan-400 font-medium">Home</a>
+          <a href="../../index.html#packages" class="nav-link text-gray-800 hover:text-cyan-400 font-medium">Pacotes</a>
+          <a href="../../index.html#destinations" class="nav-link text-gray-800 hover:text-cyan-400 font-medium">Destinos</a>
+          <a href="../../index.html#contact" class="nav-link text-gray-800 hover:text-cyan-400 font-medium">Contato</a>
+        </div>
+        <div class="md:hidden">
+          <button class="mobile-menu-button p-2 focus:outline-none block md:hidden" aria-label="Abrir menu">
+            <i class="fas fa-bars text-purple-600 text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu hidden md:hidden bg-white py-4 px-4">
+      <a href="../../index.html#hero" class="block py-2 text-gray-800 hover:text-cyan-400">Home</a>
+      <a href="../../index.html#packages" class="block py-2 text-gray-800 hover:text-cyan-400">Pacotes</a>
+      <a href="../../index.html#destinations" class="block py-2 text-gray-800 hover:text-cyan-400">Destinos</a>
+      <a href="../../index.html#contact" class="block py-2 text-gray-800 hover:text-cyan-400">Contato</a>
+    </div>
+  </nav>
+
+  <!-- HERO reduzido (herda estilo do site) -->
+  <section class="hero hero--sm">
+    <div class="hero__image" id="heroImage" role="img" aria-label="Pedra da Macela"></div>
+    <div class="hero__overlay">
+         <div class="hero__text">
+            <h1 class="titulo-hero" id="tripTitle">Pedra da Macela + Cachoeira do Faé</h1>
+            <p class="text-white text-base" id="tripSubtitle">Bate e Volta com trilha no nascer do sol</p>
+         </div>
+         <a id="ctaHero" class="btn" target="_blank" rel="noopener">Reservar no WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-4 text-sm">
+    <a href="../../index.html" class="text-purple-700 hover:underline">Início</a> <span class="mx-1">›</span>
+    <a href="../../index.html#packages" class="text-purple-700 hover:underline">Pacotes</a> <span class="mx-1">›</span>
+    <strong>Informações da viagem</strong>
+  </div>
+
+  <!-- Card Resumo -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="info-card trip-summary">
+      <div class="trip-summary__grid">
+        <div>
+          <h3 class="info-title">Datas</h3>
+          <p id="tripDate" class="info-text">—</p>
+        </div>
+        <div>
+          <h3 class="info-title">Valor</h3>
+          <p id="tripPrice" class="info-text">—</p>
+        </div>
+        <div>
+          <h3 class="info-title">Tipo</h3>
+          <span id="tripType" class="badge">—</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grade de conteúdo -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid-2 my-6">
+    <!-- Incluso -->
+    <article class="info-card">
+      <h2 class="section-title">🔝 Incluso</h2>
+      <ul id="includedList" class="bulleted"></ul>
+    </article>
+
+    <!-- Não incluso -->
+    <article class="info-card">
+      <h2 class="section-title">🛑 Não incluso</h2>
+      <ul id="notIncludedList" class="bulleted"></ul>
+    </article>
+
+    <!-- Embarque & Retorno -->
+    <article class="info-card">
+      <h2 class="section-title">🚍 Embarque & Retorno</h2>
+      <h3 class="info-subtitle">Locais de Embarque</h3>
+      <ul id="boardingList" class="bulleted"></ul>
+      <h3 class="info-subtitle">Retorno</h3>
+      <p id="returnInfo" class="info-text"></p>
+    </article>
+
+    <!-- Pagamento -->
+    <article class="info-card">
+      <h2 class="section-title">⭕ Formas de Pagamento</h2>
+      <ul id="paymentList" class="bulleted"></ul>
+    </article>
+
+    <!-- Roteiro -->
+    <article class="info-card card--full">
+      <h2 class="section-title">♨️ Roteiro</h2>
+      <div id="itinerary" class="itinerary"></div>
+    </article>
+
+    <!-- Políticas -->
+    <article class="info-card">
+      <h2 class="section-title">❌ Políticas e Regras</h2>
+      <ul id="policiesList" class="bulleted"></ul>
+    </article>
+
+    <!-- Informações Adicionais -->
+    <article class="info-card">
+      <h2 class="section-title">ℹ️ Informações adicionais</h2>
+      <ul id="infosList" class="bulleted"></ul>
+    </article>
+  </section>
+
+  <!-- Rodapé (igual ao site) -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Informações Legais</h3>
+          <p class="mb-1">CNPJ: 49.914.405/0001-24</p>
+          <p class="mb-1">Cadastur: 25.195643.51-7</p>
+          <img src="/img/Cadastur.JPG" alt="Logo Cadastur" class="mt-4 w-32">
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Quem Somos</h3>
+          <p class="mb-2"><strong>Missão:</strong> Proporcionar experiências inesquecíveis de viagem para todos os públicos, com responsabilidade e alegria.</p>
+          <p class="mb-2"><strong>Visão:</strong> Ser referência em turismo acessível e acolhedor no Brasil.</p>
+          <p class="mb-2"><strong>Valores:</strong> Inclusão, segurança, empatia, diversão e compromisso com o viajante.</p>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-xs text-gray-400">
+        &copy; 2025 RecTrips. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts globais (menu mobile etc.) + script desta página -->
+  <script src="../../js/carousel.js"></script>
+  <script src="./js/travel-info.js"></script>
+</body>
+</html>

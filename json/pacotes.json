@@ -1,52 +1,111 @@
 [
-    {
-      "imagem": "/img/sao-roque-rota-do-vinho.jpeg",
-      "titulo": "São Roque - Rota do Vinho + Cacau Show",
-      "tipo": "Bate e Volta",
-      "ida": "13/07/2025",
-      "volta": "13/07/2025",
-      "valor": "R$95,00"
-    },
-    {
-      "imagem": "/img/sao-roque-rota-do-vinho-goes.jpeg",
-      "titulo": "São Roque - Rota do Vinho + Cacau Show e Goes",
-      "tipo": "Bate e Volta",
-      "ida": "16/08/2025",
-      "volta": "16/08/2025",
-      "valor": "110,00"
-    },
-    {
-      "imagem": "/img/em-breve.jpg",
-      "titulo": "Pedra da Macela + Cachoeira",
-      "tipo": "Bate e Volta",
-      "ida": "14/09/2025",
-      "volta": "14/09/2025",
-      "valor": "Em breve"
-    },
-    {
-      "imagem": "/img/sao-thome-o-ritual.jpeg",
-      "titulo": "São Thomé das Letras - O ritual",
-      "tipo": "Hospedagem",
-      "ida": "31/10/2025",
-      "volta": "02/11/2025",
-      "valor": "465,00"
-    },
-    {
-      "imagem": "/img/em-breve.jpg",
-      "titulo": "Hopi Hari - Hora do Horror",
-      "tipo": "Bate e Volta",
-      "ida": "09/11/2025",
-      "volta": "09/11/2025",
-      "valor": "200,00"
-    },
-    {
-      "imagem": "/img/em-breve.jpg",
-      "titulo": "Paraty",
-      "tipo": "Bate e Volta prolongado",
-      "ida": "05/12/2025",
-      "volta": "06/12/2025",
-      "valor": "Em breve"
+  {
+    "id": "sao-roque-cacau-show-2026",
+    "imagem": "/img/sao-roque-rota-do-vinho.jpeg",
+    "titulo": "São Roque & Cacau Show",
+    "tipo": "Bate e Volta",
+    "ida": "20/06/2026",
+    "volta": "20/06/2026",
+    "valor": "R$99,00",
+    "url": "/sao-roque-200626/",
+    "destaque": "Rota do Vinho com adegas, degustações e parada na fábrica da Cacau Show.",
+    "detalhes": {
+      "subtitulo": "Rota do Vinho",
+      "data": "20 de Junho de 2026",
+      "preco": "R$99,00",
+      "resumo": "Um bate e volta para São Roque com visitas às principais adegas da Rota do Vinho, degustações, compras de vinhos, doces e queijos, almoço self-service e parada final na fábrica da Cacau Show.",
+      "incluso": [
+        "Transporte ida e volta em ônibus executivo",
+        "Guia e monitores da RecTrips",
+        "Visitas nas adegas com degustação gratuita",
+        "Sorteios exclusivos durante a viagem"
+      ],
+      "embarques": [
+        "Shopping Internacional - 05:40",
+        "Tatuapé - 06:00",
+        "Barra Funda - 06:25",
+        "Retorno em São Paulo entre 18:30 e 19:15 do dia 20/06"
+      ],
+      "naoIncluso": [
+        "Café da manhã self-service: R$40,00 por pessoa",
+        "Almoço self-service: em média R$55,00"
+      ],
+      "pagamento": [
+        "PIX: valor total à vista",
+        "Parcelamento em até 12x, mediante consulta das taxas da plataforma",
+        "Crianças até 5 anos não pagam, desde que viajem no colo"
+      ],
+      "roteiro": [
+        "Após o embarque, parada para café e para ver variedades de queijos e salames",
+        "Visitas às principais adegas de São Roque para degustação e compras",
+        "Almoço self-service",
+        "Parada final na fábrica da Cacau Show para parque e compras",
+        "Saída para São Paulo até 17:30"
+      ],
+      "politicas": [
+        "90% de reembolso para cancelamentos feitos até 31 dias antes da viagem",
+        "80% de reembolso para cancelamentos entre 16 e 30 dias antes da viagem",
+        "0% de reembolso para cancelamentos com menos de 15 dias do início da viagem",
+        "Cancelamentos com menos de 20 dias da viagem não terão direito a crédito ou reembolso",
+        "Caso o saldo restante não seja pago até a data estipulada, o passageiro perderá o valor da reserva",
+        "Embarque permitido apenas com documento original com foto, RG ou CNH",
+        "Não comparecimento no horário marcado será considerado desistência, sem reembolso",
+        "A viagem pode ser remarcada caso não haja número mínimo de participantes",
+        "O roteiro pode sofrer alterações devido a condições climáticas ou imprevistos"
+      ],
+      "avisos": [
+        "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido",
+        "É proibido consumir bebidas alcoólicas dentro do ônibus",
+        "Coolers e malas de rodinhas vão no bagageiro inferior",
+        "Cabos USB disponíveis no ônibus para carregar celular",
+        "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto"
+      ],
+      "whatsappMensagem": "Olá! Quero reservar/receber informações sobre a viagem São Roque & Cacau Show - Rota do Vinho, dia 20/06/2026."
     }
-
-  ]
-  
+  },
+  {
+    "id": "sao-roque-goes",
+    "imagem": "/img/sao-roque-rota-do-vinho-goes.jpeg",
+    "titulo": "São Roque - Rota do Vinho + Cacau Show e Goes",
+    "tipo": "Bate e Volta",
+    "ida": "16/08/2025",
+    "volta": "16/08/2025",
+    "valor": "R$110,00"
+  },
+  {
+    "id": "pedra-da-macela",
+    "imagem": "/img/em-breve.jpg",
+    "titulo": "Pedra da Macela + Cachoeira",
+    "tipo": "Bate e Volta",
+    "ida": "14/09/2025",
+    "volta": "14/09/2025",
+    "valor": "Em breve"
+  },
+  {
+    "id": "sao-thome-o-ritual",
+    "imagem": "/img/sao-thome-o-ritual.jpeg",
+    "titulo": "São Thomé das Letras - O ritual",
+    "tipo": "Hospedagem",
+    "ida": "31/10/2025",
+    "volta": "02/11/2025",
+    "valor": "R$465,00"
+  },
+  {
+    "id": "hopi-hari-hora-do-horror",
+    "imagem": "/img/em-breve.jpg",
+    "titulo": "Hopi Hari - Hora do Horror",
+    "tipo": "Bate e Volta",
+    "ida": "09/11/2025",
+    "volta": "09/11/2025",
+    "valor": "R$200,00"
+  },
+  {
+    "id": "paraty",
+    "imagem": "/img/em-breve.jpg",
+    "titulo": "Paraty",
+    "tipo": "Bate e Volta prolongado",
+    "ida": "05/12/2025",
+    "volta": "06/12/2025",
+    "valor": "Em breve"
+  }
+]

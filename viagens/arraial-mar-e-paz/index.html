@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title id="page-title">RecTrips</title>
+<link rel="stylesheet" href="travel-info.css">
+</head>
+<body>
+
+<!-- HERO / CARROSSEL -->
+<section class="hero">
+<div class="carousel" id="hero-carousel"></div>
+<div class="hero-overlay">
+<a href="/" class="voltar">← Voltar ao site</a>
+<h1 id="title"></h1>
+<p id="subtitle"></p>
+<div class="hero-buttons">
+<button onclick="abrirWhatsApp()" class="btn-reservar">
+Reservar agora
+</button>
+<button onclick="compartilharWhats()" class="btn-compartilhar">
+Compartilhar
+</button>
+</div>
+</div>
+</section>
+
+<!-- RESUMO -->
+<section class="container resumo">
+<div class="info-card">
+<h3>Datas</h3>
+<p id="date"></p>
+</div>
+<div class="info-card">
+<h3>Valor</h3>
+<p id="price"></p>
+</div>
+<div class="info-card">
+<h3>Tipo</h3>
+<p id="type"></p>
+</div>
+</section>
+
+<!-- INCLUSOS -->
+<section class="container">
+<h2>Incluso na viagem</h2>
+<ul id="included"></ul>
+</section>
+
+<!-- NÃO INCLUSOS -->
+<section class="container">
+<h2>Não incluso</h2>
+<ul id="notIncluded"></ul>
+</section>
+
+<!-- EMBARQUE -->
+
+<section class="container">
+<h2>Locais de embarque</h2>
+<ul id="boarding"></ul>
+<p id="return"></p>
+</section>
+
+<!-- HOSPEDAGEM -->
+<section class="container" id="hotel-section">
+<h2>Hospedagem</h2>
+<p id="hotel-name"></p>
+<div class="galeria" id="hotel-images"></div>
+</section>
+
+<!-- OPCIONAIS -->
+<section class="container opcionais">
+<h2>Passeios opcionais</h2>
+<button class="btn-opcionais" onclick="toggleOpcionais()">
+Ver opcionais
+</button>
+<div id="optional-container" class="optional-container"></div>
+</section>
+
+<!-- ROTEIRO -->
+
+<section class="container">
+<h2>Roteiro</h2>
+<div id="itinerary"></div>
+</section>
+
+<!-- ESPECIAL -->
+<section class="container">
+<h2>Especial RecTrips</h2>
+<ul id="special"></ul>
+</section>
+
+<!-- POLÍTICAS -->
+<section class="container">
+<h2>Políticas</h2>
+<ul id="policies"></ul>
+</section>
+
+<!-- RODAPÉ -->
+<footer>
+<p>RecTrips Turismo</p>
+<p>CNPJ: 49.914.405/0001-24</p>
+</footer>
+
+<script src="travel-info.js"></script>
+</body>
+</html>

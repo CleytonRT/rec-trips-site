@@ -1,0 +1,83 @@
+{
+"title":"Arraial e Macaé",
+"subtitle":"O mar é paz",
+"date":"15 a 17 de Maio",
+"price":"A partir de R$465",
+"type":"Viagem com hospedagem",
+
+"heroImages":[
+"/img/viagens/arraial/arraial-1.jpg",
+"/img/viagens/arraial/arraial-2.jpg",
+"/img/viagens/arraial/arraial-3.jpg"
+],
+
+"included":[
+"Transporte ida e volta",
+"Guia RecTrips",
+"Hospedagem",
+"Passeio pelo centro"
+],
+
+"notIncluded":[
+"Almoço",
+"Passeios opcionais",
+"Despesas pessoais"
+],
+
+"boarding":[
+"Barra Funda",
+"Guarulhos",
+"Tatuapé"
+],
+
+"return":"Saída de Macaé às 17h",
+
+"hotel":{
+"name":"Hotel em Macaé",
+"images":[
+"/img/viagens/arraial/hospedagem-1.jpg",
+"/img/viagens/arraial/hospedagem-2.jpg"
+]
+},
+
+"optional":[
+{
+"name":"Passeio de barco",
+"price":"R$120",
+"image":"/img/viagens/arraial/barco-1.jpg",
+"description":"Passeio pelas praias paradisíacas de Arraial"
+},
+{
+"name":"Passeio de buggy",
+"price":"R$150",
+"image":"/img/viagens/arraial/buggy-1.jpg",
+"description":"Tour pelas praias e mirantes"
+}
+],
+
+"special":[
+"Pôr do sol na Janela do Paraíso",
+"Karaokê e diversão no ônibus"
+],
+
+"policies":[
+"Viagem sujeita a alterações",
+"Necessário documento com foto",
+"Pagamento conforme política da RecTrips"
+],
+
+"itinerary":[
+{
+"day":"Dia 1",
+"description":"Saída de São Paulo rumo a Macaé"
+},
+{
+"day":"Dia 2",
+"description":"Passeio em Arraial do Cabo"
+},
+{
+"day":"Dia 3",
+"description":"Manhã livre e retorno"
+}
+]
+}

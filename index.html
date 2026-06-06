@@ -326,13 +326,14 @@ Simplesmente incrível, obrigado Rec!”
               <p class="package-type">${pkg.tipo}</p>
               <p class="package-date"><i class="fas fa-calendar-alt mr-2"></i>Ida: ${pkg.ida}</p>
               <p class="package-date"><i class="fas fa-calendar-alt mr-2"></i>Retorno: ${pkg.volta}</p>
+              ${pkg.destaque ? `<p class="package-highlight">${pkg.destaque}</p>` : ''}
               <div class="mt-4">
                 <p class="text-gray-500 text-xs">A partir de:</p>
                 <p class="package-price">${pkg.valor}</p>
               </div>
               <div class="mt-4">
-                <a href="#" class="whatsapp-btn" onclick="abrirWhatsApp()">
-                  <i class="fab fa-whatsapp mr-2"></i>informações
+                <a href="${pkg.url || '#contact'}" class="whatsapp-btn">
+                  <i class="fas fa-circle-info mr-2"></i>Ver detalhes
                 </a>
               </div>
             </div>
