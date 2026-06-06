@@ -64,48 +64,30 @@
     }
   },
   {
-    "id": "sao-roque-goes",
-    "imagem": "/img/sao-roque-rota-do-vinho-goes.jpeg",
-    "titulo": "São Roque - Rota do Vinho + Cacau Show e Goes",
-    "tipo": "Bate e Volta",
-    "ida": "16/08/2025",
-    "volta": "16/08/2025",
-    "valor": "R$110,00"
-  },
-  {
-    "id": "pedra-da-macela",
+    "id": "Em breve",
     "imagem": "/img/em-breve.jpg",
-    "titulo": "Pedra da Macela + Cachoeira",
-    "tipo": "Bate e Volta",
-    "ida": "14/09/2025",
-    "volta": "14/09/2025",
+    "titulo": "Em Breve",
+    "tipo": "-",
+    "ida": "-",
+    "volta": "-",
     "valor": "Em breve"
   },
   {
-    "id": "sao-thome-o-ritual",
-    "imagem": "/img/sao-thome-o-ritual.jpeg",
-    "titulo": "São Thomé das Letras - O ritual",
-    "tipo": "Hospedagem",
-    "ida": "31/10/2025",
-    "volta": "02/11/2025",
-    "valor": "R$465,00"
+    "id": "Em breve",
+    "imagem": "/img/em-breve.jpg",
+    "titulo": "Em Breve",
+    "tipo": "-",
+    "ida": "-",
+    "volta": "-",
+    "valor": "Em breve"
   },
   {
-    "id": "hopi-hari-hora-do-horror",
+    "id": "Em breve",
     "imagem": "/img/em-breve.jpg",
-    "titulo": "Hopi Hari - Hora do Horror",
-    "tipo": "Bate e Volta",
-    "ida": "09/11/2025",
-    "volta": "09/11/2025",
-    "valor": "R$200,00"
-  },
-  {
-    "id": "paraty",
-    "imagem": "/img/em-breve.jpg",
-    "titulo": "Paraty",
-    "tipo": "Bate e Volta prolongado",
-    "ida": "05/12/2025",
-    "volta": "06/12/2025",
+    "titulo": "Em Breve",
+    "tipo": "-",
+    "ida": "-",
+    "volta": "-",
     "valor": "Em breve"
   }
 ]
