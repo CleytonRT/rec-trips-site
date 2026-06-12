@@ -1,0 +1,70 @@
+{
+  "title": "São Roque & Cacau Show",
+  "subtitle": "Rota do Vinho",
+  "date": "20/06/2026",
+  "price_full": "R$ 99,00",
+  "type": "Bate e Volta",
+  "hero": "/img/sao-roque-rota-do-vinho.jpeg",
+  "whatsapp_url": "https://wa.me/message/G7FUENJX5QHII1",
+  "included": [
+    "Transporte ida e volta em ônibus executivo",
+    "Guia e monitores da RecTrips",
+    "Visitas nas adegas com degustação gratuita",
+    "Sorteios exclusivos durante a viagem"
+  ],
+  "boarding": [
+    "Shopping Internacional - 05:40",
+    "Tatuapé - 06:00",
+    "Barra Funda - 06:25"
+  ],
+  "returning": "Retorno em São Paulo entre 18:30 e 19:15 do dia 20/06",
+  "not_included": [
+    "Café da manhã self-service: R$40,00 por pessoa",
+    "Almoço self-service: em média R$55,00"
+  ],
+  "payment": [
+    "PIX: valor total à vista",
+    "Parcelamento em até 12x, mediante consulta das taxas da plataforma",
+    "Crianças até 5 anos não pagam, desde que viajem no colo"
+  ],
+  "itinerary": [
+    {
+      "step": "Café",
+      "detail": "Após o embarque, faremos uma parada para café e para ver variedades de queijos e salames."
+    },
+    {
+      "step": "Rota do Vinho",
+      "detail": "Visitas às principais adegas de São Roque para degustação gratuita e compras de vinhos, doces e queijos."
+    },
+    {
+      "step": "Almoço",
+      "detail": "Parada para almoço self-service."
+    },
+    {
+      "step": "Cacau Show",
+      "detail": "Parada final na fábrica da Cacau Show para aproveitar o parque e comprar chocolates."
+    },
+    {
+      "step": "Retorno",
+      "detail": "Saída para São Paulo até 17:30."
+    }
+  ],
+  "policies": [
+    "90% de reembolso para cancelamentos feitos até 31 dias antes da viagem.",
+    "80% de reembolso para cancelamentos entre 16 e 30 dias antes da viagem.",
+    "0% de reembolso para cancelamentos com menos de 15 dias do início da viagem.",
+    "Cancelamentos com menos de 20 dias da viagem não terão direito a crédito ou reembolso.",
+    "Caso o saldo restante não seja pago até a data estipulada, o passageiro perderá o valor da reserva.",
+    "Embarque permitido apenas com documento original com foto, RG ou CNH.",
+    "Não comparecimento no horário marcado será considerado desistência, sem reembolso.",
+    "A viagem pode ser remarcada caso não haja número mínimo de participantes.",
+    "O roteiro pode sofrer alterações devido a condições climáticas ou imprevistos."
+  ],
+  "infos": [
+    "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido.",
+    "É proibido consumir bebidas alcoólicas dentro do ônibus.",
+    "Coolers e malas de rodinhas vão no bagageiro inferior.",
+    "Cabos USB disponíveis no ônibus para carregar celular.",
+    "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto."
+  ]
+}
