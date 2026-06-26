@@ -2,11 +2,6 @@
   {
     "id": "sao-roque-cacau-show-20-06-2026",
     "slug": "sao-roque-cacau-show-20-06-2026",
-    "legacySlug": "sao-roque-200626",
-    "legacyIds": [
-      "sao-roque-200626",
-      "sao-roque-cacau-show-2026"
-    ],
     "imagem": "img/sao-roque-rota-do-vinho.jpeg",
     "titulo": "São Roque & Cacau Show",
     "subtitulo": "Rota do Vinho",
@@ -16,87 +11,24 @@
     "valor": "R$99,00",
     "url": "viagens/sao-roque-cacau-show-20-06-2026/",
     "formDestination": "São Roque & Cacau Show 20/06/2026 (Bate e Volta)",
-    "legacyFormDestination": "São Roque - Rota do Vinho 20/06/2026 (Bate e Volta)",
     "destaque": "Rota do Vinho com adegas, degustações e parada na fábrica da Cacau Show.",
-    "detalhes": {
-      "subtitulo": "Rota do Vinho",
-      "data": "20 de Junho de 2026",
-      "preco": "R$99,00",
-      "resumo": "Um bate e volta para São Roque com visitas às principais adegas da Rota do Vinho, degustações, compras de vinhos, doces e queijos, almoço self-service e parada final na fábrica da Cacau Show.",
-      "incluso": [
-        "Transporte ida e volta em ônibus executivo",
-        "Guia e monitores da RecTrips",
-        "Visitas nas adegas com degustação gratuita",
-        "Sorteios exclusivos durante a viagem"
-      ],
-      "embarques": [
-        "Shopping Internacional - 05:40",
-        "Tatuapé - 06:00",
-        "Barra Funda - 06:25",
-        "Retorno em São Paulo entre 18:30 e 19:15 do dia 20/06"
-      ],
-      "naoIncluso": [
-        "Café da manhã self-service: R$40,00 por pessoa",
-        "Almoço self-service: em mdia R$55,00"
-      ],
-      "pagamento": [
-        "PIX: valor total à vista",
-        "Parcelamento em até 12x, mediante consulta das taxas da plataforma",
-        "Crianças até 5 anos não pagam, desde que viajem no colo"
-      ],
-      "roteiro": [
-        "Após o embarque, parada para caf e para ver variedades de queijos e salames",
-        "Visitas às principais adegas de São Roque para degustação e compras",
-        "Almoço self-service",
-        "Parada final na fábrica da Cacau Show para parque e compras",
-        "Saída para São Paulo até 17:30"
-      ],
-      "politicas": [
-        "90% de reembolso para cancelamentos feitos até 31 dias antes da viagem",
-        "80% de reembolso para cancelamentos entre 16 e 30 dias antes da viagem",
-        "0% de reembolso para cancelamentos com menos de 15 dias do início da viagem",
-        "Cancelamentos com menos de 20 dias da viagem não terão direito a crédito ou reembolso",
-        "Caso o saldo restante não seja pago até a data estipulada, o passageiro perderá o valor da reserva",
-        "Embarque permitido apenas com documento original com foto, RG ou CNH",
-        "Não comparecimento no horário marcado será considerado desistência, sem reembolso",
-        "A viagem pode ser remarcada caso no haja nmero mínimo de participantes",
-        "O roteiro pode sofrer alteraes devido a condies climáticas ou imprevistos"
-      ],
-      "avisos": [
-        "Documento original com foto  obrigatório para embarque; aplicativo oficial do governo  vlido",
-        " proibido consumir bebidas alcoólicas dentro do nibus",
-        "Coolers e malas de rodinhas vão no bagageiro inferior",
-        "Cabos USB disponíveis no nibus para carregar celular",
-        "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto"
-      ],
-      "whatsappMensagem": "Olá! Quero reservar/receber informações sobre a viagem São Roque & Cacau Show - Rota do Vinho, dia 20/06/2026."
-    }
+    "registrationClosesAt": "",
+    "cardExpiresAt": "",
+    "registrationEnabled": true
   },
   {
-    "id": "em-breve-1",
+    "id": "floripa-110726",
+    "slug": "floripa-110726",
     "imagem": "img/em-breve.jpg",
     "titulo": "Em Breve",
+    "subtitulo": "",
     "tipo": "-",
     "ida": "-",
     "volta": "-",
-    "valor": "Em breve"
-  },
-  {
-    "id": "em-breve-2",
-    "imagem": "img/em-breve.jpg",
-    "titulo": "Em Breve",
-    "tipo": "-",
-    "ida": "-",
-    "volta": "-",
-    "valor": "Em breve"
-  },
-  {
-    "id": "em-breve-3",
-    "imagem": "img/em-breve.jpg",
-    "titulo": "Em Breve",
-    "tipo": "-",
-    "ida": "-",
-    "volta": "-",
-    "valor": "Em breve"
+    "valor": "Em breve",
+    "url": "",
+    "formDestination": "Floripa (Hospedagem)",
+    "destaque": "",
+    "registrationEnabled": false
   }
 ]
