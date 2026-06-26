@@ -1,0 +1,77 @@
+{
+  "id": "floripa-110726",
+  "slug": "floripa-110726",
+  "title": "Floripa",
+  "subtitle": "Onde tudo começa",
+  "formDestination": "Floripa (Hospedagem)",
+  "date": "11/07/2026",
+  "price_full": "400,00",
+  "type": "Hospedagem",
+  "hero": "https://raw.githubusercontent.com/CleytonRT/rec-trips-site/main/img/arraial1.jpeg",
+  "whatsapp_url": "https://wa.me/message/G7FUENJX5QHII1",
+  "included": [
+    "Transporte ida e Volta",
+    "Café da manhã",
+    "Passeio pelas praias"
+  ],
+  "boarding": [
+    "Shopping Internacional, Guarulhos",
+    "Posto SAKAMOTO, Guarulhos",
+    "Tatuapé, São Paulo",
+    "Barra Funda, São Paulo"
+  ],
+  "returning": "Retorno previsto as 18:00 do dia 13/07/2026",
+  "not_included": [
+    "Almoço"
+  ],
+  "payment": [
+    "PIX: valor total ÃƒÆ’Ã‚Â  vista",
+    "Parcelamento em atÃƒÆ’Ã‚Â© 12x, mediante consulta das taxas da plataforma",
+    "CrianÃƒÆ’Ã‚Â§as atÃƒÆ’Ã‚Â© 5 anos nÃƒÆ’Ã‚Â£o pagam, desde que viajem no colo"
+  ],
+  "itinerary": [
+    {
+      "step": "Item 1",
+      "detail": "Parada para café"
+    },
+    {
+      "step": "Item 2",
+      "detail": "Hospedagem para troca"
+    },
+    {
+      "step": "Item 3",
+      "detail": "Praia da Joaquina para banho e dunas"
+    },
+    {
+      "step": "Item 4",
+      "detail": "Luau na praia"
+    }
+  ],
+  "policies": [
+    "90% de reembolso para cancelamentos feitos atÃƒÆ’Ã‚Â© 31 dias antes da viagem.",
+    "80% de reembolso para cancelamentos entre 16 e 30 dias antes da viagem.",
+    "0% de reembolso para cancelamentos com menos de 15 dias do inÃƒÆ’Ã‚Â­cio da viagem.",
+    "Cancelamentos com menos de 20 dias da viagem nÃƒÆ’Ã‚Â£o terÃƒÆ’Ã‚Â£o direito a crÃƒÆ’Ã‚Â©dito ou reembolso.",
+    "Caso o saldo restante nÃƒÆ’Ã‚Â£o seja pago atÃƒÆ’Ã‚Â© a data estipulada, o passageiro perderÃƒÆ’Ã‚Â¡ o valor da reserva.",
+    "Embarque permitido apenas com documento original com foto, RG ou CNH.",
+    "NÃƒÆ’Ã‚Â£o comparecimento no horÃƒÆ’Ã‚Â¡rio marcado serÃƒÆ’Ã‚Â¡ considerado desistÃƒÆ’Ã‚Âªncia, sem reembolso.",
+    "A viagem pode ser remarcada caso nÃƒÆ’Ã‚Â£o haja nÃƒÆ’Ã‚Âºmero mÃƒÆ’Ã‚Â­nimo de participantes.",
+    "O roteiro pode sofrer alteraÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Âµes devido a condiÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Âµes climÃƒÆ’Ã‚Â¡ticas ou imprevistos."
+  ],
+  "infos": [
+    "Documento original com foto ÃƒÆ’Ã‚Â© obrigatÃƒÆ’Ã‚Â³rio para embarque; aplicativo oficial do governo ÃƒÆ’Ã‚Â© vÃƒÆ’Ã‚Â¡lido.",
+    "ÃƒÆ’Ã¢â‚¬Â° proibido consumir bebidas alcoÃƒÆ’Ã‚Â³licas dentro do ÃƒÆ’Ã‚Â´nibus.",
+    "Coolers e malas de rodinhas vÃƒÆ’Ã‚Â£o no bagageiro inferior.",
+    "Cabos USB disponÃƒÆ’Ã‚Â­veis no ÃƒÆ’Ã‚Â´nibus para carregar celular.",
+    "Leve uma manta ou coberta, pois o ar-condicionado ficarÃƒÆ’Ã‚Â¡ ligado durante o trajeto."
+  ],
+  "lifecycle": {
+    "cardExpiresAt": "2026-07-12T01:40:00.000Z",
+    "registrationEnabled": true,
+    "admFinalizesManually": true,
+    "registrationClosesAt": "2026-07-12T01:40:00.000Z",
+    "staffHiddenAfterReport": true
+  },
+  "registrationClosesAt": "2026-07-12T01:40:00.000Z",
+  "cardExpiresAt": "2026-07-12T01:40:00.000Z"
+}
