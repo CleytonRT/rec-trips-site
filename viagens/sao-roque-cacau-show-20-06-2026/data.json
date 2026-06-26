@@ -1,19 +1,13 @@
 {
   "id": "sao-roque-cacau-show-20-06-2026",
   "slug": "sao-roque-cacau-show-20-06-2026",
-  "legacySlug": "sao-roque-200626",
-  "legacyIds": [
-    "sao-roque-200626",
-    "sao-roque-cacau-show-2026"
-  ],
   "title": "São Roque & Cacau Show",
   "subtitle": "Rota do Vinho",
   "formDestination": "São Roque & Cacau Show 20/06/2026 (Bate e Volta)",
-  "legacyFormDestination": "São Roque - Rota do Vinho 20/06/2026 (Bate e Volta)",
   "date": "20/06/2026",
-  "price_full": "R$ 99,00",
+  "price_full": "R$99,00",
   "type": "Bate e Volta",
-  "hero": "../../img/sao-roque-rota-do-vinho.jpeg",
+  "hero": "img/sao-roque-rota-do-vinho.jpeg",
   "whatsapp_url": "https://wa.me/message/G7FUENJX5QHII1",
   "included": [
     "Transporte ida e volta em ônibus executivo",
@@ -22,9 +16,9 @@
     "Sorteios exclusivos durante a viagem"
   ],
   "boarding": [
-    "Shopping Internacional - 05:40",
-    "Tatuapé - 06:00",
-    "Barra Funda - 06:25"
+    "Shopping Internacional, Guarulhos",
+    "Tatuapé, São Paulo",
+    "Barra Funda, São Paulo"
   ],
   "returning": "Retorno em São Paulo entre 18:30 e 19:15 do dia 20/06",
   "not_included": [
@@ -75,5 +69,14 @@
     "Coolers e malas de rodinhas vão no bagageiro inferior.",
     "Cabos USB disponíveis no ônibus para carregar celular.",
     "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto."
-  ]
+  ],
+  "lifecycle": {
+    "cardExpiresAt": "",
+    "registrationEnabled": true,
+    "admFinalizesManually": true,
+    "registrationClosesAt": "",
+    "staffHiddenAfterReport": true
+  },
+  "registrationClosesAt": "",
+  "cardExpiresAt": ""
 }
