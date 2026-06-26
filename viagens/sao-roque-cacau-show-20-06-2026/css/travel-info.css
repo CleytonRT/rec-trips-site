@@ -86,15 +86,44 @@ body {
   padding: 0.25rem 0.5rem;
 }
 
-.bulleted {
-  color: #374151;
-  list-style: disc;
-  padding-left: 1.25rem;
+.icon-list {
+  color: #1F2937;
+  display: grid;
+  gap: 0.7rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.bulleted li {
-  margin: 0.35rem 0;
+.icon-list li {
+  align-items: flex-start;
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: 1.25rem minmax(0, 1fr);
+  line-height: 1.45;
 }
+
+.icon-list li::before {
+  align-items: center;
+  background: #14B8A6;
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 0.72rem;
+  font-weight: 900;
+  height: 1rem;
+  justify-content: center;
+  margin-top: 0.22rem;
+  width: 1rem;
+}
+
+.icon-list--check li::before { content: "✓"; }
+.icon-list--x li::before { content: "×"; }
+.icon-list--clock li::before { content: "◷"; }
+.icon-list--card li::before { content: "▰"; }
+.icon-list--pin li::before { content: "•"; }
+.icon-list--warn li::before { content: "!"; }
+.icon-list--info li::before { content: "i"; }
 
 .trip-summary__grid {
   display: grid;
@@ -112,25 +141,8 @@ body {
   grid-column: 1 / -1;
 }
 
-.itinerary {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.itinerary .step {
-  align-items: flex-start;
-  background: #F9FAFB;
-  border: 1px solid #EEEEEE;
-  border-radius: 0.5rem;
-  display: flex;
-  gap: 0.75rem;
-  padding: 0.75rem;
-}
-
-.itinerary .step strong {
-  color: #6B21A8;
-  min-width: 7rem;
+.hidden {
+  display: none !important;
 }
 
 .floating-whats {
@@ -190,7 +202,7 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .itinerary .step {
-    flex-direction: column;
+  .icon-list li {
+    gap: 0.55rem;
   }
 }

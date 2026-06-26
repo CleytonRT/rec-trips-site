@@ -19,12 +19,18 @@
     floatingWhats: $('floatingWhats')
   };
 
+  const escapeText = (value = '') => String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+
   const fillList = (ul, items) => {
     if (!ul) return;
     ul.innerHTML = '';
     (items || []).forEach((text) => {
       const li = document.createElement('li');
-      li.textContent = text;
+      li.innerHTML = `<span>${escapeText(text)}</span>`;
       ul.appendChild(li);
     });
   };
@@ -32,12 +38,11 @@
   const renderItinerary = (steps) => {
     if (!els.itinerary) return;
     els.itinerary.innerHTML = '';
-    (steps || []).forEach((item, index) => {
-      const step = typeof item === 'string' ? `Item ${index + 1}` : item.step;
-      const detail = typeof item === 'string' ? item : item.detail;
-      const row = document.createElement('div');
-      row.className = 'step';
-      row.innerHTML = `<strong>${step || `Item ${index + 1}`}</strong><p>${detail || ''}</p>`;
+    (steps || []).forEach((item) => {
+      const detail = typeof item === 'string' ? item : (item.detail || item.step || '');
+      if (!detail) return;
+      const row = document.createElement('li');
+      row.innerHTML = `<span>${escapeText(detail)}</span>`;
       els.itinerary.appendChild(row);
     });
   };
@@ -67,7 +72,7 @@
       if (els.returnInfo) els.returnInfo.textContent = data.returning || '';
       fillList(els.includedList, data.included);
       fillList(els.notIncludedList, data.not_included);
-      fillList(els.boardingList, data.boarding);
+      fillList(els.boardingList, [...(data.boarding || []), data.returning].filter(Boolean));
       fillList(els.paymentList, data.payment);
       fillList(els.policiesList, data.policies);
       fillList(els.infosList, data.infos);
@@ -76,6 +81,6 @@
     })
     .catch((err) => {
       console.error('Erro ao carregar data.json:', err);
-      if (els.itinerary) els.itinerary.innerHTML = '<p class="load-error">Nao foi possivel carregar as informacoes. Tente recarregar a pagina.</p>';
+      if (els.itinerary) els.itinerary.innerHTML = '<li class="load-error"><span>Não foi possível carregar as informações. Tente recarregar a página.</span></li>';
     });
 }());
