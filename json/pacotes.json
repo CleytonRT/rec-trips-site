@@ -22,13 +22,15 @@
     "imagem": "https://raw.githubusercontent.com/CleytonRT/rec-trips-site/main/img/arraial1.jpeg",
     "titulo": "Floripa",
     "subtitulo": "Onde tudo começa",
-    "tipo": "Em breve",
-    "ida": "Em breve",
-    "volta": "Em breve",
-    "valor": "Em breve",
-    "url": "",
+    "tipo": "Hospedagem",
+    "ida": "11/07/2026",
+    "volta": "11/07/2026",
+    "valor": "400,00",
+    "url": "viagens/floripa-110726/",
     "formDestination": "Floripa (Hospedagem)",
-    "destaque": "",
-    "registrationEnabled": false
+    "destaque": "Onde vamos nos aventurar",
+    "registrationClosesAt": "2026-07-12T01:40:00.000Z",
+    "cardExpiresAt": "2026-07-12T01:40:00.000Z",
+    "registrationEnabled": true
   }
 ]
