@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>São Roque & Cacau Show | RecTrips</title>
+  <meta name="description" content="Bate e volta para São Roque com Rota do Vinho e Cacau Show.">
+  <meta property="og:title" content="São Roque & Cacau Show | RecTrips">
+  <meta property="og:description" content="Rota do Vinho em São Roque no dia 20 de Junho de 2026 por R$99,00.">
+  <meta property="og:image" content="/img/sao-roque-rota-do-vinho.jpeg">
+  <link rel="icon" href="/img/logo-rt-sem-fundo.png" type="image/png" sizes="48x48">
+  <meta name="theme-color" content="#6B21A8">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="./css/travel-info.css">
+</head>
+<body class="bg-gray-50">
+  <a id="floatingWhats" class="floating-whats" aria-label="WhatsApp" target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <a href="/" class="flex items-center">
+          <img src="/img/logo-rt-sem-fundo.png" alt="Logo RecTrips" class="h-12 w-auto">
+          <span class="ml-2 text-2xl font-bold bg-gradient-to-r from-purple-600 to-cyan-400 bg-clip-text text-transparent">RecTrips</span>
+        </a>
+        <a href="/#packages" class="trip-header-back">
+          <i class="fas fa-arrow-left"></i>
+          Pacotes
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero hero--sm">
+    <div class="hero__image" id="heroImage" role="img" aria-label="Imagem da viagem"></div>
+    <div class="hero__overlay">
+      <a id="ctaHero" class="btn" target="_blank" rel="noopener">Reservar no WhatsApp</a>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-4 text-sm">
+    <a href="/" class="text-purple-700 hover:underline">Início</a>
+    <span class="mx-1">›</span>
+    <a href="/#packages" class="text-purple-700 hover:underline">Pacotes</a>
+    <span class="mx-1">›</span>
+    <strong>Informações da viagem</strong>
+  </div>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="info-card trip-summary">
+      <div class="trip-summary__grid">
+        <div>
+          <h2 class="info-title">Data</h2>
+          <p id="tripDate" class="info-text"></p>
+        </div>
+        <div>
+          <h2 class="info-title">Valor</h2>
+          <p id="tripPrice" class="info-text"></p>
+        </div>
+        <div>
+          <h2 class="info-title">Tipo</h2>
+          <span id="tripType" class="badge"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid-2 my-6">
+    <article class="info-card">
+      <h2 class="section-title">Incluso</h2>
+      <ul id="includedList" class="bulleted"></ul>
+    </article>
+    <article class="info-card">
+      <h2 class="section-title">Não incluso</h2>
+      <ul id="notIncludedList" class="bulleted"></ul>
+    </article>
+    <article class="info-card">
+      <h2 class="section-title">Embarque e retorno</h2>
+      <h3 class="info-subtitle">Locais de embarque</h3>
+      <ul id="boardingList" class="bulleted"></ul>
+      <h3 class="info-subtitle">Retorno</h3>
+      <p id="returnInfo" class="info-text"></p>
+    </article>
+    <article class="info-card">
+      <h2 class="section-title">Pagamento</h2>
+      <ul id="paymentList" class="bulleted"></ul>
+    </article>
+    <article class="info-card card--full">
+      <h2 class="section-title">Roteiro</h2>
+      <div id="itinerary" class="itinerary"></div>
+    </article>
+    <article class="info-card">
+      <h2 class="section-title">Políticas e regras</h2>
+      <ul id="policiesList" class="bulleted"></ul>
+    </article>
+    <article class="info-card">
+      <h2 class="section-title">Informações adicionais</h2>
+      <ul id="infosList" class="bulleted"></ul>
+    </article>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+    <div class="info-card final-cta">
+      <p>Pronto para garantir sua vaga?</p>
+      <a id="ctaSummary" class="btn" target="_blank" rel="noopener">Reservar no WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+        <div>
+          <h2 class="text-lg font-semibold mb-2">Informações Legais</h2>
+          <p class="mb-1">CNPJ: 49.914.405/0001-24</p>
+          <p class="mb-1">Cadastur: 25.195643.51-7</p>
+          <img src="/img/Cadastur.JPG" alt="Logo Cadastur" class="mt-4 w-32">
+        </div>
+        <div>
+          <h2 class="text-lg font-semibold mb-2">Quem Somos</h2>
+          <p class="mb-2"><strong>Missão:</strong> Proporcionar experiências inesquecíveis de viagem para todos os públicos, com responsabilidade e alegria.</p>
+          <p class="mb-2"><strong>Visão:</strong> Ser referência em turismo acessível e acolhedor no Brasil.</p>
+          <p class="mb-2"><strong>Valores:</strong> Inclusão, segurança, empatia, diversão e compromisso com o viajante.</p>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-xs text-gray-400">
+        &copy; 2025 RecTrips. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/carousel.js"></script>
+  <script src="./js/travel-info.js"></script>
+</body>
+</html>
