@@ -25,9 +25,9 @@
     "Almoço"
   ],
   "payment": [
-    "PIX: valor total ÃƒÆ’Ã‚Â  vista",
-    "Parcelamento em atÃƒÆ’Ã‚Â© 12x, mediante consulta das taxas da plataforma",
-    "CrianÃƒÆ’Ã‚Â§as atÃƒÆ’Ã‚Â© 5 anos nÃƒÆ’Ã‚Â£o pagam, desde que viajem no colo"
+    "PIX: valor total à vista",
+    "Parcelamento em até 12x, mediante consulta das taxas da plataforma",
+    "Crianças até 5 anos não pagam, desde que viajem no colo"
   ],
   "itinerary": [
     {
@@ -48,22 +48,22 @@
     }
   ],
   "policies": [
-    "90% de reembolso para cancelamentos feitos atÃƒÆ’Ã‚Â© 31 dias antes da viagem.",
+    "90% de reembolso para cancelamentos feitos até 31 dias antes da viagem.",
     "80% de reembolso para cancelamentos entre 16 e 30 dias antes da viagem.",
-    "0% de reembolso para cancelamentos com menos de 15 dias do inÃƒÆ’Ã‚Â­cio da viagem.",
-    "Cancelamentos com menos de 20 dias da viagem nÃƒÆ’Ã‚Â£o terÃƒÆ’Ã‚Â£o direito a crÃƒÆ’Ã‚Â©dito ou reembolso.",
-    "Caso o saldo restante nÃƒÆ’Ã‚Â£o seja pago atÃƒÆ’Ã‚Â© a data estipulada, o passageiro perderÃƒÆ’Ã‚Â¡ o valor da reserva.",
+    "0% de reembolso para cancelamentos com menos de 15 dias do início da viagem.",
+    "Cancelamentos com menos de 20 dias da viagem não terão direito a crédito ou reembolso.",
+    "Caso o saldo restante não seja pago até a data estipulada, o passageiro perderá o valor da reserva.",
     "Embarque permitido apenas com documento original com foto, RG ou CNH.",
-    "NÃƒÆ’Ã‚Â£o comparecimento no horÃƒÆ’Ã‚Â¡rio marcado serÃƒÆ’Ã‚Â¡ considerado desistÃƒÆ’Ã‚Âªncia, sem reembolso.",
-    "A viagem pode ser remarcada caso nÃƒÆ’Ã‚Â£o haja nÃƒÆ’Ã‚Âºmero mÃƒÆ’Ã‚Â­nimo de participantes.",
-    "O roteiro pode sofrer alteraÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Âµes devido a condiÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Âµes climÃƒÆ’Ã‚Â¡ticas ou imprevistos."
+    "Não comparecimento no horário marcado será considerado desistência, sem reembolso.",
+    "A viagem pode ser remarcada caso não haja número mínimo de participantes.",
+    "O roteiro pode sofrer alterações devido a condições climáticas ou imprevistos."
   ],
   "infos": [
-    "Documento original com foto ÃƒÆ’Ã‚Â© obrigatÃƒÆ’Ã‚Â³rio para embarque; aplicativo oficial do governo ÃƒÆ’Ã‚Â© vÃƒÆ’Ã‚Â¡lido.",
-    "ÃƒÆ’Ã¢â‚¬Â° proibido consumir bebidas alcoÃƒÆ’Ã‚Â³licas dentro do ÃƒÆ’Ã‚Â´nibus.",
-    "Coolers e malas de rodinhas vÃƒÆ’Ã‚Â£o no bagageiro inferior.",
-    "Cabos USB disponÃƒÆ’Ã‚Â­veis no ÃƒÆ’Ã‚Â´nibus para carregar celular.",
-    "Leve uma manta ou coberta, pois o ar-condicionado ficarÃƒÆ’Ã‚Â¡ ligado durante o trajeto."
+    "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido.",
+    "É proibido consumir bebidas alcoólicas dentro do ônibus.",
+    "Coolers e malas de rodinhas vão no bagageiro inferior.",
+    "Cabos USB disponíveis no ônibus para carregar celular.",
+    "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto."
   ],
   "lifecycle": {
     "cardExpiresAt": "2026-07-12T01:40:00.000Z",
