@@ -138,6 +138,10 @@ body {
   grid-column: 1 / -1;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .floating-whats {
   align-items: center;
   background: #40E0D0;
