@@ -2,23 +2,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.trip-header-back {
-  align-items: center;
-  background: #F3E8FF;
-  border-radius: 9999px;
-  color: #6B21A8;
-  display: inline-flex;
-  font-weight: 800;
-  gap: 0.5rem;
-  padding: 0.7rem 1rem;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.trip-header-back:hover {
-  background: #6B21A8;
-  color: #ffffff;
-}
-
 .hero--sm {
   height: 48vh;
   overflow: hidden;
@@ -86,44 +69,58 @@ body {
   padding: 0.25rem 0.5rem;
 }
 
-.icon-list {
-  color: #1F2937;
+.trip-info-card,
+.trip-policy-card {
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.75rem;
+  box-shadow: none;
+  padding: 1.25rem;
+}
+
+.trip-info-card h2,
+.trip-policy-card h2 {
+  color: #111827;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+}
+
+.trip-info-card ul {
   display: grid;
-  gap: 0.7rem;
+  gap: 0.65rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.icon-list li {
+.trip-info-card li {
   align-items: flex-start;
+  color: #1F2937;
   display: grid;
   gap: 0.65rem;
   grid-template-columns: 1.25rem minmax(0, 1fr);
   line-height: 1.45;
 }
 
-.icon-list li::before {
-  align-items: center;
-  background: #14B8A6;
-  border-radius: 999px;
-  color: #ffffff;
-  display: inline-flex;
-  font-size: 0.72rem;
-  font-weight: 900;
-  height: 1rem;
-  justify-content: center;
+.trip-info-card li i {
+  color: #14B8A6;
+  font-size: 1rem;
   margin-top: 0.22rem;
-  width: 1rem;
 }
 
-.icon-list--check li::before { content: "✓"; }
-.icon-list--x li::before { content: "×"; }
-.icon-list--clock li::before { content: "◷"; }
-.icon-list--card li::before { content: "▰"; }
-.icon-list--pin li::before { content: "•"; }
-.icon-list--warn li::before { content: "!"; }
-.icon-list--info li::before { content: "i"; }
+.trip-policy-card {
+  margin-top: 0;
+}
+
+.trip-policy-card ul {
+  color: #374151;
+  display: grid;
+  gap: 0.65rem;
+  line-height: 1.55;
+  list-style: disc;
+  padding-left: 1.2rem;
+}
 
 .trip-summary__grid {
   display: grid;
@@ -202,7 +199,7 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .icon-list li {
+  .trip-info-card li {
     gap: 0.55rem;
   }
 }

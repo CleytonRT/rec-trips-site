@@ -25,12 +25,22 @@
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 
-  const fillList = (ul, items) => {
+  const fillList = (ul, items, icon = 'fa-circle-info') => {
     if (!ul) return;
     ul.innerHTML = '';
     (items || []).forEach((text) => {
       const li = document.createElement('li');
-      li.innerHTML = `<span>${escapeText(text)}</span>`;
+      li.innerHTML = `<i class="fas ${icon}"></i><span>${escapeText(text)}</span>`;
+      ul.appendChild(li);
+    });
+  };
+
+  const fillPlainList = (ul, items) => {
+    if (!ul) return;
+    ul.innerHTML = '';
+    (items || []).forEach((text) => {
+      const li = document.createElement('li');
+      li.textContent = text;
       ul.appendChild(li);
     });
   };
@@ -42,7 +52,7 @@
       const detail = typeof item === 'string' ? item : (item.detail || item.step || '');
       if (!detail) return;
       const row = document.createElement('li');
-      row.innerHTML = `<span>${escapeText(detail)}</span>`;
+      row.innerHTML = `<i class="fas fa-location-dot"></i><span>${escapeText(detail)}</span>`;
       els.itinerary.appendChild(row);
     });
   };
@@ -70,17 +80,17 @@
       if (els.tripPrice) els.tripPrice.textContent = data.price_full || '';
       if (els.tripType) els.tripType.textContent = data.type || '';
       if (els.returnInfo) els.returnInfo.textContent = data.returning || '';
-      fillList(els.includedList, data.included);
-      fillList(els.notIncludedList, data.not_included);
-      fillList(els.boardingList, [...(data.boarding || []), data.returning].filter(Boolean));
-      fillList(els.paymentList, data.payment);
-      fillList(els.policiesList, data.policies);
-      fillList(els.infosList, data.infos);
+      fillList(els.includedList, data.included, 'fa-check-circle');
+      fillList(els.notIncludedList, data.not_included, 'fa-circle-xmark');
+      fillList(els.boardingList, [...(data.boarding || []), data.returning].filter(Boolean), 'fa-clock');
+      fillList(els.paymentList, data.payment, 'fa-credit-card');
+      fillPlainList(els.policiesList, data.policies);
+      fillList(els.infosList, data.infos, 'fa-circle-info');
       renderItinerary(data.itinerary);
       wireWhatsLinks(data.whatsapp_url);
     })
     .catch((err) => {
       console.error('Erro ao carregar data.json:', err);
-      if (els.itinerary) els.itinerary.innerHTML = '<li class="load-error"><span>Não foi possível carregar as informações. Tente recarregar a página.</span></li>';
+      if (els.itinerary) els.itinerary.innerHTML = '<li class="load-error"><i class="fas fa-circle-info"></i><span>Não foi possível carregar as informações. Tente recarregar a página.</span></li>';
     });
 }());

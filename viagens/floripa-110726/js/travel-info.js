@@ -19,7 +19,23 @@
     floatingWhats: $('floatingWhats')
   };
 
-  const fillList = (ul, items) => {
+  const escapeText = (value = '') => String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+
+  const fillList = (ul, items, icon = 'fa-circle-info') => {
+    if (!ul) return;
+    ul.innerHTML = '';
+    (items || []).forEach((text) => {
+      const li = document.createElement('li');
+      li.innerHTML = `<i class="fas ${icon}"></i><span>${escapeText(text)}</span>`;
+      ul.appendChild(li);
+    });
+  };
+
+  const fillPlainList = (ul, items) => {
     if (!ul) return;
     ul.innerHTML = '';
     (items || []).forEach((text) => {
@@ -32,12 +48,11 @@
   const renderItinerary = (steps) => {
     if (!els.itinerary) return;
     els.itinerary.innerHTML = '';
-    (steps || []).forEach((item, index) => {
-      const step = typeof item === 'string' ? `Item ${index + 1}` : item.step;
-      const detail = typeof item === 'string' ? item : item.detail;
-      const row = document.createElement('div');
-      row.className = 'step';
-      row.innerHTML = `<strong>${step || `Item ${index + 1}`}</strong><p>${detail || ''}</p>`;
+    (steps || []).forEach((item) => {
+      const detail = typeof item === 'string' ? item : (item.detail || item.step || '');
+      if (!detail) return;
+      const row = document.createElement('li');
+      row.innerHTML = `<i class="fas fa-location-dot"></i><span>${escapeText(detail)}</span>`;
       els.itinerary.appendChild(row);
     });
   };
@@ -65,17 +80,17 @@
       if (els.tripPrice) els.tripPrice.textContent = data.price_full || '';
       if (els.tripType) els.tripType.textContent = data.type || '';
       if (els.returnInfo) els.returnInfo.textContent = data.returning || '';
-      fillList(els.includedList, data.included);
-      fillList(els.notIncludedList, data.not_included);
-      fillList(els.boardingList, data.boarding);
-      fillList(els.paymentList, data.payment);
-      fillList(els.policiesList, data.policies);
-      fillList(els.infosList, data.infos);
+      fillList(els.includedList, data.included, 'fa-check-circle');
+      fillList(els.notIncludedList, data.not_included, 'fa-circle-xmark');
+      fillList(els.boardingList, [...(data.boarding || []), data.returning].filter(Boolean), 'fa-clock');
+      fillList(els.paymentList, data.payment, 'fa-credit-card');
+      fillPlainList(els.policiesList, data.policies);
+      fillList(els.infosList, data.infos, 'fa-circle-info');
       renderItinerary(data.itinerary);
       wireWhatsLinks(data.whatsapp_url);
     })
     .catch((err) => {
       console.error('Erro ao carregar data.json:', err);
-      if (els.itinerary) els.itinerary.innerHTML = '<p class="load-error">Nao foi possivel carregar as informacoes. Tente recarregar a pagina.</p>';
+      if (els.itinerary) els.itinerary.innerHTML = '<li class="load-error"><i class="fas fa-circle-info"></i><span>Não foi possível carregar as informações. Tente recarregar a página.</span></li>';
     });
 }());
