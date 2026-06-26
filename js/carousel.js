@@ -19,7 +19,7 @@ if (mobileMenuButton && mobileMenu) {
   });
 }
 
-// Scroll suave ao clicar em âncoras da navbar
+// Scroll suave ao clicar em ncoras da navbar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
