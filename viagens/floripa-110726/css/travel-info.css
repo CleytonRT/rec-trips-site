@@ -122,6 +122,32 @@ body {
   padding-left: 1.2rem;
 }
 
+.room-package-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.room-package-card {
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.65rem;
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.85rem;
+}
+
+.room-package-card strong {
+  color: #111827;
+  font-size: 0.98rem;
+}
+
+.room-package-card span {
+  color: #6B21A8;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
 .trip-summary__grid {
   display: grid;
   gap: 1rem;
@@ -195,7 +221,8 @@ body {
   }
 
   .trip-summary__grid,
-  .grid-2 {
+  .grid-2,
+  .room-package-grid {
     grid-template-columns: 1fr;
   }
 

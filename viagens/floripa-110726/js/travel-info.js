@@ -4,6 +4,7 @@
   const els = {
     heroImage: $('heroImage'),
     tripDate: $('tripDate'),
+    tripPriceLabel: $('tripPriceLabel'),
     tripPrice: $('tripPrice'),
     tripType: $('tripType'),
     returnInfo: $('returnInfo'),
@@ -14,6 +15,8 @@
     itinerary: $('itinerary'),
     policiesList: $('policiesList'),
     infosList: $('infosList'),
+    roomPackagesSection: $('roomPackagesSection'),
+    roomPackagesList: $('roomPackagesList'),
     ctaHero: $('ctaHero'),
     ctaSummary: $('ctaSummary'),
     floatingWhats: $('floatingWhats')
@@ -57,6 +60,24 @@
     });
   };
 
+  const renderRoomPackages = (rooms) => {
+    const packages = rooms || [];
+    if (!els.roomPackagesSection || !els.roomPackagesList) return;
+    els.roomPackagesList.innerHTML = '';
+    els.roomPackagesSection.classList.toggle('hidden', !packages.length);
+    if (els.tripPriceLabel) els.tripPriceLabel.textContent = packages.length ? 'A partir de' : 'Valor';
+
+    packages.forEach((room) => {
+      const card = document.createElement('article');
+      card.className = 'room-package-card';
+      card.innerHTML = `
+        <strong>${escapeText(room.titulo || room.title || '')}</strong>
+        <span>${escapeText(room.valor || room.price || '')}</span>
+      `;
+      els.roomPackagesList.appendChild(card);
+    });
+  };
+
   const wireWhatsLinks = (url) => {
     if (!url) return;
     [els.ctaHero, els.ctaSummary, els.floatingWhats].forEach((link) => {
@@ -87,6 +108,7 @@
       fillPlainList(els.policiesList, data.policies);
       fillList(els.infosList, data.infos, 'fa-circle-info');
       renderItinerary(data.itinerary);
+      renderRoomPackages(data.quartos || data.rooms || []);
       wireWhatsLinks(data.whatsapp_url);
     })
     .catch((err) => {
