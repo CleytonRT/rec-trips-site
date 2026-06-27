@@ -51,34 +51,40 @@
     {
       "id": "compartilhado",
       "valor": "R$400,00",
-      "titulo": "Compartilhado"
+      "titulo": "Compartilhado",
+      "descricao": "Por pessoa"
     },
     {
       "id": "triplo",
       "valor": "R$600,00",
-      "titulo": "Triplo"
+      "titulo": "Triplo",
+      "descricao": ""
     },
     {
       "id": "casal",
       "valor": "800,00",
-      "titulo": "Casal"
+      "titulo": "Casal",
+      "descricao": "O casal"
     }
   ],
   "rooms": [
     {
       "id": "compartilhado",
       "valor": "R$400,00",
-      "titulo": "Compartilhado"
+      "titulo": "Compartilhado",
+      "descricao": "Por pessoa"
     },
     {
       "id": "triplo",
       "valor": "R$600,00",
-      "titulo": "Triplo"
+      "titulo": "Triplo",
+      "descricao": ""
     },
     {
       "id": "casal",
       "valor": "800,00",
-      "titulo": "Casal"
+      "titulo": "Casal",
+      "descricao": "O casal"
     }
   ],
   "policies": [
