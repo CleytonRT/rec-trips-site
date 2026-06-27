@@ -316,7 +316,10 @@ Simplesmente incrÒ­vel, obrigado Rec!"
           console.error('Container #pacotes-container NÒO encontrado');
           return;
         }
-        const assetPath = (value = '') => String(value || '').replace(/^\//, '');
+        const assetPath = (value = '') => {
+          const image = String(value || '');
+          return /^https?:\/\//i.test(image) ? image : image.replace(/^\//, '');
+        };
         const isVisiblePackage = (pkg) => {
           if (!pkg.cardExpiresAt) return true;
           const expiresAt = new Date(pkg.cardExpiresAt);
