@@ -73,6 +73,7 @@
       card.innerHTML = `
         <strong>${escapeText(room.titulo || room.title || '')}</strong>
         <span>${escapeText(room.valor || room.price || '')}</span>
+        <small>${escapeText(room.descricao || room.description || '')}</small>
       `;
       els.roomPackagesList.appendChild(card);
     });
