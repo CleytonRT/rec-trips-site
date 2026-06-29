@@ -7,9 +7,9 @@
     <meta property="og:title" content="RecTrips - Grave seu momento com a gente" />
     <meta property="og:description" content="Cada viagem, um novo capítulo da sua história." />
     <title>RecTrips | Grave seu momento conosco</title>
-    <link rel="icon" href="img/logo-rt-sem-fundo.png" type="image/png" sizes="48x48">
-    <link rel="apple-touch-icon" sizes="48x48" href="img/logo-rt-sem-fundo.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/logo-rt-sem-fundo.png">
+    <link rel="icon" href="/img/logo-rt-sem-fundo.png" type="image/png" sizes="48x48">
+    <link rel="apple-touch-icon" sizes="48x48" href="/img/logo-rt-sem-fundo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/logo-rt-sem-fundo.png">
     <meta name="theme-color" content="#6B21A8">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -47,7 +47,7 @@
     <div class="flex justify-between items-center py-4">
       <div class="flex items-center space-x-4">
         <div class="flex items-center">
-          <img src="img/logo-rt-sem-fundo.png" alt="Logo RecTrips" class="h-12 w-auto">
+          <img src="/img/logo-rt-sem-fundo.png" alt="Logo RecTrips" class="h-12 w-auto">
           <span class="ml-2 text-2xl font-bold bg-gradient-to-r from-purple-600 to-cyan-400 bg-clip-text text-transparent">RecTrips</span>
         </div>
       </div>
@@ -81,22 +81,22 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <picture class="imagem-overlay">
-            <source media="(max-width: 768px)" srcset="img/angra1.jpeg">
-            <img src="img/arraial3.jpeg" alt="Hero 1" />
+            <source media="(max-width: 768px)" srcset="/img/angra1.jpeg">
+            <img src="/img/arraial3.jpeg" alt="Hero 1" />
           </picture>
         </div>
           
         <div class="carousel-item">
           <picture class="imagem-overlay">
-            <source media="(max-width: 768px)" srcset="img/saothome1.jpeg">
-            <img src="img/arraial6.jpeg" alt="Hero 2" />
+            <source media="(max-width: 768px)" srcset="/img/saothome1.jpeg">
+            <img src="/img/arraial6.jpeg" alt="Hero 2" />
           </picture>
         </div>
           
         <div class="carousel-item">
           <picture class="imagem-overlay">
-            <source media="(max-width: 768px)" srcset="img/arraial1.jpeg">
-            <img src="img/arraial4.jpeg" alt="Hero 3" />
+            <source media="(max-width: 768px)" srcset="/img/arraial1.jpeg">
+            <img src="/img/arraial4.jpeg" alt="Hero 3" />
           </picture>
         </div>          
       </div>
@@ -141,15 +141,15 @@
 
       <!-- Imagem principal -->
       <img
-        src="img/arraial2.jpeg"
+        src="/img/arraial2.jpeg"
         alt="Soltos ao Mar"
         class="destino-main-img"
       />
 
       <!-- Grid de miniaturas -->
       <div class="destino-thumbs">
-        <img src="img/arraial5.jpeg" alt="Cerveja" />
-        <img src="img/vinicius1.jpeg" alt="Vinicius e Alice" />
+        <img src="/img/arraial5.jpeg" alt="Cerveja" />
+        <img src="/img/vinicius1.jpeg" alt="Vinicius e Alice" />
       </div>
 
       <!-- Depoimento -->
@@ -166,15 +166,15 @@ Simplesmente incrÒ­vel, obrigado Rec!"
 
       <!-- Imagem principal -->
       <img
-        src="img/juan2.jpeg"
+        src="/img/juan2.jpeg"
         alt="Juan"
         class="destino-main-img"
       />
 
       <!-- Grid de miniaturas -->
       <div class="destino-thumbs">
-        <img src="img/juan1.jpeg" alt="Fogueira" />
-        <img src="img/juan3.jpeg" alt="Pessoal na praia" />
+        <img src="/img/juan1.jpeg" alt="Fogueira" />
+        <img src="/img/juan3.jpeg" alt="Pessoal na praia" />
       </div>
 
       <!-- Depoimento -->
@@ -189,15 +189,15 @@ Simplesmente incrÒ­vel, obrigado Rec!"
 
       <!-- Imagem principal -->
       <img
-        src="img/gustavo2.jpeg"
+        src="/img/gustavo2.jpeg"
         alt="Galera de Floripa"
         class="destino-main-img"
       />
 
       <!-- Grid de miniaturas -->
       <div class="destino-thumbs">
-        <img src="img/gustavo1.jpeg" alt="Praia" />
-        <img src="img/gustavo3.jpeg" alt="Dunas da Joaquina" />
+        <img src="/img/gustavo1.jpeg" alt="Praia" />
+        <img src="/img/gustavo3.jpeg" alt="Dunas da Joaquina" />
       </div>
 
       <!-- Depoimento -->
@@ -268,7 +268,7 @@ Simplesmente incrÒ­vel, obrigado Rec!"
         <h3 class="text-lg font-semibold mb-2">Informações Legais</h3>
         <p class="mb-1">CNPJ: 49.914.405/0001-24</p>
         <p class="mb-1">Cadastur: 25.195643.51-7</p>
-        <img src="img/Cadastur.JPG" alt="Logo Cadastur" class="mt-4 w-32">
+        <img src="/img/Cadastur.JPG" alt="Logo Cadastur" class="mt-4 w-32">
       </div>
 
       <!-- Missão, Visão e Valores -->
@@ -325,9 +325,11 @@ Simplesmente incrÒ­vel, obrigado Rec!"
           const expiresAt = new Date(pkg.cardExpiresAt);
           return Number.isNaN(expiresAt.getTime()) || expiresAt > new Date();
         };
+        const isComingSoonValue = (value = '') => String(value || '').trim().toLowerCase() === 'em breve';
         pacotes.filter(isVisiblePackage).forEach(pkg => {
           const card = document.createElement('div');
           card.className = 'package-card';
+          const comingSoonValue = isComingSoonValue(pkg.valor);
           card.innerHTML = `
             <img src="${assetPath(pkg.imagem)}" alt="${pkg.titulo}" class="package-img" loading="lazy" decoding="async">
             <div class="p-6">
@@ -337,7 +339,7 @@ Simplesmente incrÒ­vel, obrigado Rec!"
               <p class="package-date"><i class="fas fa-calendar-alt mr-2"></i>Retorno: ${pkg.volta}</p>
               ${pkg.destaque ? `<p class="package-highlight">${pkg.destaque}</p>` : ''}
               <div class="mt-4">
-                <p class="text-gray-500 text-xs">A partir de:</p>
+                ${comingSoonValue ? '' : '<p class="text-gray-500 text-xs">A partir de:</p>'}
                 <p class="package-price">${pkg.valor}</p>
               </div>
               <div class="mt-4">
