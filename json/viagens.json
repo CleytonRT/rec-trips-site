@@ -7,12 +7,14 @@
     "subtitulo": "Rafting e Gruta do Anjo",
     "tipo": "Bate e Volta",
     "ida": "23/08/2026",
-    "volta": "20/08/2026",
+    "volta": "23/08/2026",
     "valor": "Em Breve",
-    "url": "",
+    "url": "viagens/socorro-230826/",
     "formDestination": "Socorro + Pedra Bela Vista (Bate e Volta)",
-    "destaque": "",
-    "registrationEnabled": false
+    "destaque": "Rafting e Gruta do anjo em Socorro, no parque Kango Jango e por do sol no mirante Pedra Bela Vista",
+    "registrationClosesAt": "2026-08-23T07:00:00.000Z",
+    "cardExpiresAt": "2026-08-23T07:00:00.000Z",
+    "registrationEnabled": true
   },
   {
     "id": "holambra-041026",
