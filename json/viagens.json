@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "id": "socorro-230826",
+    "slug": "socorro-230826",
+    "imagem": "https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1782747619/rectrips/cards/em-breve.jpg",
+    "titulo": "Socorro + Pedra Bela Vista",
+    "subtitulo": "Rafting e Gruta do Anjo",
+    "tipo": "Bate e Volta",
+    "ida": "23/08/2026",
+    "volta": "20/08/2026",
+    "valor": "Em Breve",
+    "url": "",
+    "formDestination": "Socorro + Pedra Bela Vista (Bate e Volta)",
+    "destaque": "",
+    "registrationEnabled": false
+  }
+]
