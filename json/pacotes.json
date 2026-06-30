@@ -28,5 +28,20 @@
     "formDestination": "Holambra (Bate e Volta)",
     "destaque": "",
     "registrationEnabled": false
+  },
+  {
+    "id": "sao-thome-301026",
+    "slug": "sao-thome-301026",
+    "imagem": "https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1782747619/rectrips/cards/em-breve.jpg",
+    "titulo": "São Thomé das Letras",
+    "subtitulo": "Rec Halloween",
+    "tipo": "Hospedagem",
+    "ida": "30/10/2026",
+    "volta": "01/11/2026",
+    "valor": "Em Breve",
+    "url": "",
+    "formDestination": "São Thomé das Letras (Hospedagem)",
+    "destaque": "",
+    "registrationEnabled": false
   }
 ]
