@@ -13,5 +13,20 @@
     "formDestination": "Socorro + Pedra Bela Vista (Bate e Volta)",
     "destaque": "",
     "registrationEnabled": false
+  },
+  {
+    "id": "holambra-041026",
+    "slug": "holambra-041026",
+    "imagem": "https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1782747619/rectrips/cards/em-breve.jpg",
+    "titulo": "Holambra",
+    "subtitulo": "Cidade das Flores",
+    "tipo": "Bate e Volta",
+    "ida": "04/10/2026",
+    "volta": "04/10/2026",
+    "valor": "Em Breve",
+    "url": "",
+    "formDestination": "Holambra (Bate e Volta)",
+    "destaque": "",
+    "registrationEnabled": false
   }
 ]
