@@ -16,6 +16,8 @@
     tripDate: $('tripDate'),
     tripPrice: $('tripPrice'),
     tripType: $('tripType'),
+    tripHighlightBox: $('tripHighlightBox'),
+    tripHighlight: $('tripHighlight'),
 
     returnInfo: $('returnInfo'),
 
@@ -94,6 +96,7 @@
       fillList(els.infosList,        data.infos);
 
       // Roteiro (agora de fato renderizado)
+      renderHighlight(data.highlight || data.subtitle || data.description || data.descricao);
       renderItinerary(data.itinerary);
 
       // CTAs (hero, resumo e botão flutuante)

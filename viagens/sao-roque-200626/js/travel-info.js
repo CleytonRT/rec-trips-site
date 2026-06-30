@@ -6,6 +6,8 @@
     tripDate: $('tripDate'),
     tripPrice: $('tripPrice'),
     tripType: $('tripType'),
+    tripHighlightBox: $('tripHighlightBox'),
+    tripHighlight: $('tripHighlight'),
     returnInfo: $('returnInfo'),
     includedList: $('includedList'),
     notIncludedList: $('notIncludedList'),
@@ -71,6 +73,7 @@
       fillList(els.paymentList, data.payment);
       fillList(els.policiesList, data.policies);
       fillList(els.infosList, data.infos);
+      renderHighlight(data.highlight || data.subtitle || data.description || data.descricao);
       renderItinerary(data.itinerary);
       wireWhatsLinks(data.whatsapp_url);
     })

@@ -178,14 +178,6 @@
   text-align: center;
 }
 
-.package-highlight {
-  color: #374151;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin-top: 0.75rem;
-  min-height: 4rem;
-}
-
 .whatsapp-btn {
   display: flex;
   background-color: #7C3AED;
@@ -441,6 +433,10 @@
 }
 
 /* Imagem principal */
+.destino-slide > picture {
+  display: block;
+}
+
 .destino-main-img {
   width: 100%;
   max-height: 25rem;
@@ -453,6 +449,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.75rem;
+}
+.destino-thumbs picture {
+  display: block;
+  min-width: 0;
 }
 .destino-thumbs img {
   width: 100%;

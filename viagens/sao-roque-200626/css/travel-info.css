@@ -194,3 +194,28 @@ body {
     flex-direction: column;
   }
 }
+
+.trip-highlight-box {
+  background: linear-gradient(135deg, #F3E8FF 0%, #ECFEFF 100%);
+  border: 1px solid #E9D5FF;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+}
+
+.trip-highlight-box span {
+  color: #6B21A8;
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+}
+
+.trip-highlight-box p {
+  color: #374151;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0;
+}
