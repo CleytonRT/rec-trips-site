@@ -1,0 +1,55 @@
+{
+  "id": "socorro-230826",
+  "slug": "socorro-230826",
+  "title": "Socorro + Pedra Bela Vista",
+  "subtitle": "Rafting e Gruta do Anjo",
+  "formDestination": "Socorro + Pedra Bela Vista (Bate e Volta)",
+  "date": "23/08/2026",
+  "price_full": "Em Breve",
+  "type": "Bate e Volta",
+  "hero": "https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1782747619/rectrips/cards/em-breve.jpg",
+  "whatsapp_url": "https://wa.me/message/G7FUENJX5QHII1",
+  "included": [],
+  "boarding": [
+    "Shopping Internacional, Guarulhos",
+    "Tatuapé, São Paulo",
+    "Barra Funda, São Paulo"
+  ],
+  "returning": "Retorno previsto as 21:30 do dia 23/08/2026",
+  "not_included": [],
+  "payment": [
+    "PIX: valor total à vista",
+    "Parcelamento em até 12x, mediante consulta das taxas da plataforma",
+    "Crianças até 5 anos não pagam, desde que viajem no colo"
+  ],
+  "itinerary": [],
+  "quartos": [],
+  "rooms": [],
+  "policies": [
+    "90% de reembolso para cancelamentos feitos até 31 dias antes da viagem.",
+    "80% de reembolso para cancelamentos entre 16 e 30 dias antes da viagem.",
+    "0% de reembolso para cancelamentos com menos de 15 dias do início da viagem.",
+    "Cancelamentos com menos de 20 dias da viagem não terão direito a crédito ou reembolso.",
+    "Caso o saldo restante não seja pago até a data estipulada, o passageiro perderá o valor da reserva.",
+    "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido.",
+    "Não comparecimento no horário marcado será considerado desistência, sem reembolso.",
+    "A viagem pode ser remarcada caso não haja número mínimo de participantes.",
+    "O roteiro pode sofrer alterações devido a condições climáticas ou imprevistos."
+  ],
+  "infos": [
+    "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido.",
+    "É proibido consumir bebidas alcoólicas dentro do ônibus.",
+    "Coolers e malas de rodinhas vão no bagageiro inferior.",
+    "Cabos USB disponíveis no ônibus para carregar celular.",
+    "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto."
+  ],
+  "lifecycle": {
+    "cardExpiresAt": "2026-08-23T07:00:00.000Z",
+    "registrationEnabled": true,
+    "admFinalizesManually": true,
+    "registrationClosesAt": "2026-08-23T07:00:00.000Z",
+    "staffHiddenAfterReport": true
+  },
+  "registrationClosesAt": "2026-08-23T07:00:00.000Z",
+  "cardExpiresAt": "2026-08-23T07:00:00.000Z"
+}
