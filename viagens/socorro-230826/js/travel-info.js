@@ -7,6 +7,8 @@
     tripPriceLabel: $('tripPriceLabel'),
     tripPrice: $('tripPrice'),
     tripType: $('tripType'),
+    tripHighlightBox: $('tripHighlightBox'),
+    tripHighlight: $('tripHighlight'),
     returnInfo: $('returnInfo'),
     includedList: $('includedList'),
     notIncludedList: $('notIncludedList'),
@@ -60,6 +62,12 @@
     });
   };
 
+  const renderHighlight = (text = '') => {
+    const value = String(text || '').trim();
+    if (!els.tripHighlightBox || !els.tripHighlight) return;
+    els.tripHighlightBox.classList.toggle('hidden', !value);
+    els.tripHighlight.textContent = value;
+  };
   const renderRoomPackages = (rooms) => {
     const packages = rooms || [];
     if (!els.roomPackagesSection || !els.roomPackagesList) return;
@@ -108,6 +116,7 @@
       fillList(els.paymentList, data.payment, 'fa-credit-card');
       fillPlainList(els.policiesList, data.policies);
       fillList(els.infosList, data.infos, 'fa-circle-info');
+      renderHighlight(data.highlight || data.subtitle || data.description || data.descricao);
       renderItinerary(data.itinerary);
       renderRoomPackages(data.quartos || data.rooms || []);
       wireWhatsLinks(data.whatsapp_url);

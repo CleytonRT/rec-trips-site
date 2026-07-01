@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>São Roque & Cacau Show | RecTrips</title>
-  <meta name="description" content="Bate e volta para São Roque com Rota do Vinho e Cacau Show.">
-  <meta property="og:title" content="São Roque & Cacau Show | RecTrips">
-  <meta property="og:description" content="Rota do Vinho em São Roque no dia 20 de Junho de 2026 por R$99,00.">
-  <meta property="og:image" content="/img/sao-roque-rota-do-vinho.jpeg">
-  <link rel="icon" href="/img/logo-rt-sem-fundo.png" type="image/png" sizes="48x48">
+  <title>Modelo Bate e Volta | RecTrips</title>
+  <meta name="description" content="Modelo interno para viagens bate e volta.">
+  <meta property="og:title" content="Modelo Bate e Volta | RecTrips">
+  <meta property="og:description" content="Modelo interno para viagens bate e volta.">
+  <meta property="og:image" content="https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1782747619/rectrips/cards/em-breve.jpg">
+  <link rel="icon" href="https://rectrips.com.br/img/logo-rt-sem-fundo.png" type="image/png" sizes="48x48">
   <meta name="theme-color" content="#6B21A8">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,10 +27,10 @@
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between items-center py-4">
         <a href="/" class="flex items-center">
-          <img src="/img/logo-rt-sem-fundo.png" alt="Logo RecTrips" class="h-12 w-auto">
+          <picture><source media="(min-width: 0px)" srcset="https://rectrips.com.br/img/logo-rt-sem-fundo.png"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Logo RecTrips" class="h-12 w-auto"></picture>
           <span class="ml-2 text-2xl font-bold bg-gradient-to-r from-purple-600 to-cyan-400 bg-clip-text text-transparent">RecTrips</span>
         </a>
-        <a href="/#packages" class="trip-header-back">
+        <a href="/#packages" class="trip-back-btn mb-0">
           <i class="fas fa-arrow-left"></i>
           Pacotes
         </a>
@@ -61,7 +61,7 @@
           <p id="tripDate" class="info-text"></p>
         </div>
         <div>
-          <h2 class="info-title">Valor</h2>
+          <h2 id="tripPriceLabel" class="info-title">Valor</h2>
           <p id="tripPrice" class="info-text"></p>
         </div>
         <div>
@@ -76,37 +76,47 @@
     </div>
   </section>
 
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid-2 my-6">
-    <article class="info-card">
-      <h2 class="section-title">Incluso</h2>
-      <ul id="includedList" class="bulleted"></ul>
+  <section id="roomPackagesSection" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-6 hidden">
+    <article class="trip-info-card">
+      <h2>Pacotes da hospedagem</h2>
+      <div id="roomPackagesList" class="room-package-grid"></div>
     </article>
-    <article class="info-card">
-      <h2 class="section-title">Não incluso</h2>
-      <ul id="notIncludedList" class="bulleted"></ul>
-    </article>
-    <article class="info-card">
-      <h2 class="section-title">Embarque e retorno</h2>
-      <h3 class="info-subtitle">Locais de embarque</h3>
-      <ul id="boardingList" class="bulleted"></ul>
-      <h3 class="info-subtitle">Retorno</h3>
-      <p id="returnInfo" class="info-text"></p>
-    </article>
-    <article class="info-card">
-      <h2 class="section-title">Pagamento</h2>
-      <ul id="paymentList" class="bulleted"></ul>
-    </article>
-    <article class="info-card card--full">
-      <h2 class="section-title">Roteiro</h2>
-      <div id="itinerary" class="itinerary"></div>
-    </article>
-    <article class="info-card">
-      <h2 class="section-title">Políticas e regras</h2>
-      <ul id="policiesList" class="bulleted"></ul>
-    </article>
-    <article class="info-card">
-      <h2 class="section-title">Informações adicionais</h2>
-      <ul id="infosList" class="bulleted"></ul>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-6">
+    <div class="trip-details-grid">
+      <article class="trip-info-card">
+        <h2>O que está incluso?</h2>
+        <ul id="includedList"></ul>
+      </article>
+      <article class="trip-info-card">
+        <h2>Embarques</h2>
+        <ul id="boardingList"></ul>
+        <p id="returnInfo" class="hidden"></p>
+      </article>
+      <article class="trip-info-card">
+        <h2>Não incluso</h2>
+        <ul id="notIncludedList"></ul>
+      </article>
+      <article class="trip-info-card">
+        <h2>Pagamento</h2>
+        <ul id="paymentList"></ul>
+      </article>
+      <article class="trip-info-card">
+        <h2>Roteiro</h2>
+        <ul id="itinerary"></ul>
+      </article>
+      <article class="trip-info-card">
+        <h2>Informações adicionais</h2>
+        <ul id="infosList"></ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+    <article class="trip-policy-card">
+      <h2>Políticas de reserva e cancelamento</h2>
+      <ul id="policiesList"></ul>
     </article>
   </section>
 
@@ -124,7 +134,7 @@
           <h2 class="text-lg font-semibold mb-2">Informações Legais</h2>
           <p class="mb-1">CNPJ: 49.914.405/0001-24</p>
           <p class="mb-1">Cadastur: 25.195643.51-7</p>
-          <img src="/img/Cadastur.JPG" alt="Logo Cadastur" class="mt-4 w-32">
+          <picture><source media="(min-width: 0px)" srcset="https://rectrips.com.br/img/Cadastur.JPG"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Logo Cadastur" class="mt-4 w-32"></picture>
         </div>
         <div>
           <h2 class="text-lg font-semibold mb-2">Quem Somos</h2>

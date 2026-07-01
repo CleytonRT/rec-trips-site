@@ -1,0 +1,26 @@
+{
+  "id": "_template-bate-volta",
+  "slug": "_template-bate-volta",
+  "title": "Modelo Bate e Volta",
+  "subtitle": "Use este modelo apenas para gerar novas viagens.",
+  "formDestination": "Modelo Bate e Volta (Bate e Volta)",
+  "date": "",
+  "price_full": "",
+  "type": "Bate e Volta",
+  "hero": "https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1782747619/rectrips/cards/em-breve.jpg",
+  "whatsapp_url": "https://wa.me/message/G7FUENJX5QHII1",
+  "included": [],
+  "boarding": [],
+  "returning": "",
+  "not_included": [],
+  "payment": [],
+  "itinerary": [],
+  "quartos": [],
+  "rooms": [],
+  "policies": [],
+  "infos": [],
+  "lifecycle": {
+    "template": true,
+    "registrationEnabled": false
+  }
+}

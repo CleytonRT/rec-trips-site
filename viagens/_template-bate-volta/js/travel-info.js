@@ -68,7 +68,6 @@
     els.tripHighlightBox.classList.toggle('hidden', !value);
     els.tripHighlight.textContent = value;
   };
-
   const renderRoomPackages = (rooms) => {
     const packages = rooms || [];
     if (!els.roomPackagesSection || !els.roomPackagesList) return;
