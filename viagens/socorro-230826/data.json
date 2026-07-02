@@ -9,20 +9,53 @@
   "type": "Bate e Volta",
   "hero": "https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1782747619/rectrips/cards/em-breve.jpg",
   "whatsapp_url": "https://wa.me/message/G7FUENJX5QHII1",
-  "included": [],
+  "included": [
+    "Transporte ida e volta",
+    "Ingresso parque Kango Jango",
+    "Passeio de Rafting",
+    "Visita a Gruta do Anjo",
+    "Ingresso Mirante pedra bela vista"
+  ],
   "boarding": [
-    "Shopping Internacional, Guarulhos",
-    "Tatuapé, São Paulo",
-    "Barra Funda, São Paulo"
+    "Tatuapé, São Paulo - 07:00",
+    "Barra Funda, São Paulo - 06:30"
   ],
   "returning": "Retorno previsto as 21:30 do dia 23/08/2026",
-  "not_included": [],
+  "not_included": [
+    "Almoço - Prato executivo média de R$43,00 (O parque conta com porções e lanches)",
+    "Atividades adicionais do parque"
+  ],
   "payment": [
     "PIX: valor total à vista",
     "Parcelamento em até 12x, mediante consulta das taxas da plataforma",
     "Crianças até 5 anos não pagam, desde que viajem no colo"
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "step": "Item 1",
+      "detail": "Chegada em Socorro no parque Kango Jango pela manhã e vamos nos preparando para o Rafting"
+    },
+    {
+      "step": "Item 2",
+      "detail": "Pausa para almoço"
+    },
+    {
+      "step": "Item 3",
+      "detail": "Tarde livre para outras atividades do parque"
+    },
+    {
+      "step": "Item 4",
+      "detail": "Visita a Gruta do anjo"
+    },
+    {
+      "step": "Item 5",
+      "detail": "Seguiremos para o mirante Pedra Bela vista para pôr do sol e atividades adicionais"
+    },
+    {
+      "step": "Item 6",
+      "detail": "Retorno para SP às 18:30hrs"
+    }
+  ],
   "quartos": [],
   "rooms": [],
   "policies": [
