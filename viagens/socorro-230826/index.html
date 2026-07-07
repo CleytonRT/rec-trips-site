@@ -46,15 +46,20 @@
   </section>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-4 text-sm">
-    <a href="/" class="text-purple-700 hover:underline">Início</a>
-    <span class="mx-1">›</span>
+    <a href="/" class="text-purple-700 hover:underline">InÃ­cio</a>
+    <span class="mx-1">â€º</span>
     <a href="/#packages" class="text-purple-700 hover:underline">Pacotes</a>
-    <span class="mx-1">›</span>
-    <strong>Informações da viagem</strong>
+    <span class="mx-1">â€º</span>
+    <strong>InformaÃ§Ãµes da viagem</strong>
   </div>
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="info-card trip-summary">
+      <div class="trip-heading">
+        <p id="tripKicker">Viagem RecTrips</p>
+        <h1 id="tripTitle"></h1>
+        <p id="tripSubtitle"></p>
+      </div>
       <div class="trip-summary__grid">
         <div>
           <h2 class="info-title">Data</h2>
@@ -70,7 +75,7 @@
         </div>
       </div>
       <div id="tripHighlightBox" class="trip-highlight-box hidden">
-        <span>Resumo da viagem</span>
+        <span></span>
         <p id="tripHighlight"></p>
       </div>
     </div>
@@ -86,7 +91,7 @@
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-6">
     <div class="trip-details-grid">
       <article class="trip-info-card">
-        <h2>O que está incluso?</h2>
+        <h2>O que estÃ¡ incluso?</h2>
         <ul id="includedList"></ul>
       </article>
       <article class="trip-info-card">
@@ -95,7 +100,7 @@
         <p id="returnInfo" class="hidden"></p>
       </article>
       <article class="trip-info-card">
-        <h2>Não incluso</h2>
+        <h2>NÃ£o incluso</h2>
         <ul id="notIncludedList"></ul>
       </article>
       <article class="trip-info-card">
@@ -107,7 +112,7 @@
         <ul id="itinerary"></ul>
       </article>
       <article class="trip-info-card">
-        <h2>Informações adicionais</h2>
+        <h2>InformaÃ§Ãµes adicionais</h2>
         <ul id="infosList"></ul>
       </article>
     </div>
@@ -115,7 +120,7 @@
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
     <article class="trip-policy-card">
-      <h2>Políticas de reserva e cancelamento</h2>
+      <h2>PolÃ­ticas de reserva e cancelamento</h2>
       <ul id="policiesList"></ul>
     </article>
   </section>
@@ -131,16 +136,16 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
         <div>
-          <h2 class="text-lg font-semibold mb-2">Informações Legais</h2>
+          <h2 class="text-lg font-semibold mb-2">InformaÃ§Ãµes Legais</h2>
           <p class="mb-1">CNPJ: 49.914.405/0001-24</p>
           <p class="mb-1">Cadastur: 25.195643.51-7</p>
           <picture><source media="(min-width: 0px)" srcset="https://rectrips.com.br/img/Cadastur.JPG"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Logo Cadastur" class="mt-4 w-32"></picture>
         </div>
         <div>
           <h2 class="text-lg font-semibold mb-2">Quem Somos</h2>
-          <p class="mb-2"><strong>Missão:</strong> Proporcionar experiências inesquecíveis de viagem para todos os públicos, com responsabilidade e alegria.</p>
-          <p class="mb-2"><strong>Visão:</strong> Ser referência em turismo acessível e acolhedor no Brasil.</p>
-          <p class="mb-2"><strong>Valores:</strong> Inclusão, segurança, empatia, diversão e compromisso com o viajante.</p>
+          <p class="mb-2"><strong>MissÃ£o:</strong> Proporcionar experiÃªncias inesquecÃ­veis de viagem para todos os pÃºblicos, com responsabilidade e alegria.</p>
+          <p class="mb-2"><strong>VisÃ£o:</strong> Ser referÃªncia em turismo acessÃ­vel e acolhedor no Brasil.</p>
+          <p class="mb-2"><strong>Valores:</strong> InclusÃ£o, seguranÃ§a, empatia, diversÃ£o e compromisso com o viajante.</p>
         </div>
       </div>
       <div class="mt-8 text-center text-xs text-gray-400">
@@ -148,8 +153,6 @@
       </div>
     </div>
   </footer>
-
-  <script src="../../js/carousel.js"></script>
   <script src="./js/travel-info.js"></script>
 </body>
 </html>

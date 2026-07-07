@@ -3,6 +3,8 @@
 
   const els = {
     heroImage: $('heroImage'),
+    tripTitle: $('tripTitle'),
+    tripSubtitle: $('tripSubtitle'),
     tripDate: $('tripDate'),
     tripPriceLabel: $('tripPriceLabel'),
     tripPrice: $('tripPrice'),
@@ -49,6 +51,20 @@
       ul.appendChild(li);
     });
   };
+
+
+  const boardingTimeValue = (text = '') => {
+    const match = String(text || '').match(/(?:^|\D)([01]?\d|2[0-3]):([0-5]\d)(?:\D|$)/);
+    if (!match) return Number.MAX_SAFE_INTEGER;
+    return (Number(match[1]) * 60) + Number(match[2]);
+  };
+
+  const sortedBoarding = (items = []) => [...items].sort((a, b) => {
+    const timeA = boardingTimeValue(a);
+    const timeB = boardingTimeValue(b);
+    if (timeA !== timeB) return timeA - timeB;
+    return String(a || '').localeCompare(String(b || ''), 'pt-BR');
+  });
 
   const renderItinerary = (steps) => {
     if (!els.itinerary) return;
@@ -107,17 +123,22 @@
   loadTravelData()
     .then((data) => {
       if (els.heroImage && data.hero) els.heroImage.style.backgroundImage = `url('${data.hero}')`;
+      if (els.tripTitle) els.tripTitle.textContent = data.title || '';
+      if (els.tripSubtitle) {
+        els.tripSubtitle.textContent = data.subtitle || '';
+        els.tripSubtitle.classList.toggle('hidden', !data.subtitle);
+      }
       if (els.tripDate) els.tripDate.textContent = data.date || '';
       if (els.tripPrice) els.tripPrice.textContent = data.price_full || '';
       if (els.tripType) els.tripType.textContent = data.type || '';
       if (els.returnInfo) els.returnInfo.textContent = data.returning || '';
       fillList(els.includedList, data.included, 'fa-check-circle');
       fillList(els.notIncludedList, data.not_included, 'fa-circle-xmark');
-      fillList(els.boardingList, [...(data.boarding || []), data.returning].filter(Boolean), 'fa-clock');
+      fillList(els.boardingList, [...sortedBoarding(data.boarding || []), data.returning].filter(Boolean), 'fa-clock');
       fillList(els.paymentList, data.payment, 'fa-credit-card');
       fillPlainList(els.policiesList, data.policies);
       fillList(els.infosList, data.infos, 'fa-circle-info');
-      renderHighlight(data.highlight || data.subtitle || data.description || data.descricao);
+      renderHighlight(data.highlight || data.description || data.descricao);
       renderItinerary(data.itinerary);
       renderRoomPackages(data.quartos || data.rooms || []);
       wireWhatsLinks(data.whatsapp_url);

@@ -1,18 +1,17 @@
 let slideIndex = 0;
 const carousel = document.getElementById('carousel-destinos');
-const slides = carousel.querySelectorAll('.destino-slide');
+const slides = carousel ? carousel.querySelectorAll('.destino-slide') : [];
 const totalSlides = slides.length;
 
 const btnVoltar = document.getElementById('btn-voltar');
 const btnAvancar = document.getElementById('btn-avancar');
 
-// Atualiza a posição do carrossel
 function atualizarSlide() {
+  if (!carousel || !totalSlides) return;
   carousel.style.transform = `translateX(-${slideIndex * 30}%)`;
   atualizarBotoes();
 }
 
-// Avança o slide (botão direito)
 function avancarSlide() {
   if (slideIndex < totalSlides - 1) {
     slideIndex++;
@@ -20,7 +19,6 @@ function avancarSlide() {
   }
 }
 
-// Volta o slide (botão esquerdo)
 function voltarSlide() {
   if (slideIndex > 0) {
     slideIndex--;
@@ -28,7 +26,6 @@ function voltarSlide() {
   }
 }
 
-// Mostra ou esconde os botões de navegação
 function atualizarBotoes() {
   if (btnVoltar && btnAvancar) {
     btnVoltar.style.display = slideIndex === 0 ? 'none' : 'block';
@@ -36,5 +33,4 @@ function atualizarBotoes() {
   }
 }
 
-// Inicializa
 atualizarSlide();

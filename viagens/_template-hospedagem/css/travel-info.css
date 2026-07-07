@@ -1,5 +1,32 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  width: 100%;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+body > * {
+  max-width: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .hero--sm {
@@ -154,6 +181,43 @@ body {
   font-weight: 600;
 }
 
+.trip-heading {
+  background: linear-gradient(135deg, #FAF5FF 0%, #F8FAFC 100%);
+  border: 1px solid #E9D5FF;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  padding: 0.9rem 1rem;
+}
+
+.trip-heading p {
+  margin: 0;
+}
+
+.trip-heading #tripKicker {
+  color: #14B8A6;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.trip-heading h1 {
+  color: #111827;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0.15rem 0 0;
+  overflow-wrap: anywhere;
+}
+
+.trip-heading #tripSubtitle {
+  color: #6B7280;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-top: 0.2rem;
+}
+
 .trip-summary__grid {
   display: grid;
   gap: 1rem;
@@ -217,6 +281,25 @@ body {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+    touch-action: pan-y;
+    width: 100%;
+  }
+
+  .max-w-7xl,
+  nav,
+  section,
+  footer {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .trip-heading h1 {
+    font-size: 1.15rem;
+  }
+
   .hero--sm,
   .hero--sm .hero__image {
     height: 40vh;
