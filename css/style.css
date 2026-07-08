@@ -153,9 +153,9 @@
   font-size: 1.25rem;
   font-weight: 700;
   color: #1F2937;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.15rem;
   text-align: center;
-  min-height: 4rem;
+  min-height: 0;
 }
 
 .package-subtitle {
@@ -163,7 +163,7 @@
   font-weight: 500;
   color: #6B7280;
   line-height: 1.35;
-  margin: -0.25rem 0 0.75rem;
+  margin: 0 0 0.75rem;
   text-align: center;
 }
 .package-type {

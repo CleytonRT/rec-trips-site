@@ -259,24 +259,6 @@ svg {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.return-info-text {
-  align-items: flex-start;
-  color: #374151;
-  display: grid;
-  font-size: 1.05rem;
-  font-weight: 700;
-  gap: 0.65rem;
-  grid-template-columns: 1.25rem minmax(0, 1fr);
-  line-height: 1.5;
-  margin: 0;
-}
-
-.return-info-text i {
-  color: #14B8A6;
-  font-size: 1rem;
-  margin-top: 0.22rem;
-}
-
 .grid-2 {
   display: grid;
   gap: 1rem;
