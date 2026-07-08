@@ -169,7 +169,7 @@
       if (els.tripPrice) els.tripPrice.textContent = data.price_full || '';
       if (els.tripType) els.tripType.textContent = data.type || '';
       if (els.returnInfoCard) els.returnInfoCard.classList.toggle('hidden', !data.returning);
-      if (els.returnInfo) els.returnInfo.textContent = returnLabel(data.returning);
+      if (els.returnInfo) els.returnInfo.textContent = data.returning ? `🕒 ${returnLabel(data.returning)}` : '';
       fillList(els.includedList, data.included, 'fa-check-circle');
       fillList(els.notIncludedList, data.not_included, 'fa-circle-xmark');
       fillList(els.boardingList, sortedBoarding(data.boarding || []), 'fa-clock');

@@ -238,8 +238,8 @@ svg {
   color: #6B21A8;
   font-size: 1rem;
   font-weight: 800;
-  line-height: 1.35;
-  margin-top: 0.12rem;
+  line-height: 1.15;
+  margin-top: -0.08rem;
 }
 
 .trip-intro-card #tripSummary {
@@ -367,8 +367,12 @@ svg {
 }
 
 @media (min-width: 768px) {
+  .site-nav {
+    position: sticky;
+  }
+
   .hero--sm {
-    margin-top: 80px;
+    margin-top: 0;
   }
 
   .site-nav .hidden.md\:flex {
