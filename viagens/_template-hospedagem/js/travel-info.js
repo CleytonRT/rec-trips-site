@@ -12,6 +12,7 @@
     tripType: $('tripType'),
     tripHighlightBox: $('tripHighlightBox'),
     tripHighlight: $('tripHighlight'),
+    returnInfoCard: $('returnInfoCard'),
     returnInfo: $('returnInfo'),
     includedList: $('includedList'),
     notIncludedList: $('notIncludedList'),
@@ -93,6 +94,10 @@
     return String(a || '').localeCompare(String(b || ''), 'pt-BR');
   });
 
+  const returnLabel = (value = '') => String(value || '')
+    .replace(/^retorno\s+previsto\s*(?:às|as)?\s*/i, '')
+    .trim();
+
   const renderItinerary = (steps) => {
     if (!els.itinerary) return;
     els.itinerary.innerHTML = '';
@@ -163,10 +168,11 @@
       if (els.tripDate) els.tripDate.textContent = data.date || '';
       if (els.tripPrice) els.tripPrice.textContent = data.price_full || '';
       if (els.tripType) els.tripType.textContent = data.type || '';
-      if (els.returnInfo) els.returnInfo.textContent = data.returning || '';
+      if (els.returnInfoCard) els.returnInfoCard.classList.toggle('hidden', !data.returning);
+      if (els.returnInfo) els.returnInfo.textContent = returnLabel(data.returning);
       fillList(els.includedList, data.included, 'fa-check-circle');
       fillList(els.notIncludedList, data.not_included, 'fa-circle-xmark');
-      fillList(els.boardingList, [...sortedBoarding(data.boarding || []), data.returning].filter(Boolean), 'fa-clock');
+      fillList(els.boardingList, sortedBoarding(data.boarding || []), 'fa-clock');
       fillList(els.paymentList, data.payment, 'fa-credit-card');
       fillPlainList(els.policiesList, data.policies);
       fillList(els.infosList, data.infos, 'fa-circle-info');

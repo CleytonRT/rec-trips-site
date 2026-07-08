@@ -9,6 +9,9 @@
   <meta property="og:description" content="Modelo interno para viagens com hospedagem.">
   <meta property="og:image" content="https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1782747619/rectrips/cards/em-breve.jpg">
   <link rel="icon" href="https://rectrips.com.br/img/logo-rt-sem-fundo.png" type="image/png" sizes="48x48">
+  <link rel="shortcut icon" href="/img/logo-rt-sem-fundo.png" type="image/png">
+  <link rel="apple-touch-icon" sizes="48x48" href="/img/logo-rt-sem-fundo.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/logo-rt-sem-fundo.png">
   <meta name="theme-color" content="#6B21A8">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -111,7 +114,10 @@
       <article class="trip-info-card">
         <h2>Embarques</h2>
         <ul id="boardingList"></ul>
-        <p id="returnInfo" class="hidden"></p>
+      </article>
+      <article id="returnInfoCard" class="trip-info-card hidden">
+        <h2>Retorno previsto</h2>
+        <p id="returnInfo" class="return-info-text"></p>
       </article>
       <article class="trip-info-card">
         <h2>Não incluso</h2>
