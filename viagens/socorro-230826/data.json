@@ -3,7 +3,7 @@
   "slug": "socorro-230826",
   "title": "Socorro + Pedra Bela Vista",
   "subtitle": "Rafting e Gruta do Anjo",
-  "summary": "Um bate e volta de aventura em Socorro com rafting, visita à Gruta do Anjo e encerramento no Mirante Pedra Bela Vista.",
+  "summary": "Rafting e Gruta do anjo em Socorro, no parque Kango Jango e por do sol no mirante Pedra Bela Vista",
   "formDestination": "Socorro + Pedra Bela Vista (Bate e Volta)",
   "date": "23/08/2026",
   "price_full": "R$365,00",
@@ -14,14 +14,14 @@
     "Transporte ida e volta",
     "Ingresso parque Kango Jango",
     "Passeio de Rafting",
-    "Visita à Gruta do Anjo",
-    "Ingresso Mirante Pedra Bela Vista"
+    "Visita a Gruta do Anjo",
+    "Ingresso Mirante pedra bela vista"
   ],
   "boarding": [
-    "Tatuapé, São Paulo - 07:00",
-    "Barra Funda, São Paulo - 06:30"
+    "Barra Funda, São Paulo",
+    "Tatuapé, São Paulo"
   ],
-  "returning": "Retorno previsto às 21:30 do dia 23/08/2026",
+  "returning": "Retorno previsto as 21:30 do dia 23/08/2026",
   "not_included": [
     "Almoço - Prato executivo média de R$43,00 (O parque conta com porções e lanches)",
     "Atividades adicionais do parque"
@@ -34,7 +34,7 @@
   "itinerary": [
     {
       "step": "Item 1",
-      "detail": "Chegada em Socorro no parque Kango Jango pela manhã e preparação para o rafting"
+      "detail": "Chegada em Socorro no parque Kango Jango pela manhã e vamos nos preparando para o Rafting"
     },
     {
       "step": "Item 2",
@@ -46,11 +46,11 @@
     },
     {
       "step": "Item 4",
-      "detail": "Visita à Gruta do Anjo"
+      "detail": "Visita a Gruta do anjo"
     },
     {
       "step": "Item 5",
-      "detail": "Seguiremos para o Mirante Pedra Bela Vista para pôr do sol e atividades adicionais"
+      "detail": "Seguiremos para o mirante Pedra Bela vista para pôr do sol e atividades adicionais"
     },
     {
       "step": "Item 6",
