@@ -5,6 +5,7 @@
     heroImage: $('heroImage'),
     tripTitle: $('tripTitle'),
     tripSubtitle: $('tripSubtitle'),
+    tripSummary: $('tripSummary'),
     tripDate: $('tripDate'),
     tripPriceLabel: $('tripPriceLabel'),
     tripPrice: $('tripPrice'),
@@ -24,6 +25,32 @@
     ctaHero: $('ctaHero'),
     ctaSummary: $('ctaSummary'),
     floatingWhats: $('floatingWhats')
+  };
+
+  const initNavigation = () => {
+    const nav = document.getElementById('siteNav');
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    let lastScrollY = window.scrollY;
+
+    if (menuButton && mobileMenu) {
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      mobileMenu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+      });
+    }
+
+    if (!nav) return;
+
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+      const scrollingDown = currentScrollY > lastScrollY && currentScrollY > 90;
+      nav.classList.toggle('site-nav--hidden', scrollingDown);
+      lastScrollY = Math.max(0, currentScrollY);
+    }, { passive: true });
   };
 
   const escapeText = (value = '') => String(value)
@@ -127,6 +154,11 @@
         els.tripSubtitle.textContent = data.subtitle || '';
         els.tripSubtitle.classList.toggle('hidden', !data.subtitle);
       }
+      if (els.tripSummary) {
+        const summary = data.summary || data.resumo || data.highlight || data.description || data.descricao || '';
+        els.tripSummary.textContent = summary;
+        els.tripSummary.classList.toggle('hidden', !summary);
+      }
       if (els.tripDate) els.tripDate.textContent = data.date || '';
       if (els.tripPrice) els.tripPrice.textContent = data.price_full || '';
       if (els.tripType) els.tripType.textContent = data.type || '';
@@ -137,7 +169,7 @@
       fillList(els.paymentList, data.payment, 'fa-credit-card');
       fillPlainList(els.policiesList, data.policies);
       fillList(els.infosList, data.infos, 'fa-circle-info');
-      renderHighlight(data.highlight || data.description || data.descricao);
+      renderHighlight('');
       renderItinerary(data.itinerary);
       renderRoomPackages(data.quartos || data.rooms || []);
       wireWhatsLinks(data.whatsapp_url);
@@ -146,4 +178,6 @@
       console.error('Erro ao carregar data.json:', err);
       if (els.itinerary) els.itinerary.innerHTML = '<li class="load-error"><i class="fas fa-circle-info"></i><span>Não foi possível carregar as informações. Tente recarregar a página.</span></li>';
     });
+
+  initNavigation();
 }());

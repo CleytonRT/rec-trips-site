@@ -23,18 +23,33 @@
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <nav class="bg-white shadow-lg sticky top-0 z-50">
+  <nav id="siteNav" class="site-nav bg-white shadow-lg">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between items-center py-4">
-        <a href="/" class="flex items-center">
-          <picture><source media="(min-width: 0px)" srcset="https://rectrips.com.br/img/logo-rt-sem-fundo.png"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Logo RecTrips" class="h-12 w-auto"></picture>
-          <span class="ml-2 text-2xl font-bold bg-gradient-to-r from-purple-600 to-cyan-400 bg-clip-text text-transparent">RecTrips</span>
-        </a>
-        <a href="/#packages" class="trip-back-btn mb-0">
-          <i class="fas fa-arrow-left"></i>
-          Pacotes
-        </a>
+        <div class="flex items-center space-x-4">
+          <a href="/" class="flex items-center">
+            <picture><source media="(min-width: 0px)" srcset="https://rectrips.com.br/img/logo-rt-sem-fundo.png"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Logo RecTrips" class="h-12 w-auto"></picture>
+            <span class="ml-2 text-2xl font-bold bg-gradient-to-r from-purple-600 to-cyan-400 bg-clip-text text-transparent">RecTrips</span>
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/" class="nav-link text-gray-800 hover:text-cyan-400 font-medium">Home</a>
+          <a href="/#packages" class="nav-link text-gray-800 hover:text-cyan-400 font-medium">Pacotes</a>
+          <a href="/#destinations" class="nav-link text-gray-800 hover:text-cyan-400 font-medium">Destinos</a>
+          <a href="/#contact" class="nav-link text-gray-800 hover:text-cyan-400 font-medium">Contato</a>
+        </div>
+        <div class="md:hidden">
+          <button class="mobile-menu-button p-2 focus:outline-none block md:hidden" type="button" aria-label="Abrir menu">
+            <i class="fas fa-bars text-purple-600 text-xl"></i>
+          </button>
+        </div>
       </div>
+    </div>
+    <div class="mobile-menu hidden md:hidden bg-white py-4 px-4">
+      <a href="/" class="block py-2 text-gray-800 hover:text-cyan-400">Home</a>
+      <a href="/#packages" class="block py-2 text-gray-800 hover:text-cyan-400">Pacotes</a>
+      <a href="/#destinations" class="block py-2 text-gray-800 hover:text-cyan-400">Destinos</a>
+      <a href="/#contact" class="block py-2 text-gray-800 hover:text-cyan-400">Contato</a>
     </div>
   </nav>
 
@@ -46,19 +61,19 @@
   </section>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-4 text-sm">
-    <a href="/" class="text-purple-700 hover:underline">InÃ­cio</a>
-    <span class="mx-1">â€º</span>
+    <a href="/" class="text-purple-700 hover:underline">Início</a>
+    <span class="mx-1">›</span>
     <a href="/#packages" class="text-purple-700 hover:underline">Pacotes</a>
-    <span class="mx-1">â€º</span>
-    <strong>InformaÃ§Ãµes da viagem</strong>
+    <span class="mx-1">›</span>
+    <strong>Informações da viagem</strong>
   </div>
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="info-card trip-summary">
-      <div class="trip-heading">
-        <p id="tripKicker">Viagem RecTrips</p>
+      <div class="trip-intro-card">
         <h1 id="tripTitle"></h1>
         <p id="tripSubtitle"></p>
+        <p id="tripSummary"></p>
       </div>
       <div class="trip-summary__grid">
         <div>
@@ -75,7 +90,6 @@
         </div>
       </div>
       <div id="tripHighlightBox" class="trip-highlight-box hidden">
-        <span></span>
         <p id="tripHighlight"></p>
       </div>
     </div>
@@ -91,7 +105,7 @@
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-6">
     <div class="trip-details-grid">
       <article class="trip-info-card">
-        <h2>O que estÃ¡ incluso?</h2>
+        <h2>O que está incluso?</h2>
         <ul id="includedList"></ul>
       </article>
       <article class="trip-info-card">
@@ -100,7 +114,7 @@
         <p id="returnInfo" class="hidden"></p>
       </article>
       <article class="trip-info-card">
-        <h2>NÃ£o incluso</h2>
+        <h2>Não incluso</h2>
         <ul id="notIncludedList"></ul>
       </article>
       <article class="trip-info-card">
@@ -112,7 +126,7 @@
         <ul id="itinerary"></ul>
       </article>
       <article class="trip-info-card">
-        <h2>InformaÃ§Ãµes adicionais</h2>
+        <h2>Informações adicionais</h2>
         <ul id="infosList"></ul>
       </article>
     </div>
@@ -120,7 +134,7 @@
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
     <article class="trip-policy-card">
-      <h2>PolÃ­ticas de reserva e cancelamento</h2>
+      <h2>Políticas de reserva e cancelamento</h2>
       <ul id="policiesList"></ul>
     </article>
   </section>
@@ -136,16 +150,16 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
         <div>
-          <h2 class="text-lg font-semibold mb-2">InformaÃ§Ãµes Legais</h2>
+          <h2 class="text-lg font-semibold mb-2">Informações Legais</h2>
           <p class="mb-1">CNPJ: 49.914.405/0001-24</p>
           <p class="mb-1">Cadastur: 25.195643.51-7</p>
           <picture><source media="(min-width: 0px)" srcset="https://rectrips.com.br/img/Cadastur.JPG"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Logo Cadastur" class="mt-4 w-32"></picture>
         </div>
         <div>
           <h2 class="text-lg font-semibold mb-2">Quem Somos</h2>
-          <p class="mb-2"><strong>MissÃ£o:</strong> Proporcionar experiÃªncias inesquecÃ­veis de viagem para todos os pÃºblicos, com responsabilidade e alegria.</p>
-          <p class="mb-2"><strong>VisÃ£o:</strong> Ser referÃªncia em turismo acessÃ­vel e acolhedor no Brasil.</p>
-          <p class="mb-2"><strong>Valores:</strong> InclusÃ£o, seguranÃ§a, empatia, diversÃ£o e compromisso com o viajante.</p>
+          <p class="mb-2"><strong>Missão:</strong> Proporcionar experiências inesquecíveis de viagem para todos os públicos, com responsabilidade e alegria.</p>
+          <p class="mb-2"><strong>Visão:</strong> Ser referência em turismo acessível e acolhedor no Brasil.</p>
+          <p class="mb-2"><strong>Valores:</strong> Inclusão, segurança, empatia, diversão e compromisso com o viajante.</p>
         </div>
       </div>
       <div class="mt-8 text-center text-xs text-gray-400">
