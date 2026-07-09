@@ -43,15 +43,6 @@
         link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
       });
     }
-
-    if (!nav) return;
-
-    window.addEventListener('scroll', () => {
-      const currentScrollY = window.scrollY;
-      const scrollingDown = currentScrollY > lastScrollY && currentScrollY > 90;
-      nav.classList.toggle('site-nav--hidden', scrollingDown);
-      lastScrollY = Math.max(0, currentScrollY);
-    }, { passive: true });
   };
 
   const escapeText = (value = '') => String(value)

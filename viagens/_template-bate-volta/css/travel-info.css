@@ -54,6 +54,7 @@ svg {
 
 .hero--sm {
   height: 48vh;
+  margin-top: 80px;
   overflow: hidden;
   position: relative;
 }
@@ -360,14 +361,6 @@ svg {
 }
 
 @media (min-width: 768px) {
-  .site-nav {
-    position: sticky;
-  }
-
-  .hero--sm {
-    margin-top: 0;
-  }
-
   .site-nav .hidden.md\:flex {
     display: flex !important;
   }
