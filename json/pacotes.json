@@ -26,10 +26,12 @@
     "ida": "04/10/2026",
     "volta": "04/10/2026",
     "valor": "Em Breve",
-    "url": "",
+    "url": "viagens/holambra-041026/",
     "formDestination": "Holambra (Bate e Volta)",
-    "destaque": "",
-    "registrationEnabled": false
+    "destaque": "Conheça a cidade das Flores e um pedaço de Holambra aqui em SP",
+    "registrationClosesAt": "2026-10-04T07:00:00.000Z",
+    "cardExpiresAt": "2026-10-04T07:00:00.000Z",
+    "registrationEnabled": true
   },
   {
     "id": "sao-thome-301026",
