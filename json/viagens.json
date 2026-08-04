@@ -34,6 +34,21 @@
     "registrationEnabled": true
   },
   {
+    "id": "hopi-hari-181026",
+    "slug": "hopi-hari-181026",
+    "imagem": "https://res.cloudinary.com/deec4rlfa/image/upload/c_limit,w_2200,q_auto,f_auto/v1785825567/rectrips/cards/eqczyqhmqm670bkcmoxh.png",
+    "titulo": "Hopi Hari",
+    "subtitulo": "Hora do Horror",
+    "tipo": "Bate e Volta",
+    "ida": "18/10/2026",
+    "volta": "18/10/2026",
+    "valor": "R$220,00",
+    "url": "",
+    "formDestination": "Hopi Hari (Bate e Volta)",
+    "destaque": "",
+    "registrationEnabled": false
+  },
+  {
     "id": "sao-thome-301026",
     "slug": "sao-thome-301026",
     "imagem": "https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1782747619/rectrips/cards/em-breve.jpg",
