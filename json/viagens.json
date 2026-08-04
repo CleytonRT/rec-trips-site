@@ -43,10 +43,12 @@
     "ida": "18/10/2026",
     "volta": "18/10/2026",
     "valor": "R$220,00",
-    "url": "",
+    "url": "viagens/hopi-hari-181026/",
     "formDestination": "Hopi Hari (Bate e Volta)",
-    "destaque": "",
-    "registrationEnabled": false
+    "destaque": "Venha curtir o melhor parque de SP com diversas atrações e a noite nossa Hora do Horror da N3kron - O protocolo",
+    "registrationClosesAt": "2026-10-18T06:41:00.000Z",
+    "cardExpiresAt": "2026-10-18T06:41:00.000Z",
+    "registrationEnabled": true
   },
   {
     "id": "sao-thome-301026",
