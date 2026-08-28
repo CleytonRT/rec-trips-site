@@ -136,6 +136,26 @@
     });
   };
 
+  const parseAvailabilityDate = (value) => {
+    if (!value) return null;
+    const date = new Date(value);
+    return Number.isNaN(date.getTime()) ? null : date;
+  };
+
+  const tripIsPubliclyAvailable = (data = {}) => {
+    const lifecycle = data.lifecycle || {};
+    const status = String(data.status || lifecycle.status || '').toLowerCase();
+    if (data.registrationEnabled === false || lifecycle.registrationEnabled === false) return false;
+    if (lifecycle.finalizedAt || lifecycle.admFinalizedAt || data.finalizedAt) return false;
+    if (status.includes('finaliz') || status.includes('cancel') || status.includes('arquiv')) return false;
+    const expiresAt = parseAvailabilityDate(lifecycle.cardExpiresAt || data.cardExpiresAt);
+    return !expiresAt || expiresAt > new Date();
+  };
+
+  const redirectUnavailableTrip = () => {
+    window.location.replace('/');
+  };
+
   const loadTravelData = () => fetch('./data.json', { cache: 'no-store' })
     .then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -144,6 +164,10 @@
 
   loadTravelData()
     .then((data) => {
+      if (!tripIsPubliclyAvailable(data)) {
+        redirectUnavailableTrip();
+        return;
+      }
       if (els.heroImage && data.hero) els.heroImage.style.backgroundImage = `url('${data.hero}')`;
       if (els.tripTitle) els.tripTitle.textContent = data.title || '';
       if (els.tripSubtitle) {
