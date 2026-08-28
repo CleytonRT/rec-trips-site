@@ -45,7 +45,17 @@
     }
   };
 
-  const escapeText = (value = '') => String(value)
+  const repairText = (value = '') => {
+    const text = String(value || '');
+    if (!/[ÃÂâ€]/.test(text)) return text;
+    try {
+      return decodeURIComponent(escape(text));
+    } catch (error) {
+      return text;
+    }
+  };
+
+  const escapeText = (value = '') => repairText(value)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -169,21 +179,21 @@
         return;
       }
       if (els.heroImage && data.hero) els.heroImage.style.backgroundImage = `url('${data.hero}')`;
-      if (els.tripTitle) els.tripTitle.textContent = data.title || '';
+      if (els.tripTitle) els.tripTitle.textContent = repairText(data.title || '');
       if (els.tripSubtitle) {
-        els.tripSubtitle.textContent = data.subtitle || '';
+        els.tripSubtitle.textContent = repairText(data.subtitle || '');
         els.tripSubtitle.classList.toggle('hidden', !data.subtitle);
       }
       if (els.tripSummary) {
         const summary = data.summary || data.resumo || data.highlight || data.description || data.descricao || '';
-        els.tripSummary.textContent = summary;
+        els.tripSummary.textContent = repairText(summary);
         els.tripSummary.classList.toggle('hidden', !summary);
       }
-      if (els.tripDate) els.tripDate.textContent = data.date || '';
-      if (els.tripPrice) els.tripPrice.textContent = data.price_full || '';
-      if (els.tripType) els.tripType.textContent = data.type || '';
+      if (els.tripDate) els.tripDate.textContent = repairText(data.date || '');
+      if (els.tripPrice) els.tripPrice.textContent = repairText(data.price_full || '');
+      if (els.tripType) els.tripType.textContent = repairText(data.type || '');
       if (els.returnInfoCard) els.returnInfoCard.classList.toggle('hidden', !data.returning);
-      if (els.returnInfo) els.returnInfo.textContent = data.returning ? returnLabel(data.returning) : '';
+      if (els.returnInfo) els.returnInfo.textContent = data.returning ? repairText(returnLabel(data.returning)) : '';
       fillList(els.includedList, data.included, 'fa-check-circle');
       fillList(els.notIncludedList, data.not_included, 'fa-circle-xmark');
       fillList(els.boardingList, sortedBoarding(data.boarding || []), 'fa-clock');

@@ -158,6 +158,19 @@
   min-height: 0;
 }
 
+.package-discount-badge {
+  background: linear-gradient(135deg, #6B21A8, #40E0D0);
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  margin-bottom: 0.55rem;
+  padding: 0.32rem 0.6rem;
+  text-transform: uppercase;
+}
+
 .package-subtitle {
   font-size: 0.95rem;
   font-weight: 500;

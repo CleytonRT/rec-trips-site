@@ -340,14 +340,17 @@
           return Number.isNaN(expiresAt.getTime()) || expiresAt > new Date();
         };
         const isComingSoonValue = (value = '') => String(value || '').trim().toLowerCase() === 'em breve';
+        const bestDiscount = (pkg) => Math.max(0, ...[...(pkg.quartos || []), ...(pkg.rooms || [])].map(item => Number(item.desconto ?? item.discountPercent ?? 0) || 0));
         pacotes.filter(isVisiblePackage).forEach(pkg => {
           const card = document.createElement('div');
           card.className = 'package-card';
           const comingSoonValue = isComingSoonValue(pkg.valor);
           const subtitle = String(pkg.subtitulo || pkg.subtitle || '').trim();
+          const discount = bestDiscount(pkg);
           card.innerHTML = `
             <img src="${assetPath(pkg.imagem)}" alt="${pkg.titulo}" class="package-img" loading="lazy" decoding="async">
             <div class="p-6">
+              ${discount ? `<span class="package-discount-badge">Até ${discount}% OFF</span>` : ''}
               <h3 class="package-title">${pkg.titulo}</h3>
               ${subtitle ? `<p class="package-subtitle">${subtitle}</p>` : ''}
               <p class="package-type">${pkg.tipo}</p>

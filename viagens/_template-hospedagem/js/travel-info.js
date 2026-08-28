@@ -45,7 +45,17 @@
     }
   };
 
-  const escapeText = (value = '') => String(value)
+  const repairText = (value = '') => {
+    const text = String(value || '');
+    if (!/[ÃÂâ€]/.test(text)) return text;
+    try {
+      return decodeURIComponent(escape(text));
+    } catch (error) {
+      return text;
+    }
+  };
+
+  const escapeText = (value = '') => repairText(value)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -108,7 +118,43 @@
     els.tripHighlight.textContent = value;
   };
 
-  const renderRoomPackages = (rooms) => {
+  const priceNumberFromText = (value = '') => {
+    const clean = String(value || '')
+      .replace(/[^\d,.-]/g, '')
+      .replace(/\.(?=\d{3}(?:\D|$))/g, '')
+      .replace(',', '.');
+    const amount = Number(clean);
+    return Number.isFinite(amount) ? amount : 0;
+  };
+
+  const formatMoney = (value) => Number(value || 0).toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL'
+  });
+
+  const normalizePackage = (room = {}, fallbackPrice = '') => {
+    const title = room.titulo || room.title || room.name || 'Pacote';
+    const people = Math.max(1, Number(room.pessoas || room.people || 1));
+    const discount = Math.max(0, Number(room.desconto ?? room.discountPercent ?? 0));
+    const price = room.valor || room.price || fallbackPrice || '';
+    const basePerPerson = Number(room.basePricePerPerson || 0) || priceNumberFromText(price);
+    const totalWithoutDiscount = Number(room.totalWithoutDiscount || 0) || (basePerPerson * people);
+    const totalWithDiscount = Number(room.totalWithDiscount || 0) || (totalWithoutDiscount * (1 - (discount / 100)));
+    const perPerson = Number(room.perPersonWithDiscount || 0) || (people ? totalWithDiscount / people : totalWithDiscount);
+
+    return {
+      title,
+      people,
+      discount,
+      price,
+      description: room.descricao || room.description || '',
+      totalWithoutDiscount,
+      totalWithDiscount,
+      perPerson
+    };
+  };
+
+  const renderRoomPackages = (rooms, fallbackPrice = '') => {
     const packages = rooms || [];
     if (!els.roomPackagesSection || !els.roomPackagesList) return;
     els.roomPackagesList.innerHTML = '';
@@ -116,12 +162,17 @@
     if (els.tripPriceLabel) els.tripPriceLabel.textContent = packages.length ? 'A partir de' : 'Valor';
 
     packages.forEach((room) => {
+      const pack = normalizePackage(room, fallbackPrice);
       const card = document.createElement('article');
-      card.className = 'room-package-card';
+      card.className = `room-package-card${pack.discount ? ' room-package-card--discount' : ''}`;
       card.innerHTML = `
-        <strong>${escapeText(room.titulo || room.title || '')}</strong>
-        <span>${escapeText(room.valor || room.price || '')}</span>
-        <small>${escapeText(room.descricao || room.description || '')}</small>
+        ${pack.discount ? `<em>${escapeText(`${pack.discount}% OFF`)}</em>` : ''}
+        <strong>${escapeText(pack.title)}</strong>
+        <span>${escapeText(formatMoney(pack.perPerson))}</span>
+        <small>por pessoa</small>
+        <p>${escapeText(pack.people > 1 ? `${pack.people} pessoas | total ${formatMoney(pack.totalWithDiscount)}` : (pack.price || 'Valor individual'))}</p>
+        ${pack.discount ? `<del>${escapeText(formatMoney(pack.totalWithoutDiscount))} no total sem desconto</del>` : ''}
+        ${pack.description ? `<small>${escapeText(pack.description)}</small>` : ''}
       `;
       els.roomPackagesList.appendChild(card);
     });
@@ -170,21 +221,21 @@
         return;
       }
       if (els.heroImage && data.hero) els.heroImage.style.backgroundImage = `url('${data.hero}')`;
-      if (els.tripTitle) els.tripTitle.textContent = data.title || '';
+      if (els.tripTitle) els.tripTitle.textContent = repairText(data.title || '');
       if (els.tripSubtitle) {
-        els.tripSubtitle.textContent = data.subtitle || '';
+        els.tripSubtitle.textContent = repairText(data.subtitle || '');
         els.tripSubtitle.classList.toggle('hidden', !data.subtitle);
       }
       if (els.tripSummary) {
         const summary = data.summary || data.resumo || data.highlight || data.description || data.descricao || '';
-        els.tripSummary.textContent = summary;
+        els.tripSummary.textContent = repairText(summary);
         els.tripSummary.classList.toggle('hidden', !summary);
       }
-      if (els.tripDate) els.tripDate.textContent = data.date || '';
-      if (els.tripPrice) els.tripPrice.textContent = data.price_full || '';
-      if (els.tripType) els.tripType.textContent = data.type || '';
+      if (els.tripDate) els.tripDate.textContent = repairText(data.date || '');
+      if (els.tripPrice) els.tripPrice.textContent = repairText(data.price_full || '');
+      if (els.tripType) els.tripType.textContent = repairText(data.type || '');
       if (els.returnInfoCard) els.returnInfoCard.classList.toggle('hidden', !data.returning);
-      if (els.returnInfo) els.returnInfo.textContent = data.returning ? returnLabel(data.returning) : '';
+      if (els.returnInfo) els.returnInfo.textContent = data.returning ? repairText(returnLabel(data.returning)) : '';
       fillList(els.includedList, data.included, 'fa-check-circle');
       fillList(els.notIncludedList, data.not_included, 'fa-circle-xmark');
       fillList(els.boardingList, sortedBoarding(data.boarding || []), 'fa-clock');
@@ -193,7 +244,7 @@
       fillList(els.infosList, data.infos, 'fa-circle-info');
       renderHighlight('');
       renderItinerary(data.itinerary);
-      renderRoomPackages(data.quartos || data.rooms || []);
+      renderRoomPackages(data.quartos || data.rooms || [], data.price_full || '');
       wireWhatsLinks(data.whatsapp_url);
     })
     .catch((err) => {
