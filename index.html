@@ -515,7 +515,7 @@
       if (!pkg) return false;
       const status = String(pkg.status || pkg.lifecycle?.status || '').toLowerCase();
       const finalized = Boolean(pkg.finalizedAt || pkg.lifecycle?.finalizedAt || /finaliz|cancel|arquiv/.test(status));
-      if (finalized || (pkg.registrationEnabled === false && pkg.cardExpiresAt)) return false;
+      if (finalized) return false;
       if (!pkg.cardExpiresAt) return true;
       const expiresAt = new Date(pkg.cardExpiresAt);
       return Number.isNaN(expiresAt.getTime()) || expiresAt > new Date();

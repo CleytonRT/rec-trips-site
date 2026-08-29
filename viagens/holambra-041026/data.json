@@ -1,0 +1,102 @@
+{
+  "id": "holambra-041026",
+  "slug": "holambra-041026",
+  "title": "Holambra",
+  "subtitle": "Cidade das Flores",
+  "summary": "Conheça a cidade das Flores com um city tour ou aproveite o evento do Expoflora 2026",
+  "formDestination": "Holambra (Bate e Volta)",
+  "date": "27/09/2026",
+  "price_full": "R$115,00",
+  "type": "Bate e Volta",
+  "hero": "https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1785335732/rectrips/cards/vhffy5cgxtgnseftfyp1.png",
+  "whatsapp_url": "https://wa.me/message/G7FUENJX5QHII1",
+  "included": [
+    "Transporte ida e volta",
+    "Guiamento pela cidade",
+    "Degustação de sorvete e chopp de vinho",
+    "Brindes exclusivos"
+  ],
+  "boarding": [
+    "Shopping Internacional, Guarulhos",
+    "Tatuapé, São Paulo",
+    "Barra Funda, São Paulo"
+  ],
+  "boardingTimes": {},
+  "boardingLocations": [
+    "Shopping Internacional, Guarulhos",
+    "Tatuapé, São Paulo",
+    "Barra Funda, São Paulo"
+  ],
+  "returnDate": "27/09/2026",
+  "returnTime": "19:00",
+  "returning": "Retorno previsto as 19:00 do dia 27/09/2026",
+  "not_included": [
+    "Entrada no Macena Flores - R$35,00 por pessoa",
+    "Alimentação não inclusa - Média do almoço R$45,00 a R$55,00"
+  ],
+  "payment": [
+    "PIX: valor total à vista",
+    "Parcelamento em até 12x, mediante consulta das taxas da plataforma",
+    "Crianças até 5 anos não pagam, desde que viajem no colo"
+  ],
+  "itinerary": [
+    {
+      "step": "Item 1",
+      "detail": "Embarque feito vamos seguir até o portal da cidade para fotos rápidas."
+    },
+    {
+      "step": "Item 2",
+      "detail": "Quem for fazer o evento já deixaremos na entrada do Moinho povos unidos."
+    },
+    {
+      "step": "Item 3",
+      "detail": "Seguiremos para o Macena Flores (R$35,00) para aproveitar o campo de flores e girassóis e um passeio guiado pelas estufas e cultivos de flores."
+    },
+    {
+      "step": "Item 4",
+      "detail": "Parque Van Gogh, onde vamos desfrutar de um momento tranquilo com algumas cafeterias locais, um grande lago com pedalinho e degustação do nosso chopp de vinho e novos sabores de sorvete de flores."
+    },
+    {
+      "step": "Item 5",
+      "detail": "Almoço fora da cidade, em churrascaria com média de R$45,00 a R$55,00 por pessoa, ou variações de rodízio de carne."
+    },
+    {
+      "step": "Item 6",
+      "detail": "Moinho povos unidos, com primeiro contato com o famoso sorvete de flores. Também será possível entrar no moinho e seguir para o centro da cidade, na rua dos guarda-chuvas."
+    },
+    {
+      "step": "Item 7",
+      "detail": "Finalizaremos no Shopping Flores na Mão, última parada para compras."
+    }
+  ],
+  "quartos": [],
+  "rooms": [],
+  "infos": [
+    "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido.",
+    "É proibido consumir bebidas alcoólicas dentro do ônibus.",
+    "Coolers e malas de rodinhas vão no bagageiro inferior.",
+    "Cabos USB disponíveis no ônibus para carregar celular.",
+    "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto."
+  ],
+  "policies": [
+    "90% de reembolso para cancelamentos feitos até 31 dias antes da viagem.",
+    "80% de reembolso para cancelamentos entre 16 e 30 dias antes da viagem.",
+    "0% de reembolso para cancelamentos com menos de 15 dias do início da viagem.",
+    "Cancelamentos com menos de 20 dias da viagem não terão direito a crédito ou reembolso.",
+    "Caso o saldo restante não seja pago até a data estipulada, o passageiro perderá o valor da reserva.",
+    "Embarque permitido apenas com documento original com foto, RG ou CNH.",
+    "Não comparecimento no horário marcado será considerado desistência, sem reembolso.",
+    "A viagem pode ser remarcada caso não haja número mínimo de participantes.",
+    "O roteiro pode sofrer alterações devido a condições climáticas ou imprevistos."
+  ],
+  "lifecycle": {
+    "registrationEnabled": true,
+    "registrationClosesAt": "2026-09-27T07:00:00.000Z",
+    "cardExpiresAt": "2026-09-27T07:00:00.000Z",
+    "admFinalizesManually": true,
+    "staffHiddenAfterReport": true
+  },
+  "registrationEnabled": true,
+  "registrationClosesAt": "2026-09-27T07:00:00.000Z",
+  "cardExpiresAt": "2026-09-27T07:00:00.000Z"
+}
