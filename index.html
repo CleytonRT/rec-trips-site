@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
     <meta property="og:image" content="https://rectrips.com.br/img/logo-rt-sem-fundo.png" />
     <meta property="og:title" content="RecTrips - Grave seu momento com a gente" />
     <meta property="og:description" content="Cada viagem, um novo capítulo da sua história." />
@@ -314,175 +312,6 @@
 <script src="js/carousel.js?v=20260630-1"></script>
 <script src="js/carousel-destinos.js?v=20260630-1"></script>
 <script>
-  // Garante que o container exista antes de rodar o fetch
-  document.addEventListener('DOMContentLoaded', () => {
-    return;
-    console.log('DOM pronto - iniciando fetch de pacotes.json');
-    fetch('./json/viagens.json?v=20260630-1', { cache: 'no-store' }).catch(() => fetch('./json/pacotes.json?v=20260630-1', { cache: 'no-store' }))
-      .then(response => {
-        console.log('fetch() retornou:', response);
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        return response.json();
-      })
-      .then(pacotes => {
-        console.log('viagens.json parseado:', pacotes);
-        const container = document.getElementById('pacotes-container');
-        if (!container) {
-          console.error('Container #pacotes-container NÃO encontrado');
-          return;
-        }
-        const assetPath = (value = '') => {
-          const image = String(value || '');
-          return /^https?:\/\//i.test(image) ? image : image.replace(/^\//, '');
-        };
-        const isVisiblePackage = (pkg) => {
-          if (!pkg.cardExpiresAt) return true;
-          const expiresAt = new Date(pkg.cardExpiresAt);
-          return Number.isNaN(expiresAt.getTime()) || expiresAt > new Date();
-        };
-        const isComingSoonValue = (value = '') => String(value || '').trim().toLowerCase() === 'em breve';
-        const bestDiscount = (pkg) => Math.max(0, ...[...(pkg.quartos || []), ...(pkg.rooms || [])].map(item => Number(item.desconto ?? item.discountPercent ?? 0) || 0));
-        pacotes.filter(isVisiblePackage).forEach(pkg => {
-          const card = document.createElement('div');
-          card.className = 'package-card';
-          const comingSoonValue = isComingSoonValue(pkg.valor);
-          const subtitle = String(pkg.subtitulo || pkg.subtitle || '').trim();
-          const discount = bestDiscount(pkg);
-          card.innerHTML = `
-            <img src="${assetPath(pkg.imagem)}" alt="${pkg.titulo}" class="package-img" loading="lazy" decoding="async">
-            <div class="p-6">
-              ${discount ? `<span class="package-discount-badge">Até ${discount}% OFF</span>` : ''}
-              <h3 class="package-title">${pkg.titulo}</h3>
-              ${subtitle ? `<p class="package-subtitle">${subtitle}</p>` : ''}
-              <p class="package-type">${pkg.tipo}</p>
-              <p class="package-date"><i class="fas fa-calendar-alt mr-2"></i>Ida: ${pkg.ida}</p>
-              <p class="package-date"><i class="fas fa-calendar-alt mr-2"></i>Retorno: ${pkg.volta}</p>
-              <div class="mt-4">
-                ${comingSoonValue ? '' : '<p class="text-gray-500 text-xs">A partir de:</p>'}
-                <p class="package-price">${pkg.valor}</p>
-              </div>
-              <div class="mt-4">
-                ${pkg.url ? `
-                  <a href="${pkg.url}" class="whatsapp-btn">
-                    <i class="fas fa-circle-info mr-2"></i>Ver detalhes
-                  </a>
-                ` : `
-                  <span class="whatsapp-btn disabled-card-link" aria-disabled="true">
-                    <i class="fas fa-circle-info mr-2"></i>Em breve
-                  </span>
-                `}
-              </div>
-            </div>
-          `;
-          container.appendChild(card);
-        });
-      })
-      .catch(err => console.error(' Erro ao carregar viagens:', err));
-  });
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    return;
-    const container = document.getElementById('pacotes-container');
-    if (!container) return;
-
-    const repairText = (value = '') => {
-      const text = String(value || '');
-      if (!/[ÃÂâ€]/.test(text)) return text;
-      try {
-        return decodeURIComponent(escape(text));
-      } catch (error) {
-        return text;
-      }
-    };
-
-    const escapeText = (value = '') => repairText(value)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
-
-    const asArray = (value) => Array.isArray(value) ? value : [];
-    const fallbackImage = 'https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1782747619/rectrips/cards/em-breve.jpg';
-    const assetPath = (value = '') => {
-      const image = String(value || '');
-      if (!image) return fallbackImage;
-      return /^https?:\/\//i.test(image) ? image : image.replace(/^\//, '');
-    };
-    const isVisiblePackage = (pkg) => {
-      if (!pkg) return false;
-      if (!pkg.cardExpiresAt) return true;
-      const expiresAt = new Date(pkg.cardExpiresAt);
-      return Number.isNaN(expiresAt.getTime()) || expiresAt > new Date();
-    };
-    const isComingSoonValue = (value = '') => String(value || '').trim().toLowerCase() === 'em breve';
-    const bestDiscount = (pkg = {}) => Math.max(0, ...[...asArray(pkg.quartos), ...asArray(pkg.rooms)].map((item) => Number(item.desconto ?? item.discountPercent ?? 0) || 0));
-
-    fetch('./json/viagens.json?v=20260828-1', { cache: 'no-store' })
-      .then((response) => response.ok ? response : fetch('./json/pacotes.json?v=20260828-1', { cache: 'no-store' }))
-      .then((response) => {
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        return response.json();
-      })
-      .then((packages) => {
-        const visible = Array.isArray(packages) ? packages.filter(isVisiblePackage) : [];
-        container.innerHTML = '';
-        if (!visible.length) {
-          container.innerHTML = '<p class="text-center text-gray-600 col-span-full">Novas viagens em breve.</p>';
-          return;
-        }
-
-        visible.forEach((pkg) => {
-          const title = escapeText(pkg.titulo || pkg.title || 'Viagem RecTrips');
-          const subtitle = String(pkg.subtitulo || pkg.subtitle || '').trim();
-          const type = escapeText(pkg.tipo || pkg.type || '');
-          const ida = escapeText(pkg.ida || pkg.displayDate || 'Em breve');
-          const volta = escapeText(pkg.volta || pkg.displayReturnDate || pkg.ida || 'Em breve');
-          const price = escapeText(pkg.valor || pkg.price || 'Em Breve');
-          const discount = bestDiscount(pkg);
-          const comingSoonValue = isComingSoonValue(pkg.valor || pkg.price || '');
-          const url = String(pkg.url || '').trim();
-          const card = document.createElement('div');
-
-          card.className = 'package-card';
-          card.innerHTML = `
-            <img src="${assetPath(pkg.imagem)}" alt="${title}" class="package-img" loading="lazy" decoding="async">
-            <div class="p-6">
-              ${discount ? `<span class="package-discount-badge">Até ${discount}% OFF</span>` : ''}
-              <h3 class="package-title">${title}</h3>
-              ${subtitle ? `<p class="package-subtitle">${escapeText(subtitle)}</p>` : ''}
-              <p class="package-type">${type}</p>
-              <p class="package-date"><i class="fas fa-calendar-alt mr-2"></i>Ida: ${ida}</p>
-              <p class="package-date"><i class="fas fa-calendar-alt mr-2"></i>Retorno: ${volta}</p>
-              <div class="mt-4">
-                ${comingSoonValue ? '' : '<p class="text-gray-500 text-xs">A partir de:</p>'}
-                <p class="package-price">${price}</p>
-              </div>
-              <div class="mt-4">
-                ${url ? `
-                  <a href="${escapeText(url)}" class="whatsapp-btn">
-                    <i class="fas fa-circle-info mr-2"></i>Ver detalhes
-                  </a>
-                ` : `
-                  <span class="whatsapp-btn disabled-card-link" aria-disabled="true">
-                    <i class="fas fa-circle-info mr-2"></i>Em breve
-                  </span>
-                `}
-              </div>
-            </div>
-          `;
-          container.appendChild(card);
-        });
-      })
-      .catch((error) => {
-        console.error('Erro ao carregar viagens:', error);
-        container.innerHTML = '<p class="text-center text-gray-600 col-span-full">Não foi possível carregar as viagens agora.</p>';
-      });
-  });
-</script>
-
-<script>
   document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('pacotes-container');
     if (!container) return;
@@ -522,10 +351,13 @@
     };
 
     const isComingSoonValue = (value = '') => String(value || '').trim().toLowerCase() === 'em breve';
-    const bestDiscount = (pkg = {}) => Math.max(0, ...[...asArray(pkg.quartos), ...asArray(pkg.rooms)].map((item) => Number(item.desconto ?? item.discountPercent ?? 0) || 0));
+    const discountNumber = (value) => Number(String(value ?? 0).replace(',', '.')) || 0;
+    const bestDiscount = (pkg = {}) => Math.max(0, ...[...asArray(pkg.quartos), ...asArray(pkg.rooms)].map((item) => discountNumber(item.desconto ?? item.discountPercent)));
+    const formatPercent = (value) => Number(value || 0).toLocaleString('pt-BR', { maximumFractionDigits: 2 });
 
-    fetch('./json/viagens.json?v=20260828-2', { cache: 'no-store' })
-      .then((response) => response.ok ? response : fetch('./json/pacotes.json?v=20260828-2', { cache: 'no-store' }))
+    const siteDataVersion = '20260829-1';
+    fetch(`./json/viagens.json?v=${siteDataVersion}`, { cache: 'default' })
+      .then((response) => response.ok ? response : fetch(`./json/pacotes.json?v=${siteDataVersion}`, { cache: 'default' }))
       .then((response) => {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         return response.json();
@@ -554,7 +386,7 @@
           card.innerHTML = `
             <img src="${assetPath(pkg.imagem || pkg.image)}" alt="${title}" class="package-img" loading="lazy" decoding="async">
             <div class="p-6">
-              ${discount ? `<span class="package-discount-badge">At&eacute; ${discount}% OFF</span>` : ''}
+              ${discount ? `<span class="package-discount-badge">At&eacute; ${formatPercent(discount)}% OFF</span>` : ''}
               <h3 class="package-title">${title}</h3>
               ${subtitle ? `<p class="package-subtitle">${escapeText(subtitle)}</p>` : ''}
               <p class="package-type">${type}</p>

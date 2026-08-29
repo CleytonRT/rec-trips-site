@@ -132,10 +132,15 @@
     currency: 'BRL'
   });
 
+  const formatPercent = (value) => Number(value || 0).toLocaleString('pt-BR', {
+    maximumFractionDigits: 2
+  });
+
   const normalizePackage = (room = {}, fallbackPrice = '') => {
     const title = room.titulo || room.title || room.name || 'Pacote';
     const people = Math.max(1, Number(room.pessoas || room.people || 1));
-    const discount = Math.max(0, Number(room.desconto ?? room.discountPercent ?? 0));
+    const discountValue = Number(String(room.desconto ?? room.discountPercent ?? 0).replace(',', '.'));
+    const discount = Math.min(100, Math.max(0, Number.isFinite(discountValue) ? discountValue : 0));
     const price = room.valor || room.price || fallbackPrice || '';
     const basePerPerson = Number(room.basePricePerPerson || 0) || priceNumberFromText(price);
     const totalWithoutDiscount = Number(room.totalWithoutDiscount || 0) || (basePerPerson * people);
@@ -154,8 +159,37 @@
     };
   };
 
+  const parseRoomPackages = (value = '') => String(value || '')
+    .split('\n')
+    .map((line) => {
+      const [rawTitle, rawPrice = '', rawPeople = '', rawDiscount = '', ...rawDescription] = line.split('|');
+      const title = rawTitle.trim();
+      if (!title) return null;
+      const peopleText = rawPeople.trim();
+      const hasNumericPeople = /^\d+$/.test(peopleText);
+      const people = hasNumericPeople ? Number(peopleText) || 1 : 1;
+      const discount = hasNumericPeople ? Number(String(rawDiscount || '').replace(/[^\d,.]+/g, '').replace(',', '.')) || 0 : 0;
+      const description = hasNumericPeople
+        ? rawDescription.join('|').trim()
+        : [rawPeople, rawDiscount, ...rawDescription].join('|').trim();
+      return {
+        titulo: title,
+        valor: rawPrice.trim(),
+        pessoas: people,
+        desconto: discount,
+        descricao: description
+      };
+    })
+    .filter(Boolean);
+
+  const roomPackageList = (rooms) => {
+    if (Array.isArray(rooms)) return rooms;
+    if (typeof rooms === 'string') return parseRoomPackages(rooms);
+    return [];
+  };
+
   const renderRoomPackages = (rooms, fallbackPrice = '') => {
-    const packages = rooms || [];
+    const packages = roomPackageList(rooms);
     if (!els.roomPackagesSection || !els.roomPackagesList) return;
     els.roomPackagesList.innerHTML = '';
     els.roomPackagesSection.classList.toggle('hidden', !packages.length);
@@ -166,7 +200,7 @@
       const card = document.createElement('article');
       card.className = `room-package-card${pack.discount ? ' room-package-card--discount' : ''}`;
       card.innerHTML = `
-        ${pack.discount ? `<em>${escapeText(`${pack.discount}% OFF`)}</em>` : ''}
+        ${pack.discount ? `<em>${escapeText(`${formatPercent(pack.discount)}% OFF`)}</em>` : ''}
         <strong>${escapeText(pack.title)}</strong>
         <span>${escapeText(formatMoney(pack.perPerson))}</span>
         <small>por pessoa</small>
