@@ -63,12 +63,48 @@
     "tipo": "Bate e Volta",
     "ida": "18/10/2026",
     "volta": "18/10/2026",
-    "valor": "Em Breve",
+    "valor": "R$ 220,00",
     "url": "viagens/hopi-hari-181026/",
     "formDestination": "Hopi Hari (Bate e Volta)",
     "destaque": "Venha curtir o melhor parque de SP com diversas atrações e a noite nossa Hora do Horror da N3kron - O protocolo",
-    "quartos": [],
-    "rooms": [],
+    "quartos": [
+      {
+        "id": "pacote-individual",
+        "name": "Pacote individual",
+        "price": "R$220,00",
+        "valor": "R$220,00",
+        "people": 1,
+        "titulo": "Pacote individual",
+        "pessoas": 1,
+        "desconto": 0,
+        "descricao": "Valor por pessoa já com ingresso",
+        "description": "Valor por pessoa já com ingresso",
+        "discountPercent": 0,
+        "totalWithDiscount": 220,
+        "basePricePerPerson": 220,
+        "totalWithoutDiscount": 220,
+        "perPersonWithDiscount": 220
+      }
+    ],
+    "rooms": [
+      {
+        "id": "pacote-individual",
+        "name": "Pacote individual",
+        "price": "R$220,00",
+        "valor": "R$220,00",
+        "people": 1,
+        "titulo": "Pacote individual",
+        "pessoas": 1,
+        "desconto": 0,
+        "descricao": "Valor por pessoa já com ingresso",
+        "description": "Valor por pessoa já com ingresso",
+        "discountPercent": 0,
+        "totalWithDiscount": 220,
+        "basePricePerPerson": 220,
+        "totalWithoutDiscount": 220,
+        "perPersonWithDiscount": 220
+      }
+    ],
     "registrationClosesAt": "2026-10-18T06:41:00.000Z",
     "cardExpiresAt": "2026-10-18T06:41:00.000Z",
     "registrationEnabled": true
