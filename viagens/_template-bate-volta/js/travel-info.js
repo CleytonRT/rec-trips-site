@@ -7,8 +7,6 @@
     tripSubtitle: $('tripSubtitle'),
     tripSummary: $('tripSummary'),
     tripDate: $('tripDate'),
-    tripPriceLabel: $('tripPriceLabel'),
-    tripPrice: $('tripPrice'),
     tripType: $('tripType'),
     tripHighlightBox: $('tripHighlightBox'),
     tripHighlight: $('tripHighlight'),
@@ -193,7 +191,6 @@
     if (!els.roomPackagesSection || !els.roomPackagesList) return;
     els.roomPackagesList.innerHTML = '';
     els.roomPackagesSection.classList.toggle('hidden', !packages.length);
-    if (els.tripPriceLabel) els.tripPriceLabel.textContent = 'Valor por pessoa';
 
     packages.forEach((room) => {
       const pack = normalizePackage(room, fallbackPrice);
@@ -266,7 +263,6 @@
         els.tripSummary.classList.toggle('hidden', !summary);
       }
       if (els.tripDate) els.tripDate.textContent = repairText(data.date || '');
-      if (els.tripPrice) els.tripPrice.textContent = repairText(data.price_full || '');
       if (els.tripType) els.tripType.textContent = repairText(data.type || '');
       if (els.returnInfoCard) els.returnInfoCard.classList.toggle('hidden', !data.returning);
       if (els.returnInfo) els.returnInfo.textContent = data.returning ? repairText(returnLabel(data.returning)) : '';
