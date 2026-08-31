@@ -353,6 +353,26 @@
     const isComingSoonValue = (value = '') => String(value || '').trim().toLowerCase() === 'em breve';
     const discountNumber = (value) => Number(String(value ?? 0).replace(',', '.')) || 0;
     const bestDiscount = (pkg = {}) => Math.max(0, ...[...asArray(pkg.quartos), ...asArray(pkg.rooms)].map((item) => discountNumber(item.desconto ?? item.discountPercent)));
+    const priceNumberFromText = (value = '') => {
+      const clean = String(value || '')
+        .replace(/[^\d,.-]/g, '')
+        .replace(/\.(?=\d{3}(?:\D|$))/g, '')
+        .replace(',', '.');
+      const amount = Number(clean);
+      return Number.isFinite(amount) ? amount : 0;
+    };
+    const packagePerPerson = (pack = {}) => {
+      const people = Math.max(1, Number(pack.pessoas || pack.people || 1));
+      const discount = Math.min(100, Math.max(0, discountNumber(pack.desconto ?? pack.discountPercent)));
+      const base = Number(pack.basePricePerPerson || 0) || priceNumberFromText(pack.valor || pack.price || pack.basePrice || '');
+      if (!base) return 0;
+      return (base * people * (1 - (discount / 100))) / people;
+    };
+    const cheapestPackagePrice = (pkg = {}) => [...asArray(pkg.quartos), ...asArray(pkg.rooms)]
+      .map(packagePerPerson)
+      .filter((value) => Number.isFinite(value) && value > 0)
+      .sort((a, b) => a - b)[0] || 0;
+    const formatMoney = (value) => Number(value || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     const formatPercent = (value) => Number(value || 0).toLocaleString('pt-BR', { maximumFractionDigits: 2 });
 
     const siteDataVersion = '20260829-1';
@@ -377,9 +397,10 @@
           const ida = escapeText(pkg.ida || pkg.displayDate || 'Em breve');
           const volta = escapeText(pkg.volta || pkg.displayReturnDate || pkg.ida || 'Em breve');
           const url = String(pkg.url || '').trim();
-          const price = escapeText(pkg.valor || pkg.price || 'Em breve');
+          const cheapest = cheapestPackagePrice(pkg);
+          const price = escapeText(cheapest ? formatMoney(cheapest) : (pkg.valor || pkg.price || 'Em breve'));
           const discount = url && pkg.registrationEnabled !== false ? bestDiscount(pkg) : 0;
-          const comingSoonValue = isComingSoonValue(pkg.valor || pkg.price || '');
+          const comingSoonValue = !cheapest && isComingSoonValue(pkg.valor || pkg.price || '');
           const card = document.createElement('div');
 
           card.className = 'package-card';
