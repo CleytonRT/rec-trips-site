@@ -193,7 +193,7 @@
     if (!els.roomPackagesSection || !els.roomPackagesList) return;
     els.roomPackagesList.innerHTML = '';
     els.roomPackagesSection.classList.toggle('hidden', !packages.length);
-    if (els.tripPriceLabel) els.tripPriceLabel.textContent = packages.length ? 'A partir de' : 'Valor';
+    if (els.tripPriceLabel) els.tripPriceLabel.textContent = 'Valor por pessoa';
 
     packages.forEach((room) => {
       const pack = normalizePackage(room, fallbackPrice);
@@ -242,7 +242,7 @@
     window.location.replace('/');
   };
 
-  const loadTravelData = () => fetch('./data.json', { cache: 'no-store' })
+  const loadTravelData = () => fetch('./data.json', { cache: 'default' })
     .then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();

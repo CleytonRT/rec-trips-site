@@ -376,10 +376,10 @@
           const type = escapeText(pkg.tipo || pkg.type || '');
           const ida = escapeText(pkg.ida || pkg.displayDate || 'Em breve');
           const volta = escapeText(pkg.volta || pkg.displayReturnDate || pkg.ida || 'Em breve');
-          const price = escapeText(pkg.valor || pkg.price || 'Em breve');
-          const discount = bestDiscount(pkg);
-          const comingSoonValue = isComingSoonValue(pkg.valor || pkg.price || '');
           const url = String(pkg.url || '').trim();
+          const price = escapeText(pkg.valor || pkg.price || 'Em breve');
+          const discount = url && pkg.registrationEnabled !== false ? bestDiscount(pkg) : 0;
+          const comingSoonValue = isComingSoonValue(pkg.valor || pkg.price || '');
           const card = document.createElement('div');
 
           card.className = 'package-card';
