@@ -6,7 +6,7 @@
   "summary": "Venha curtir o melhor parque de SP com diversas atrações e a noite nossa Hora do Horror da N3kron - O protocolo",
   "formDestination": "Hopi Hari (Bate e Volta)",
   "date": "18/10/2026",
-  "price_full": "Em Breve",
+  "price_full": "R$ 220,00",
   "type": "Bate e Volta",
   "hero": "https://res.cloudinary.com/deec4rlfa/image/upload/c_limit,w_2200,q_auto,f_auto/v1785825567/rectrips/cards/eqczyqhmqm670bkcmoxh.png",
   "whatsapp_url": "https://wa.me/message/G7FUENJX5QHII1",
@@ -48,8 +48,44 @@
       "detail": "Nos encontraremos para ir embora até as 20:30hrs no estacionamento onde foi orientado e chegamos em SP em torno das 22hrs."
     }
   ],
-  "quartos": [],
-  "rooms": [],
+  "quartos": [
+    {
+      "id": "pacote-individual",
+      "name": "Pacote individual",
+      "price": "R$220,00",
+      "valor": "R$220,00",
+      "people": 1,
+      "titulo": "Pacote individual",
+      "pessoas": 1,
+      "desconto": 0,
+      "descricao": "Valor por pessoa já com ingresso",
+      "description": "Valor por pessoa já com ingresso",
+      "discountPercent": 0,
+      "totalWithDiscount": 220,
+      "basePricePerPerson": 220,
+      "totalWithoutDiscount": 220,
+      "perPersonWithDiscount": 220
+    }
+  ],
+  "rooms": [
+    {
+      "id": "pacote-individual",
+      "name": "Pacote individual",
+      "price": "R$220,00",
+      "valor": "R$220,00",
+      "people": 1,
+      "titulo": "Pacote individual",
+      "pessoas": 1,
+      "desconto": 0,
+      "descricao": "Valor por pessoa já com ingresso",
+      "description": "Valor por pessoa já com ingresso",
+      "discountPercent": 0,
+      "totalWithDiscount": 220,
+      "basePricePerPerson": 220,
+      "totalWithoutDiscount": 220,
+      "perPersonWithDiscount": 220
+    }
+  ],
   "policies": [
     "90% de reembolso para cancelamentos feitos até 31 dias antes da viagem.",
     "80% de reembolso para cancelamentos entre 16 e 30 dias antes da viagem.",
