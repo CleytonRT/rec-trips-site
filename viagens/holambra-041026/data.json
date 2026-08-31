@@ -6,7 +6,7 @@
   "summary": "Conheça a cidade das Flores com um city tour ou aproveite o evento do Expoflora 2026",
   "formDestination": "Holambra (Bate e Volta)",
   "date": "27/09/2026",
-  "price_full": "R$115,00",
+  "price_full": "R$ 115,00",
   "type": "Bate e Volta",
   "hero": "https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1785335732/rectrips/cards/vhffy5cgxtgnseftfyp1.png",
   "whatsapp_url": "https://wa.me/message/G7FUENJX5QHII1",
@@ -17,22 +17,14 @@
     "Brindes exclusivos"
   ],
   "boarding": [
-    "Shopping Internacional, Guarulhos",
-    "Tatuapé, São Paulo",
-    "Barra Funda, São Paulo"
+    "Shopping Internacional, Guarulhos - 06:00",
+    "Tatuapé, São Paulo - 06:30",
+    "Barra Funda, São Paulo - 06:50"
   ],
-  "boardingTimes": {},
-  "boardingLocations": [
-    "Shopping Internacional, Guarulhos",
-    "Tatuapé, São Paulo",
-    "Barra Funda, São Paulo"
-  ],
-  "returnDate": "27/09/2026",
-  "returnTime": "19:00",
   "returning": "Retorno previsto as 19:00 do dia 27/09/2026",
   "not_included": [
     "Entrada no Macena Flores - R$35,00 por pessoa",
-    "Alimentação não inclusa - Média do almoço R$45,00 a R$55,00"
+    "Alimentação  não inclusa - Média do almoço R$45,00 a R$55,00"
   ],
   "payment": [
     "PIX: valor total à vista",
@@ -42,41 +34,70 @@
   "itinerary": [
     {
       "step": "Item 1",
-      "detail": "Embarque feito vamos seguir até o portal da cidade para fotos rápidas."
+      "detail": "Embarque feito vamos seguir até o portal da cidade para fotos rapidas;"
     },
     {
       "step": "Item 2",
-      "detail": "Quem for fazer o evento já deixaremos na entrada do Moinho povos unidos."
+      "detail": "Quem for fazer o evento já deixaremos na entrada do Moinho povos unidos;"
     },
     {
       "step": "Item 3",
-      "detail": "Seguiremos para o Macena Flores (R$35,00) para aproveitar o campo de flores e girassóis e um passeio guiado pelas estufas e cultivos de flores."
+      "detail": "Seguiremos para o Macena Flores (R$35,00) para aproveitar o campo de flores e Girassois e um passeio guiado pelas estufas e cultivos de flores;"
     },
     {
       "step": "Item 4",
-      "detail": "Parque Van Gogh, onde vamos desfrutar de um momento tranquilo com algumas cafeterias locais, um grande lago com pedalinho e degustação do nosso chopp de vinho e novos sabores de sorvete de flores."
+      "detail": "Parque Van Gogh, onde vamos desfrutar de um momento tranquilo com algumas cafeterias locais, um grande lago com pedalinho e aqui vamos degustar o nosso chopp de vinho e alguns novos sabores de sorvete de flores."
     },
     {
       "step": "Item 5",
-      "detail": "Almoço fora da cidade, em churrascaria com média de R$45,00 a R$55,00 por pessoa, ou variações de rodízio de carne."
+      "detail": "Almoço, que é fora da cidade, uma churrascaria, media de R$45,00 a R$55,00 por pessoa, ou variações de rodizio de carne."
     },
     {
       "step": "Item 6",
-      "detail": "Moinho povos unidos, com primeiro contato com o famoso sorvete de flores. Também será possível entrar no moinho e seguir para o centro da cidade, na rua dos guarda-chuvas."
+      "detail": "Moinho povos unidos onde teremos o primeiro contato com o famoso sorvete de flores, lá podemos entrar no moinho (R$20,00 adulto e R$10,00 criança), seguir para o centro da cidade que é a rua dos guarda-chuvas e aproveitar o centro de artesanato para comprar as lembrancinhas."
     },
     {
       "step": "Item 7",
-      "detail": "Finalizaremos no Shopping Flores na Mão, última parada para compras."
+      "detail": "Finalizaremos no shopping flores na mão, ultima parada de compra onde vende desde plata a adubo e coisas de cultivo de plantas."
     }
   ],
-  "quartos": [],
-  "rooms": [],
-  "infos": [
-    "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido.",
-    "É proibido consumir bebidas alcoólicas dentro do ônibus.",
-    "Coolers e malas de rodinhas vão no bagageiro inferior.",
-    "Cabos USB disponíveis no ônibus para carregar celular.",
-    "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto."
+  "quartos": [
+    {
+      "id": "pacote-individual",
+      "name": "Pacote individual",
+      "price": "R$115,00",
+      "valor": "R$115,00",
+      "people": 1,
+      "titulo": "Pacote individual",
+      "pessoas": 1,
+      "desconto": 0,
+      "descricao": "Valor por pessoa",
+      "description": "Valor por pessoa",
+      "discountPercent": 0,
+      "totalWithDiscount": 115,
+      "basePricePerPerson": 115,
+      "totalWithoutDiscount": 115,
+      "perPersonWithDiscount": 115
+    }
+  ],
+  "rooms": [
+    {
+      "id": "pacote-individual",
+      "name": "Pacote individual",
+      "price": "R$115,00",
+      "valor": "R$115,00",
+      "people": 1,
+      "titulo": "Pacote individual",
+      "pessoas": 1,
+      "desconto": 0,
+      "descricao": "Valor por pessoa",
+      "description": "Valor por pessoa",
+      "discountPercent": 0,
+      "totalWithDiscount": 115,
+      "basePricePerPerson": 115,
+      "totalWithoutDiscount": 115,
+      "perPersonWithDiscount": 115
+    }
   ],
   "policies": [
     "90% de reembolso para cancelamentos feitos até 31 dias antes da viagem.",
@@ -84,19 +105,26 @@
     "0% de reembolso para cancelamentos com menos de 15 dias do início da viagem.",
     "Cancelamentos com menos de 20 dias da viagem não terão direito a crédito ou reembolso.",
     "Caso o saldo restante não seja pago até a data estipulada, o passageiro perderá o valor da reserva.",
-    "Embarque permitido apenas com documento original com foto, RG ou CNH.",
+    "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido.",
     "Não comparecimento no horário marcado será considerado desistência, sem reembolso.",
     "A viagem pode ser remarcada caso não haja número mínimo de participantes.",
     "O roteiro pode sofrer alterações devido a condições climáticas ou imprevistos."
   ],
+  "infos": [
+    "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido.",
+    "É proibido consumir bebidas alcoólicas dentro do ônibus.",
+    "Coolers e malas de rodinhas vão no bagageiro inferior.",
+    "Cabos USB disponíveis no ônibus para carregar celular.",
+    "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto."
+  ],
   "lifecycle": {
-    "registrationEnabled": true,
-    "registrationClosesAt": "2026-09-27T07:00:00.000Z",
     "cardExpiresAt": "2026-09-27T07:00:00.000Z",
+    "registrationEnabled": true,
     "admFinalizesManually": true,
+    "registrationClosesAt": "2026-09-27T07:00:00.000Z",
     "staffHiddenAfterReport": true
   },
-  "registrationEnabled": true,
   "registrationClosesAt": "2026-09-27T07:00:00.000Z",
-  "cardExpiresAt": "2026-09-27T07:00:00.000Z"
+  "cardExpiresAt": "2026-09-27T07:00:00.000Z",
+  "registrationEnabled": true
 }
