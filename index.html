@@ -398,9 +398,9 @@
           const volta = escapeText(pkg.volta || pkg.displayReturnDate || pkg.ida || 'Em breve');
           const url = String(pkg.url || '').trim();
           const cheapest = cheapestPackagePrice(pkg);
-          const price = escapeText(cheapest ? formatMoney(cheapest) : (pkg.valor || pkg.price || 'Em breve'));
+          const price = escapeText(cheapest ? formatMoney(cheapest) : 'Em breve');
           const discount = url && pkg.registrationEnabled !== false ? bestDiscount(pkg) : 0;
-          const comingSoonValue = !cheapest && isComingSoonValue(pkg.valor || pkg.price || '');
+          const comingSoonValue = !cheapest;
           const card = document.createElement('div');
 
           card.className = 'package-card';
