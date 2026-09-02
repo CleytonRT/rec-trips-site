@@ -1,0 +1,234 @@
+{
+  "id": "sao-thome-301026",
+  "slug": "sao-thome-301026",
+  "title": "São Thomé das Letras",
+  "subtitle": "Nossa história",
+  "summary": "Venha aproveitar o Halloween na cidade mais mística do Brasil. Com degustação de cachaça, passeio pelas cachoeiras e uma noite inesquecível de doces ou travessuras.",
+  "formDestination": "São Thomé das Letras (Hospedagem)",
+  "date": "30/10/2026",
+  "price_full": "R$ 522,00",
+  "type": "Hospedagem",
+  "hero": "https://res.cloudinary.com/deec4rlfa/image/upload/c_limit,w_2200,q_auto,f_auto/v1788372223/rectrips/cards/jcd9m3ogs7w1fikqffxv.png",
+  "whatsapp_url": "https://wa.me/message/G7FUENJX5QHII1",
+  "included": [
+    "Transporte ida e volta",
+    "Passeio com guiamento local com degustação de cachaça",
+    "Ingresso da Cachoeira do Véu da Noiva e Garganta do Diabo",
+    "Tour na rota do cogumelo azul (Sábado)",
+    "Hospedagem com café da manhã nos 3 dias",
+    "Equipe RecTrips"
+  ],
+  "boarding": [
+    "Shopping Internacional, Guarulhos - 22:50",
+    "Tatuapé, São Paulo - 23:15",
+    "Barra Funda, São Paulo - 23:40"
+  ],
+  "returning": "Retorno previsto as 22:30 do dia 02/11/2026",
+  "not_included": [
+    "Sobradinho (Domingo) - R$70,00 por pessoa",
+    "Almoço - Média de R$50,00"
+  ],
+  "payment": [
+    "PIX: valor total à vista",
+    "Parcelamento em até 12x, mediante consulta das taxas da plataforma",
+    "Crianças até 5 anos não pagam, desde que viajem no colo"
+  ],
+  "itinerary": [
+    {
+      "step": "Item 1",
+      "detail": "Após os embarques, vamos passar as informações da viagem no ônibus e fazer uma parada no Graal Bela vista, depois seguiremos para São Thomé."
+    },
+    {
+      "step": "Item 2",
+      "detail": "Sábado - Fazendo Check-In na hospedagem, já vamos tomar café e se organizar para começar nosso passeio pelas cachoeiras."
+    },
+    {
+      "step": "Item 3",
+      "detail": "Primeira parada será o Complexo Véu das noivas, onde vamos apreciar uma das mais incríveis cachoeiras com estrutura local, depois seguiremos para a Garganta do Diabo, para chegar até a queda d’água tem uma pequena trilha, mas que vale muito a pena, depois seguiremos para o letreiro da cidade para fazer fotos e finalizamos na cidade onde nosso guia vai nos levar até a Pirâmide para nosso pôr do sol."
+    },
+    {
+      "step": "Item 4",
+      "detail": "Sábado a noite - Aqui começamos o nosso doces ou travessuras, onde faremos o passeio da rota do cogumelo azul e vamos finalizar no bar próximo à pirâmide."
+    },
+    {
+      "step": "Item 5",
+      "detail": "Domingo - Após café da manhã temos o passeio até o complexo de Sobradinho, valor da entrada com a gruta R$70,00. Lá conta com piscinas, cachoeiras, trilha e guiamento pela gruta."
+    },
+    {
+      "step": "Item 6",
+      "detail": "Domingo à noite - Nosso Halloween oficial, onde as noites de São Thomé se transformaram em um conto de fadas e o que acontece em São Thomé, fica em São Thomé."
+    },
+    {
+      "step": "Item 7",
+      "detail": "Segunda - Dia livre pela cidade, check out às 16:30hrs e saída até as 17hrs."
+    }
+  ],
+  "quartos": [
+    {
+      "id": "pacote-individual",
+      "name": "Pacote individual",
+      "price": "R$580,00",
+      "valor": "R$580,00",
+      "people": 1,
+      "titulo": "Pacote individual",
+      "pessoas": 1,
+      "desconto": 0,
+      "descricao": "Para quem está indo sozinho, será alocado em quarto compartilhado",
+      "description": "Para quem está indo sozinho, será alocado em quarto compartilhado",
+      "discountPercent": 0,
+      "totalWithDiscount": 580,
+      "basePricePerPerson": 580,
+      "totalWithoutDiscount": 580,
+      "perPersonWithDiscount": 580
+    },
+    {
+      "id": "quarto-casal",
+      "name": "Quarto casal",
+      "price": "R$600,00",
+      "valor": "R$600,00",
+      "people": 2,
+      "titulo": "Quarto casal",
+      "pessoas": 2,
+      "desconto": 0,
+      "descricao": "Quarto exclusivo com cama casal apenas para 2 pessoas",
+      "description": "Quarto exclusivo com cama casal apenas para 2 pessoas",
+      "discountPercent": 0,
+      "totalWithDiscount": 1200,
+      "basePricePerPerson": 600,
+      "totalWithoutDiscount": 1200,
+      "perPersonWithDiscount": 600
+    },
+    {
+      "id": "combo-4-amigos",
+      "name": "Combo 4 amigos",
+      "price": "R$580,00",
+      "valor": "R$580,00",
+      "people": 4,
+      "titulo": "Combo 4 amigos",
+      "pessoas": 4,
+      "desconto": 6,
+      "descricao": "Leve 4 amigos para compartilhar o quarto com você e ganhe 6% de desconto",
+      "description": "Leve 4 amigos para compartilhar o quarto com você e ganhe 6% de desconto",
+      "discountPercent": 6,
+      "totalWithDiscount": 2180.7999999999997,
+      "basePricePerPerson": 580,
+      "totalWithoutDiscount": 2320,
+      "perPersonWithDiscount": 545.1999999999999
+    },
+    {
+      "id": "combo-6-amigos",
+      "name": "Combo 6 amigos",
+      "price": "R$580,00",
+      "valor": "R$580,00",
+      "people": 6,
+      "titulo": "Combo 6 amigos",
+      "pessoas": 6,
+      "desconto": 10,
+      "descricao": "Leve 6 amigos para compartilhar o quarto com você e ganhe 10% de desconto",
+      "description": "Leve 6 amigos para compartilhar o quarto com você e ganhe 10% de desconto",
+      "discountPercent": 10,
+      "totalWithDiscount": 3132,
+      "basePricePerPerson": 580,
+      "totalWithoutDiscount": 3480,
+      "perPersonWithDiscount": 522
+    }
+  ],
+  "rooms": [
+    {
+      "id": "pacote-individual",
+      "name": "Pacote individual",
+      "price": "R$580,00",
+      "valor": "R$580,00",
+      "people": 1,
+      "titulo": "Pacote individual",
+      "pessoas": 1,
+      "desconto": 0,
+      "descricao": "Para quem está indo sozinho, será alocado em quarto compartilhado",
+      "description": "Para quem está indo sozinho, será alocado em quarto compartilhado",
+      "discountPercent": 0,
+      "totalWithDiscount": 580,
+      "basePricePerPerson": 580,
+      "totalWithoutDiscount": 580,
+      "perPersonWithDiscount": 580
+    },
+    {
+      "id": "quarto-casal",
+      "name": "Quarto casal",
+      "price": "R$600,00",
+      "valor": "R$600,00",
+      "people": 2,
+      "titulo": "Quarto casal",
+      "pessoas": 2,
+      "desconto": 0,
+      "descricao": "Quarto exclusivo com cama casal apenas para 2 pessoas",
+      "description": "Quarto exclusivo com cama casal apenas para 2 pessoas",
+      "discountPercent": 0,
+      "totalWithDiscount": 1200,
+      "basePricePerPerson": 600,
+      "totalWithoutDiscount": 1200,
+      "perPersonWithDiscount": 600
+    },
+    {
+      "id": "combo-4-amigos",
+      "name": "Combo 4 amigos",
+      "price": "R$580,00",
+      "valor": "R$580,00",
+      "people": 4,
+      "titulo": "Combo 4 amigos",
+      "pessoas": 4,
+      "desconto": 6,
+      "descricao": "Leve 4 amigos para compartilhar o quarto com você e ganhe 6% de desconto",
+      "description": "Leve 4 amigos para compartilhar o quarto com você e ganhe 6% de desconto",
+      "discountPercent": 6,
+      "totalWithDiscount": 2180.7999999999997,
+      "basePricePerPerson": 580,
+      "totalWithoutDiscount": 2320,
+      "perPersonWithDiscount": 545.1999999999999
+    },
+    {
+      "id": "combo-6-amigos",
+      "name": "Combo 6 amigos",
+      "price": "R$580,00",
+      "valor": "R$580,00",
+      "people": 6,
+      "titulo": "Combo 6 amigos",
+      "pessoas": 6,
+      "desconto": 10,
+      "descricao": "Leve 6 amigos para compartilhar o quarto com você e ganhe 10% de desconto",
+      "description": "Leve 6 amigos para compartilhar o quarto com você e ganhe 10% de desconto",
+      "discountPercent": 10,
+      "totalWithDiscount": 3132,
+      "basePricePerPerson": 580,
+      "totalWithoutDiscount": 3480,
+      "perPersonWithDiscount": 522
+    }
+  ],
+  "policies": [
+    "90% de reembolso para cancelamentos feitos até 31 dias antes da viagem.",
+    "80% de reembolso para cancelamentos entre 16 e 30 dias antes da viagem.",
+    "0% de reembolso para cancelamentos com menos de 15 dias do início da viagem.",
+    "Cancelamentos com menos de 20 dias da viagem não terão direito a crédito ou reembolso.",
+    "Caso o saldo restante não seja pago até a data estipulada, o passageiro perderá o valor da reserva.",
+    "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido.",
+    "Não comparecimento no horário marcado será considerado desistência, sem reembolso.",
+    "A viagem pode ser remarcada caso não haja número mínimo de participantes.",
+    "O roteiro pode sofrer alterações devido a condições climáticas ou imprevistos."
+  ],
+  "infos": [
+    "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido.",
+    "É proibido consumir bebidas alcoólicas dentro do ônibus.",
+    "Coolers e malas de rodinhas vão no bagageiro inferior.",
+    "Cabos USB disponíveis no ônibus para carregar celular.",
+    "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto."
+  ],
+  "lifecycle": {
+    "cardExpiresAt": "2026-10-31T00:00:00.000Z",
+    "registrationEnabled": true,
+    "admFinalizesManually": true,
+    "registrationClosesAt": "2026-10-31T00:00:00.000Z",
+    "staffHiddenAfterReport": true
+  },
+  "registrationClosesAt": "2026-10-31T00:00:00.000Z",
+  "cardExpiresAt": "2026-10-31T00:00:00.000Z",
+  "registrationEnabled": true
+}
