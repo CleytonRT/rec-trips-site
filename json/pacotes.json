@@ -265,5 +265,22 @@
     "registrationClosesAt": "2026-10-31T00:00:00.000Z",
     "cardExpiresAt": "2026-10-31T00:00:00.000Z",
     "registrationEnabled": true
+  },
+  {
+    "id": "balneario041226",
+    "slug": "balneario041226",
+    "imagem": "https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1782747619/rectrips/cards/em-breve.jpg",
+    "titulo": "Beto Carreiro + Balneário Camboriú",
+    "subtitulo": "Vem gravar seu momento",
+    "tipo": "Hospedagem",
+    "ida": "04/12/2026",
+    "volta": "06/12/2026",
+    "valor": "Em Breve",
+    "url": "",
+    "formDestination": "Beto Carreiro + Balneário Camboriú (Hospedagem)",
+    "destaque": "",
+    "quartos": [],
+    "rooms": [],
+    "registrationEnabled": false
   }
 ]
