@@ -118,10 +118,10 @@
     "tipo": "Hospedagem",
     "ida": "30/10/2026",
     "volta": "02/11/2026",
-    "valor": "Em Breve",
-    "url": "",
+    "valor": "R$ 522,00",
+    "url": "viagens/sao-thome-301026/",
     "formDestination": "São Thomé das Letras (Hospedagem)",
-    "destaque": "",
+    "destaque": "Venha aproveitar o Halloween na cidade mais mística do Brasil. Com degustação de cachaça, passeio pelas cachoeiras e uma noite inesquecível de doces ou travessuras.",
     "quartos": [
       {
         "id": "pacote-individual",
@@ -262,6 +262,8 @@
         "perPersonWithDiscount": 522
       }
     ],
-    "registrationEnabled": false
+    "registrationClosesAt": "2026-10-31T00:00:00.000Z",
+    "cardExpiresAt": "2026-10-31T00:00:00.000Z",
+    "registrationEnabled": true
   }
 ]
