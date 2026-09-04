@@ -375,7 +375,7 @@
     const formatMoney = (value) => Number(value || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     const formatPercent = (value) => Number(value || 0).toLocaleString('pt-BR', { maximumFractionDigits: 2 });
 
-    const siteDataVersion = '20260904121548';
+    const siteDataVersion = '20260904121613';
     fetch(`./json/viagens.json?v=${siteDataVersion}`, { cache: 'default' })
       .then((response) => response.ok ? response : fetch(`./json/pacotes.json?v=${siteDataVersion}`, { cache: 'default' }))
       .then((response) => {
