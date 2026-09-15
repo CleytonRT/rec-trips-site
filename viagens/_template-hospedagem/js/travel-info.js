@@ -264,8 +264,9 @@
       }
       if (els.tripDate) els.tripDate.textContent = repairText(data.date || '');
       if (els.tripType) els.tripType.textContent = repairText(data.type || '');
-      if (els.returnInfoCard) els.returnInfoCard.classList.toggle('hidden', !data.returning);
-      if (els.returnInfo) els.returnInfo.textContent = data.returning ? repairText(returnLabel(data.returning)) : '';
+      const returnText = data.arrivalReturning || data.returning || '';
+      if (els.returnInfoCard) els.returnInfoCard.classList.toggle('hidden', !returnText);
+      if (els.returnInfo) els.returnInfo.textContent = returnText ? repairText(returnLabel(returnText)) : '';
       fillList(els.includedList, data.included, 'fa-check-circle');
       fillList(els.notIncludedList, data.not_included, 'fa-circle-xmark');
       fillList(els.boardingList, sortedBoarding(data.boarding || []), 'fa-clock');
