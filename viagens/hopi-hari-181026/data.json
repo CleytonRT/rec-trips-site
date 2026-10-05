@@ -6,12 +6,12 @@
   "summary": "Venha curtir o melhor parque de SP com diversas atrações e a noite nossa Hora do Horror da N3kron - O protocolo",
   "formDestination": "Hopi Hari (Bate e Volta)",
   "date": "18/10/2026",
-  "price_full": "R$220,00",
+  "price_full": "R$ 220,00",
   "type": "Bate e Volta",
   "hero": "https://res.cloudinary.com/deec4rlfa/image/upload/c_limit,w_2200,q_auto,f_auto/v1785825567/rectrips/cards/eqczyqhmqm670bkcmoxh.png",
   "whatsapp_url": "https://wa.me/message/G7FUENJX5QHII1",
   "included": [
-    "Transporte ida e volta de ônibus executivo",
+    "Transporte ida e volta de Ônibus executivo",
     "Ingresso do parque Hopi Hari",
     "Guia e monitores da RecTrips"
   ],
@@ -20,21 +20,13 @@
     "Tatuapé, São Paulo - 08:00",
     "Barra Funda, São Paulo - 08:30"
   ],
-  "boardingTimes": {
-    "Shopping Internacional, Guarulhos": "07:35",
-    "Tatuapé, São Paulo": "08:00",
-    "Barra Funda, São Paulo": "08:30"
-  },
-  "boardingLocations": [
-    "Shopping Internacional, Guarulhos",
-    "Tatuapé, São Paulo",
-    "Barra Funda, São Paulo"
-  ],
   "returnDate": "18/10/2026",
   "returnTime": "22:00",
+  "arrivalDate": "18/10/2026",
+  "arrivalTime": "",
   "returning": "Retorno previsto as 22:00 do dia 18/10/2026",
   "not_included": [
-    "Alimentação não inclusa",
+    "Alimentação não Inclusa",
     "Atividades adicionais do parque"
   ],
   "payment": [
@@ -49,7 +41,7 @@
     },
     {
       "step": "Item 2",
-      "detail": "Chegando lá será orientada a entrada, retirada de ingressos e onde nos encontraremos na saída do parque."
+      "detail": "Chegando lá será orientado a entrada, retirada de ingressos e onde nos encontraremos na saída do parque."
     },
     {
       "step": "Item 3",
@@ -57,17 +49,46 @@
     },
     {
       "step": "Item 4",
-      "detail": "Nos encontraremos para ir embora até as 20:30hrs no estacionamento orientado e chegaremos em SP em torno das 22hrs."
+      "detail": "Nos encontraremos para ir embora até as 20:30hrs no estacionamento onde foi orientado e chegamos em SP em torno das 22hrs."
     }
   ],
-  "quartos": [],
-  "rooms": [],
-  "infos": [
-    "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido.",
-    "É proibido consumir bebidas alcoólicas dentro do ônibus.",
-    "Coolers e malas de rodinhas vão no bagageiro inferior.",
-    "Cabos USB disponíveis no ônibus para carregar celular.",
-    "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto."
+  "quartos": [
+    {
+      "id": "pacote-individual",
+      "name": "Pacote individual",
+      "price": "R$220,00",
+      "valor": "R$220,00",
+      "people": 1,
+      "titulo": "Pacote individual",
+      "pessoas": 1,
+      "desconto": 0,
+      "descricao": "Valor por pessoa já com ingresso",
+      "description": "Valor por pessoa já com ingresso",
+      "discountPercent": 0,
+      "totalWithDiscount": 220,
+      "basePricePerPerson": 220,
+      "totalWithoutDiscount": 220,
+      "perPersonWithDiscount": 220
+    }
+  ],
+  "rooms": [
+    {
+      "id": "pacote-individual",
+      "name": "Pacote individual",
+      "price": "R$220,00",
+      "valor": "R$220,00",
+      "people": 1,
+      "titulo": "Pacote individual",
+      "pessoas": 1,
+      "desconto": 0,
+      "descricao": "Valor por pessoa já com ingresso",
+      "description": "Valor por pessoa já com ingresso",
+      "discountPercent": 0,
+      "totalWithDiscount": 220,
+      "basePricePerPerson": 220,
+      "totalWithoutDiscount": 220,
+      "perPersonWithDiscount": 220
+    }
   ],
   "policies": [
     "90% de reembolso para cancelamentos feitos até 31 dias antes da viagem.",
@@ -75,19 +96,26 @@
     "0% de reembolso para cancelamentos com menos de 15 dias do início da viagem.",
     "Cancelamentos com menos de 20 dias da viagem não terão direito a crédito ou reembolso.",
     "Caso o saldo restante não seja pago até a data estipulada, o passageiro perderá o valor da reserva.",
-    "Embarque permitido apenas com documento original com foto, RG ou CNH.",
+    "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido.",
     "Não comparecimento no horário marcado será considerado desistência, sem reembolso.",
     "A viagem pode ser remarcada caso não haja número mínimo de participantes.",
     "O roteiro pode sofrer alterações devido a condições climáticas ou imprevistos."
   ],
+  "infos": [
+    "Documento original com foto é obrigatório para embarque; aplicativo oficial do governo é válido.",
+    "É proibido consumir bebidas alcoólicas dentro do ônibus.",
+    "Coolers e malas de rodinhas vão no bagageiro inferior.",
+    "Cabos USB disponíveis no ônibus para carregar celular.",
+    "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto."
+  ],
   "lifecycle": {
-    "registrationEnabled": true,
-    "registrationClosesAt": "2026-10-18T06:41:00.000Z",
     "cardExpiresAt": "2026-10-18T06:41:00.000Z",
+    "registrationEnabled": true,
     "admFinalizesManually": true,
+    "registrationClosesAt": "2026-10-18T06:41:00.000Z",
     "staffHiddenAfterReport": true
   },
-  "registrationEnabled": true,
   "registrationClosesAt": "2026-10-18T06:41:00.000Z",
-  "cardExpiresAt": "2026-10-18T06:41:00.000Z"
+  "cardExpiresAt": "2026-10-18T06:41:00.000Z",
+  "registrationEnabled": true
 }
