@@ -26,7 +26,7 @@
   "returnDate": "02/11/2026",
   "returnTime": "22:30",
   "arrivalDate": "02/11/2026",
-  "arrivalTime": "",
+  "arrivalTime": "22:30",
   "returning": "Retorno previsto as 22:30 do dia 02/11/2026",
   "not_included": [
     "Sobradinho (Domingo) - R$70,00 por pessoa",
@@ -230,7 +230,7 @@
     "registrationEnabled": true,
     "admFinalizesManually": true,
     "registrationClosesAt": "2026-10-31T00:00:00.000Z",
-    "staffHiddenAfterReport": true
+    "staffHiddenAfterReport": false
   },
   "registrationClosesAt": "2026-10-31T00:00:00.000Z",
   "cardExpiresAt": "2026-10-31T00:00:00.000Z",
