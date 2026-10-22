@@ -109,13 +109,16 @@
     "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto."
   ],
   "lifecycle": {
-    "cardExpiresAt": "2026-10-18T06:41:00.000Z",
-    "registrationEnabled": true,
+    "cardExpiresAt": "2026-10-22T02:06:35.027Z",
+    "registrationEnabled": false,
     "admFinalizesManually": true,
     "registrationClosesAt": "2026-10-18T06:41:00.000Z",
-    "staffHiddenAfterReport": true
+    "staffHiddenAfterReport": true,
+    "admFinalizedAt": "2026-10-22T02:06:35.027Z",
+    "finalizedAt": "2026-10-22T02:06:35.027Z"
   },
-  "registrationClosesAt": "2026-10-18T06:41:00.000Z",
-  "cardExpiresAt": "2026-10-18T06:41:00.000Z",
-  "registrationEnabled": true
+  "registrationClosesAt": "2026-10-22T02:06:35.027Z",
+  "cardExpiresAt": "2026-10-22T02:06:35.027Z",
+  "registrationEnabled": false,
+  "status": "Cancelada"
 }
