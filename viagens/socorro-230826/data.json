@@ -6,7 +6,7 @@
   "summary": "Rafting e Gruta do anjo em Socorro, no parque Kango Jango e por do sol no mirante Pedra Bela Vista",
   "formDestination": "Socorro + Pedra Bela Vista (Bate e Volta)",
   "date": "23/08/2026",
-  "price_full": "R$365,00",
+  "price_full": "Em Breve",
   "type": "Bate e Volta",
   "hero": "https://res.cloudinary.com/deec4rlfa/image/upload/f_auto,q_auto/v1782970056/rectrips/cards/lzjrhdthlyadtskbikde.png",
   "whatsapp_url": "https://wa.me/message/G7FUENJX5QHII1",
@@ -19,8 +19,13 @@
   ],
   "boarding": [
     "Barra Funda, São Paulo - 06:30",
-    "Tatuapé, São Paulo - 07:00"
+    "Tatuapé, São Paulo - 07:00",
+    "Shopping Internacional, Guarulhos - 07:30"
   ],
+  "returnDate": "23/08/2026",
+  "returnTime": "21:30",
+  "arrivalDate": "23/08/2026",
+  "arrivalTime": "",
   "returning": "Retorno previsto as 21:30 do dia 23/08/2026",
   "not_included": [
     "Almoço - Prato executivo média de R$43,00 (O parque conta com porções e lanches)",
@@ -78,12 +83,16 @@
     "Leve uma manta ou coberta, pois o ar-condicionado ficará ligado durante o trajeto."
   ],
   "lifecycle": {
-    "cardExpiresAt": "2026-08-23T07:00:00.000Z",
-    "registrationEnabled": true,
+    "cardExpiresAt": "2026-10-28T13:19:30.468Z",
+    "registrationEnabled": false,
     "admFinalizesManually": true,
     "registrationClosesAt": "2026-08-23T07:00:00.000Z",
-    "staffHiddenAfterReport": true
+    "staffHiddenAfterReport": true,
+    "admFinalizedAt": "2026-10-28T13:19:30.468Z",
+    "finalizedAt": "2026-10-28T13:19:30.468Z"
   },
-  "registrationClosesAt": "2026-08-23T07:00:00.000Z",
-  "cardExpiresAt": "2026-08-23T07:00:00.000Z"
+  "registrationClosesAt": "2026-10-28T13:19:30.468Z",
+  "cardExpiresAt": "2026-10-28T13:19:30.468Z",
+  "registrationEnabled": false,
+  "status": "Cancelada"
 }
